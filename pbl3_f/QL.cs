@@ -61,10 +61,11 @@ namespace pbl3_f
         private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tab_Home;
-            Home_btn.Normalcolor = Color.LightGray;
-            waiter_btn.Normalcolor = Color.White;
-            Item_btn.Normalcolor = Color.White;
-            doanhthu_btn.Normalcolor = Color.White;
+            Home_btn.Textcolor = Color.OrangeRed;
+            waiter_btn.Textcolor = Color.White;
+            Item_btn.Textcolor = Color.White;
+            doanhthu_btn.Textcolor= Color.White;
+            
 
             
         }
@@ -72,28 +73,30 @@ namespace pbl3_f
         private void bunifuFlatButton2_Click_1(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabMenu;
-            Home_btn.Normalcolor = Color.White;
-            waiter_btn.Normalcolor = Color.White;
-            Item_btn.Normalcolor = Color.LightGray;
-            doanhthu_btn.Normalcolor = Color.White;
+            Home_btn.Textcolor = Color.White;
+            waiter_btn.Textcolor = Color.White;
+            Item_btn.Textcolor = Color.OrangeRed;
+            doanhthu_btn.Textcolor = Color.White;
+
         }
 
         private void bunifuFlatButton3_Click_1(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabWaiter;
-            Home_btn.Normalcolor = Color.White;
-            waiter_btn.Normalcolor = Color.LightGray;
-            Item_btn.Normalcolor = Color.White;
-            doanhthu_btn.Normalcolor = Color.White;
+            Home_btn.Textcolor = Color.White;
+            waiter_btn.Textcolor = Color.OrangeRed;
+            Item_btn.Textcolor = Color.White;
+            doanhthu_btn.Textcolor = Color.White;
+
         }
 
         private void bunifuFlatButton4_Click_1(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabRevenue;
-            Home_btn.Normalcolor = Color.White;
-            waiter_btn.Normalcolor = Color.White;
-            Item_btn.Normalcolor = Color.White;
-            doanhthu_btn.Normalcolor = Color.LightGray;
+            Home_btn.Textcolor = Color.White;
+            waiter_btn.Textcolor = Color.White;
+            Item_btn.Textcolor = Color.White;
+            doanhthu_btn.Textcolor = Color.OrangeRed;
         }
 
         private void bunifuFlatButton5_Click_1(object sender, EventArgs e)
