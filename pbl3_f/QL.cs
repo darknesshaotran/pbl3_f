@@ -148,5 +148,11 @@ namespace pbl3_f
         {
 
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            Form f = new Profile();
+            f.ShowDialog();
+        }
     }
 }

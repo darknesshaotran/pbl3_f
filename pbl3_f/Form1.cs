@@ -84,7 +84,7 @@ namespace pbl3_f
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-         
+           
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -99,7 +99,7 @@ namespace pbl3_f
         private void Form1_Load(object sender, EventArgs e)
         {
             this.KeyPreview = true;
-            this.KeyDown += Form1_KeyDown;
+           this.KeyPress += Form1_KeyPress;
 
         }
 
