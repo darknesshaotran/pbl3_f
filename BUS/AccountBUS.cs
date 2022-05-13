@@ -40,6 +40,25 @@ namespace BUS
                 throw ex;
             }
         }
+        public bool CheckLoginTypeID(AccountDTO account)
+        {
+            if(account.UserName == null)
+            {
+                return false;
+            }
+            if(account.Password == null)
+            {
+                return false;
+            }
+            try
+            {
+                return AccountDAO.Instance.CheckLoginTypeID(account);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public DataTable GetAllAccount()
         {
             try
@@ -57,6 +76,19 @@ namespace BUS
             try
             {
                 data = AccountDAO.Instance.GetAccountByUserName(UserName);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return new AccountDTO(data.Rows[0]);
+        }
+        public AccountDTO GetAccountByTypeID(int TypeID)
+        {
+            DataTable data;
+            try
+            {
+                data = AccountDAO.Instance.GetAccountByTypeID(TypeID);
             }
             catch (Exception ex)
             {

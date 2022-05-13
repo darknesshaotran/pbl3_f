@@ -123,14 +123,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuCustomLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 231</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bunifuCustomLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>567, 284</value>
   </data>
   <data name="bunifuCustomLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+    <value>0, 16</value>
   </data>
   <data name="bunifuCustomLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -147,118 +143,116 @@
   <data name="&gt;&gt;bunifuCustomLabel1.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="Login_btn.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnLogin.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
-  <data name="Login_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 299</value>
+  <data name="btnLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 368</value>
   </data>
-  <data name="Login_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="Login_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 41</value>
+  <data name="btnLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>299, 50</value>
   </data>
-  <data name="Login_btn.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnLogin.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="Login_btn.Text" xml:space="preserve">
+  <data name="btnLogin.Text" xml:space="preserve">
     <value>Log In</value>
   </data>
-  <data name="&gt;&gt;Login_btn.Name" xml:space="preserve">
-    <value>Login_btn</value>
+  <data name="&gt;&gt;btnLogin.Name" xml:space="preserve">
+    <value>btnLogin</value>
   </data>
-  <data name="&gt;&gt;Login_btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnLogin.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Login_btn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnLogin.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Login_btn.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnLogin.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="annouce_lbl.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblAnnouce.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="annouce_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 258</value>
+  <data name="lblAnnouce.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 318</value>
   </data>
-  <data name="annouce_lbl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="lblAnnouce.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 16</value>
   </data>
-  <data name="annouce_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 13</value>
-  </data>
-  <data name="annouce_lbl.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblAnnouce.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="annouce_lbl.Text" xml:space="preserve">
+  <data name="lblAnnouce.Text" xml:space="preserve">
     <value>.</value>
   </data>
-  <data name="&gt;&gt;annouce_lbl.Name" xml:space="preserve">
-    <value>annouce_lbl</value>
+  <data name="&gt;&gt;lblAnnouce.Name" xml:space="preserve">
+    <value>lblAnnouce</value>
   </data>
-  <data name="&gt;&gt;annouce_lbl.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblAnnouce.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;annouce_lbl.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblAnnouce.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;annouce_lbl.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblAnnouce.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="User_TXT.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtUser.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="User_TXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 152</value>
+  <data name="txtUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 187</value>
   </data>
-  <data name="User_TXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="txtUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
-  <data name="User_TXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 44</value>
+  <data name="txtUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 54</value>
   </data>
-  <data name="User_TXT.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtUser.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;User_TXT.Name" xml:space="preserve">
-    <value>User_TXT</value>
+  <data name="&gt;&gt;txtUser.Name" xml:space="preserve">
+    <value>txtUser</value>
   </data>
-  <data name="&gt;&gt;User_TXT.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtUser.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;User_TXT.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtUser.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;User_TXT.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtUser.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="pass_txt.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtPass.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="pass_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 204</value>
+  <data name="txtPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 251</value>
   </data>
-  <data name="pass_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="txtPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
-  <data name="pass_txt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 44</value>
+  <data name="txtPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 54</value>
   </data>
-  <data name="pass_txt.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtPass.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;pass_txt.Name" xml:space="preserve">
-    <value>pass_txt</value>
+  <data name="&gt;&gt;txtPass.Name" xml:space="preserve">
+    <value>txtPass</value>
   </data>
-  <data name="&gt;&gt;pass_txt.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtPass.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;pass_txt.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtPass.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pass_txt.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtPass.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="display_btn.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -268,13 +262,13 @@
     <value />
   </data>
   <data name="display_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 218</value>
+    <value>383, 268</value>
   </data>
   <data name="display_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="display_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 19</value>
+    <value>29, 23</value>
   </data>
   <data name="display_btn.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -295,13 +289,13 @@
     <value>1</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, -17</value>
+    <value>76, -21</value>
   </data>
   <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 163</value>
+    <value>273, 201</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -644,13 +638,13 @@
 </value>
   </data>
   <data name="bunifuImageButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 216</value>
+    <value>27, 266</value>
   </data>
   <data name="bunifuImageButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="bunifuImageButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 21</value>
+    <value>24, 26</value>
   </data>
   <data name="bunifuImageButton2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -1378,13 +1372,13 @@
 </value>
   </data>
   <data name="bunifuImageButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 171</value>
+    <value>29, 210</value>
   </data>
   <data name="bunifuImageButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="bunifuImageButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
+    <value>20, 20</value>
   </data>
   <data name="bunifuImageButton1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -1404,49 +1398,49 @@
   <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="exit_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnExit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJcAAAAiCAYAAABSmEu/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABpSURBVHhe7dIxAQAADMOg+TfdqcgHGrhBRC4ycpGRi4xc
-        ZOQiIxcZucjIRUYuMnKRkYuMXGTkIiMXGbnIyEVGLjJykZGLjFxk5CIjFxm5yMhFRi4ycpGRi4xcZOQi
-        IxcZucjIRUYuItsDc3PsajSYpbMAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAMkAAAAqCAYAAAAZFn8pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAB9SURBVHhe7dMBAQAwDMOg+zfdO1gMgAfegJMkECSBIAkE
+        SSBIAkESCJJAkASCJBAkgSAJBEkgSAJBEgiSQJAEgiQQJIEgCQRJIEgCQRIIkkCQBIIkECSBIAkESSBI
+        AkESCJJAkASCJBAkgSAJBEkgSAJBEgiSQJAEgiRw2j65EWvGr97S3gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="exit_btn.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnExit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt, style=Bold</value>
   </data>
-  <data name="exit_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 359</value>
+  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 442</value>
   </data>
-  <data name="exit_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="btnExit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
-  <data name="exit_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 34</value>
+  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 42</value>
   </data>
-  <data name="exit_btn.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;exit_btn.Name" xml:space="preserve">
-    <value>exit_btn</value>
+  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
+    <value>btnExit</value>
   </data>
-  <data name="&gt;&gt;exit_btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;exit_btn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;exit_btn.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>320, 449</value>
+    <value>427, 553</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4467,7 +4461,10 @@
     <value>10, 10</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Login</value>

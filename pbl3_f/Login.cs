@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using BUS;
+using System.Threading;
 
 namespace pbl3_f
 {
@@ -19,51 +22,44 @@ namespace pbl3_f
            
         }
 
-        private void User_TXT_OnValueChanged(object sender, EventArgs e)
-        {
-           
-
-        }
 
         private void Login_btn_Click(object sender, EventArgs e)
         {
-            annouce_lbl.ForeColor = Color.Red;
-            if (User_TXT.Text == "admin" && pass_txt.Text == "1")
+            //AccountDTO accountDTO = new AccountDTO(txtUser.Text, txtPass.Text);
+            //if(AccountBUS.Instance.CheckLogin(accountDTO))
+            //{
+            //    AccountDTO account = AccountBUS.Instance.GetAccountByUserName(accountDTO.UserName);
+            //    lblAnnouce.Text = "Đăng nhập thành công !!!";
+            //    Thread.Sleep(500);
+            //    QL ql = new QL();
+            //    this.Hide();
+            //    ql.ShowDialog();
+            //    this.Show();
+            //    txtUser.Text = "";
+            //    txtPass.Text = "";
+            //    lblAnnouce.Text = "";
+            //    txtUser.Focus();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
+            AccountDTO accountDTO = new AccountDTO(txtUser.Text, txtPass.Text);
+            if(AccountBUS.Instance.CheckLoginTypeID(accountDTO) == true)
             {
-                annouce_lbl.ForeColor = Color.SteelBlue;
-                annouce_lbl.Text = "đăng nhập thành công !";
-                Form form = new QL();
-                this.Hide();
-                form.ShowDialog();
-                this.Show();
-            }
-            else if (User_TXT.Text == "NV1" && pass_txt.Text == "1")
-            {
-                annouce_lbl.ForeColor = Color.SteelBlue;
-                annouce_lbl.Text = "đăng nhập thành công !";
-                Form form = new NV();
-                this.Hide();
-                form.ShowDialog();
-                this.Show();
-            }
-            else if (pass_txt.Text == "" && User_TXT.Text == "")
-            {
-                annouce_lbl.Text = "không để trống tên đăng nhập và mật khẩu!! ";
+                AccountDTO account = AccountBUS.Instance.GetAccountByTypeID(accountDTO.TypeID);
+                lblAnnouce.Text = "oke";
             }
             else
             {
-                annouce_lbl.Text = "nhập sai mật khẩu hoặc tên tài khoản!! ";
+                lblAnnouce.Text = "sai";
             }
-        }
 
-        private void pass_txt_OnValueChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void pass_txt_OnValueChanged_1(object sender, EventArgs e)
         {
-            pass_txt.isPassword = true;
+            txtPass.isPassword = true;
         }
 
         private void display_btn_Click(object sender, EventArgs e)
@@ -72,11 +68,11 @@ namespace pbl3_f
             i++;
             if(i%2 != 0 )
             {
-                pass_txt.isPassword=false;
+                txtPass.isPassword=false;
             }
             else
             {
-                pass_txt.isPassword=true;
+                txtPass.isPassword=true;
             }
         }
 

@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.Login_btn = new System.Windows.Forms.Button();
-            this.annouce_lbl = new System.Windows.Forms.Label();
-            this.User_TXT = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.pass_txt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.lblAnnouce = new System.Windows.Forms.Label();
+            this.txtUser = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.display_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.exit_btn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnExit = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.display_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -51,55 +51,55 @@
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.UseWaitCursor = true;
             // 
-            // Login_btn
+            // btnLogin
             // 
-            this.Login_btn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.Login_btn.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            resources.ApplyResources(this.Login_btn, "Login_btn");
-            this.Login_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Login_btn.Name = "Login_btn";
-            this.Login_btn.UseVisualStyleBackColor = false;
-            this.Login_btn.UseWaitCursor = true;
-            this.Login_btn.Click += new System.EventHandler(this.Login_btn_Click);
+            this.btnLogin.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            resources.ApplyResources(this.btnLogin, "btnLogin");
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.UseWaitCursor = true;
+            this.btnLogin.Click += new System.EventHandler(this.Login_btn_Click);
             // 
-            // annouce_lbl
+            // lblAnnouce
             // 
-            resources.ApplyResources(this.annouce_lbl, "annouce_lbl");
-            this.annouce_lbl.Name = "annouce_lbl";
-            this.annouce_lbl.UseWaitCursor = true;
+            resources.ApplyResources(this.lblAnnouce, "lblAnnouce");
+            this.lblAnnouce.Name = "lblAnnouce";
+            this.lblAnnouce.UseWaitCursor = true;
             // 
-            // User_TXT
+            // txtUser
             // 
-            this.User_TXT.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            resources.ApplyResources(this.User_TXT, "User_TXT");
-            this.User_TXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.User_TXT.HintForeColor = System.Drawing.Color.Empty;
-            this.User_TXT.HintText = "";
-            this.User_TXT.isPassword = false;
-            this.User_TXT.LineFocusedColor = System.Drawing.Color.Blue;
-            this.User_TXT.LineIdleColor = System.Drawing.Color.Gray;
-            this.User_TXT.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.User_TXT.LineThickness = 3;
-            this.User_TXT.Name = "User_TXT";
-            this.User_TXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.User_TXT.UseWaitCursor = true;
+            this.txtUser.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            resources.ApplyResources(this.txtUser, "txtUser");
+            this.txtUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtUser.HintForeColor = System.Drawing.Color.Empty;
+            this.txtUser.HintText = "";
+            this.txtUser.isPassword = false;
+            this.txtUser.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtUser.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtUser.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtUser.LineThickness = 3;
+            this.txtUser.Name = "txtUser";
+            this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtUser.UseWaitCursor = true;
             // 
-            // pass_txt
+            // txtPass
             // 
-            this.pass_txt.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            resources.ApplyResources(this.pass_txt, "pass_txt");
-            this.pass_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pass_txt.HintForeColor = System.Drawing.Color.Empty;
-            this.pass_txt.HintText = "";
-            this.pass_txt.isPassword = true;
-            this.pass_txt.LineFocusedColor = System.Drawing.Color.Blue;
-            this.pass_txt.LineIdleColor = System.Drawing.Color.Gray;
-            this.pass_txt.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.pass_txt.LineThickness = 3;
-            this.pass_txt.Name = "pass_txt";
-            this.pass_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.pass_txt.UseWaitCursor = true;
-            this.pass_txt.OnValueChanged += new System.EventHandler(this.pass_txt_OnValueChanged_1);
+            this.txtPass.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            resources.ApplyResources(this.txtPass, "txtPass");
+            this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPass.HintForeColor = System.Drawing.Color.Empty;
+            this.txtPass.HintText = "";
+            this.txtPass.isPassword = true;
+            this.txtPass.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtPass.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtPass.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtPass.LineThickness = 3;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPass.UseWaitCursor = true;
+            this.txtPass.OnValueChanged += new System.EventHandler(this.pass_txt_OnValueChanged_1);
             // 
             // display_btn
             // 
@@ -141,42 +141,42 @@
             this.bunifuImageButton1.UseWaitCursor = true;
             this.bunifuImageButton1.Zoom = 10;
             // 
-            // exit_btn
+            // btnExit
             // 
-            this.exit_btn.ActiveBorderThickness = 1;
-            this.exit_btn.ActiveCornerRadius = 20;
-            this.exit_btn.ActiveFillColor = System.Drawing.Color.SteelBlue;
-            this.exit_btn.ActiveForecolor = System.Drawing.Color.White;
-            this.exit_btn.ActiveLineColor = System.Drawing.Color.SteelBlue;
-            this.exit_btn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            resources.ApplyResources(this.exit_btn, "exit_btn");
-            this.exit_btn.ButtonText = "Exit";
-            this.exit_btn.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.exit_btn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.exit_btn.IdleBorderThickness = 1;
-            this.exit_btn.IdleCornerRadius = 20;
-            this.exit_btn.IdleFillColor = System.Drawing.Color.White;
-            this.exit_btn.IdleForecolor = System.Drawing.Color.SteelBlue;
-            this.exit_btn.IdleLineColor = System.Drawing.Color.White;
-            this.exit_btn.Name = "exit_btn";
-            this.exit_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.exit_btn.UseWaitCursor = true;
-            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click_1);
+            this.btnExit.ActiveBorderThickness = 1;
+            this.btnExit.ActiveCornerRadius = 20;
+            this.btnExit.ActiveFillColor = System.Drawing.Color.SteelBlue;
+            this.btnExit.ActiveForecolor = System.Drawing.Color.White;
+            this.btnExit.ActiveLineColor = System.Drawing.Color.SteelBlue;
+            this.btnExit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.ButtonText = "Exit";
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnExit.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnExit.IdleBorderThickness = 1;
+            this.btnExit.IdleCornerRadius = 20;
+            this.btnExit.IdleFillColor = System.Drawing.Color.White;
+            this.btnExit.IdleForecolor = System.Drawing.Color.SteelBlue;
+            this.btnExit.IdleLineColor = System.Drawing.Color.White;
+            this.btnExit.Name = "btnExit";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnExit.UseWaitCursor = true;
+            this.btnExit.Click += new System.EventHandler(this.exit_btn_Click_1);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Controls.Add(this.exit_btn);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.display_btn);
-            this.Controls.Add(this.pass_txt);
-            this.Controls.Add(this.User_TXT);
-            this.Controls.Add(this.annouce_lbl);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.lblAnnouce);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.bunifuImageButton1);
-            this.Controls.Add(this.Login_btn);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "Form1";
             this.UseWaitCursor = true;
@@ -195,15 +195,15 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private System.Windows.Forms.Button Login_btn;
+        private System.Windows.Forms.Button btnLogin;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label annouce_lbl;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox User_TXT;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox pass_txt;
+        private System.Windows.Forms.Label lblAnnouce;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtUser;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPass;
         private Bunifu.Framework.UI.BunifuImageButton display_btn;
-        private Bunifu.Framework.UI.BunifuThinButton2 exit_btn;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnExit;
     }
 }
 

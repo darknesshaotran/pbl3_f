@@ -36,6 +36,20 @@ namespace DAO
             }
             return result.Rows.Count > 0;
         }
+        public bool CheckLoginTypeID(AccountDTO account)
+        {
+            string query = "USP_LoginTypeID @UserName , @PassWord , @TypeID";
+            DataTable data = new DataTable();
+            try
+            {
+                data = DataProvider.Instance.ExecuteQuery(query, new object[] {account.UserName, account.Password, account.TypeID});
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            return data.Rows.Count > 0;
+        }
         public DataTable GetAllAccount()
         {
             try
@@ -59,5 +73,18 @@ namespace DAO
                 throw ex;
             }
         }
+        public DataTable GetAccountByTypeID(int TypeID)
+        {
+            string query = "USP_GetAccountByTypeID @TypeID";
+            try
+            {
+                return DataProvider.Instance.ExecuteQuery(query, new Object[] { TypeID });
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

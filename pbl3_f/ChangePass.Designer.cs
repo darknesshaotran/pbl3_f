@@ -57,10 +57,10 @@
             this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(208, 25);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(277, 31);
+            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(269, 50);
+            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(359, 62);
             this.bunifuMaterialTextbox1.TabIndex = 2;
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuMaterialTextbox1.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
@@ -69,9 +69,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 55);
+            this.label1.Location = new System.Drawing.Point(40, 68);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 17);
+            this.label1.Size = new System.Drawing.Size(171, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Tên đăng nhập (ID)";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -80,9 +81,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 137);
+            this.label2.Location = new System.Drawing.Point(40, 169);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 17);
+            this.label2.Size = new System.Drawing.Size(103, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "tên hiển thị";
             // 
@@ -98,10 +100,10 @@
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(208, 107);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(277, 132);
+            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(269, 50);
+            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(359, 62);
             this.bunifuMaterialTextbox2.TabIndex = 5;
             this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -109,9 +111,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 236);
+            this.label3.Location = new System.Drawing.Point(40, 290);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 17);
+            this.label3.Size = new System.Drawing.Size(111, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Mật khẩu cũ";
             // 
@@ -119,9 +122,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 325);
+            this.label4.Location = new System.Drawing.Point(40, 400);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 17);
+            this.label4.Size = new System.Drawing.Size(121, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Mật khẩu mới";
             // 
@@ -129,9 +133,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 428);
+            this.label5.Location = new System.Drawing.Point(40, 527);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 17);
+            this.label5.Size = new System.Drawing.Size(169, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Xác nhận mật khẩu";
             // 
@@ -147,10 +152,10 @@
             this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox3.LineThickness = 3;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(208, 206);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(277, 254);
+            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(269, 50);
+            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(359, 62);
             this.bunifuMaterialTextbox3.TabIndex = 9;
             this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -166,10 +171,10 @@
             this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox4.LineThickness = 3;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(208, 300);
-            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(277, 369);
+            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(269, 50);
+            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(359, 62);
             this.bunifuMaterialTextbox4.TabIndex = 10;
             this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuMaterialTextbox4.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox4_OnValueChanged);
@@ -186,10 +191,10 @@
             this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(208, 398);
-            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(277, 490);
+            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(269, 50);
+            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(359, 62);
             this.bunifuMaterialTextbox5.TabIndex = 11;
             this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuMaterialTextbox5.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox5_OnValueChanged);
@@ -212,10 +217,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.SteelBlue;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(64, 535);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(85, 658);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(147, 50);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(196, 62);
             this.bunifuThinButton21.TabIndex = 12;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -237,10 +242,10 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.SteelBlue;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(302, 535);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(403, 658);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(147, 50);
+            this.bunifuThinButton23.Size = new System.Drawing.Size(196, 62);
             this.bunifuThinButton23.TabIndex = 14;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click);
@@ -250,9 +255,10 @@
             this.bunifuImageButton1.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(457, 323);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(609, 398);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(20, 22);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(27, 27);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 15;
             this.bunifuImageButton1.TabStop = false;
@@ -261,9 +267,9 @@
             // 
             // ChangePass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 620);
+            this.ClientSize = new System.Drawing.Size(669, 763);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuThinButton23);
             this.Controls.Add(this.bunifuThinButton21);
@@ -277,7 +283,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ChangePass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChangePass";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
