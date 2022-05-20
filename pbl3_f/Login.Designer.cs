@@ -1,6 +1,6 @@
 ﻿namespace pbl3_f
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblAnnouce = new System.Windows.Forms.Label();
@@ -163,7 +163,7 @@
             this.btnExit.UseWaitCursor = true;
             this.btnExit.Click += new System.EventHandler(this.exit_btn_Click_1);
             // 
-            // Form1
+            // Login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,11 +178,9 @@
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.UseWaitCursor = true;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.display_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();

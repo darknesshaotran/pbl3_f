@@ -36,19 +36,24 @@
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbItem = new System.Windows.Forms.ComboBox();
+            this.nmItemAmount = new System.Windows.Forms.NumericUpDown();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txbTotalPrice = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAddItem = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvBill = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.bunifuThinButton27 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -69,7 +74,7 @@
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmItemAmount)).BeginInit();
             this.panel2.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -202,12 +207,12 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.comboBox2);
-            this.tabPage2.Controls.Add(this.numericUpDown1);
-            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.cbItem);
+            this.tabPage2.Controls.Add(this.nmItemAmount);
+            this.tabPage2.Controls.Add(this.cbCategory);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.bunifuThinButton24);
+            this.tabPage2.Controls.Add(this.btnAddItem);
             this.tabPage2.Controls.Add(this.bunifuGradientPanel3);
             this.tabPage2.Controls.Add(this.bunifuGradientPanel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
@@ -219,31 +224,42 @@
             this.tabPage2.Text = "order";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // cbItem
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(604, 66);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(160, 24);
-            this.comboBox2.TabIndex = 6;
+            this.cbItem.FormattingEnabled = true;
+            this.cbItem.Location = new System.Drawing.Point(604, 66);
+            this.cbItem.Margin = new System.Windows.Forms.Padding(4);
+            this.cbItem.Name = "cbItem";
+            this.cbItem.Size = new System.Drawing.Size(160, 24);
+            this.cbItem.TabIndex = 6;
             // 
-            // numericUpDown1
+            // nmItemAmount
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(773, 66);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(43, 22);
-            this.numericUpDown1.TabIndex = 5;
+            this.nmItemAmount.Location = new System.Drawing.Point(773, 66);
+            this.nmItemAmount.Margin = new System.Windows.Forms.Padding(4);
+            this.nmItemAmount.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.nmItemAmount.Name = "nmItemAmount";
+            this.nmItemAmount.Size = new System.Drawing.Size(43, 22);
+            this.nmItemAmount.TabIndex = 5;
+            this.nmItemAmount.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // comboBox1
+            // cbCategory
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(604, 17);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 24);
-            this.comboBox1.TabIndex = 5;
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(604, 17);
+            this.cbCategory.Margin = new System.Windows.Forms.Padding(4);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(160, 24);
+            this.cbCategory.TabIndex = 5;
+            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -255,10 +271,10 @@
             this.label2.Size = new System.Drawing.Size(73, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "category";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.txbTotalPrice);
             this.panel2.Controls.Add(this.comboBox3);
             this.panel2.Controls.Add(this.bunifuThinButton26);
             this.panel2.Controls.Add(this.bunifuThinButton25);
@@ -267,6 +283,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(337, 123);
             this.panel2.TabIndex = 2;
+            // 
+            // txbTotalPrice
+            // 
+            this.txbTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTotalPrice.Location = new System.Drawing.Point(169, 18);
+            this.txbTotalPrice.Name = "txbTotalPrice";
+            this.txbTotalPrice.ReadOnly = true;
+            this.txbTotalPrice.Size = new System.Drawing.Size(148, 27);
+            this.txbTotalPrice.TabIndex = 8;
+            this.txbTotalPrice.Text = "0";
+            this.txbTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // comboBox3
             // 
@@ -320,69 +347,96 @@
             this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton25.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.Location = new System.Drawing.Point(208, 33);
+            this.bunifuThinButton25.Location = new System.Drawing.Point(186, 53);
             this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton25.Name = "bunifuThinButton25";
             this.bunifuThinButton25.Size = new System.Drawing.Size(111, 57);
             this.bunifuThinButton25.TabIndex = 4;
             this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuThinButton24
+            // btnAddItem
             // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "thêm món";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(820, 50);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(111, 57);
-            this.bunifuThinButton24.TabIndex = 3;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddItem.ActiveBorderThickness = 1;
+            this.btnAddItem.ActiveCornerRadius = 20;
+            this.btnAddItem.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnAddItem.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAddItem.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAddItem.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddItem.BackgroundImage")));
+            this.btnAddItem.ButtonText = "thêm món";
+            this.btnAddItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddItem.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddItem.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAddItem.IdleBorderThickness = 1;
+            this.btnAddItem.IdleCornerRadius = 20;
+            this.btnAddItem.IdleFillColor = System.Drawing.Color.White;
+            this.btnAddItem.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnAddItem.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAddItem.Location = new System.Drawing.Point(820, 50);
+            this.btnAddItem.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.Size = new System.Drawing.Size(111, 57);
+            this.btnAddItem.TabIndex = 3;
+            this.btnAddItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // bunifuGradientPanel3
             // 
             this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
             this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.Controls.Add(this.listView1);
+            this.bunifuGradientPanel3.Controls.Add(this.lvBill);
             this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(599, 116);
+            this.bunifuGradientPanel3.Location = new System.Drawing.Point(604, 116);
             this.bunifuGradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(343, 422);
+            this.bunifuGradientPanel3.Size = new System.Drawing.Size(338, 422);
             this.bunifuGradientPanel3.TabIndex = 1;
             // 
-            // listView1
+            // lvBill
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(336, 421);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lvBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lvBill.GridLines = true;
+            this.lvBill.HideSelection = false;
+            this.lvBill.Location = new System.Drawing.Point(0, 0);
+            this.lvBill.Margin = new System.Windows.Forms.Padding(4);
+            this.lvBill.Name = "lvBill";
+            this.lvBill.Size = new System.Drawing.Size(336, 421);
+            this.lvBill.TabIndex = 0;
+            this.lvBill.UseCompatibleStateImageBehavior = false;
+            this.lvBill.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên món";
+            this.columnHeader1.Width = 115;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số lượng";
+            this.columnHeader2.Width = 69;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn giá";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành tiền";
+            this.columnHeader4.Width = 86;
             // 
             // bunifuGradientPanel2
             // 
             this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
             this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel2.Controls.Add(this.flowLayoutPanel1);
+            this.bunifuGradientPanel2.Controls.Add(this.flpTable);
             this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
@@ -394,13 +448,14 @@
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(600, 670);
             this.bunifuGradientPanel2.TabIndex = 0;
             // 
-            // flowLayoutPanel1
+            // flpTable
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(-1, 4);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(597, 660);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flpTable.AutoScroll = true;
+            this.flpTable.Location = new System.Drawing.Point(-1, 4);
+            this.flpTable.Margin = new System.Windows.Forms.Padding(4);
+            this.flpTable.Name = "flpTable";
+            this.flpTable.Size = new System.Drawing.Size(597, 660);
+            this.flpTable.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -837,8 +892,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmItemAmount)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.bunifuGradientPanel3.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -875,20 +931,25 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAddItem;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ListView lvBill;
+        private System.Windows.Forms.ComboBox cbItem;
+        private System.Windows.Forms.ComboBox cbCategory;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton26;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.NumericUpDown nmItemAmount;
+        private System.Windows.Forms.FlowLayoutPanel flpTable;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboBox3;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton27;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.TextBox txbTotalPrice;
     }
 }

@@ -5,7 +5,6 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using DTO;
 namespace DAO
 {
@@ -21,34 +20,18 @@ namespace DAO
                 return _instance;
             }
         }
-        
-        public bool CheckLogin(AccountDTO account)
+
+        public Object CheckLogin(AccountDTO account)
         {
-            string query = "USP_Login @UserName , @PassWord";
-            DataTable result = new DataTable();
+            string query = "USP_AuthoLogin @UserName , @PassWord";
             try
             {
-                result = DataProvider.Instance.ExecuteQuery(query, new object[] {account.UserName, account.Password});
+                return DataProvider.Instance.ExecuteScalar(query, new Object[] { account.UserName, account.Password });
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            return result.Rows.Count > 0;
-        }
-        public bool CheckLoginTypeID(AccountDTO account)
-        {
-            string query = "USP_LoginTypeID @UserName , @PassWord , @TypeID";
-            DataTable data = new DataTable();
-            try
-            {
-                data = DataProvider.Instance.ExecuteQuery(query, new object[] {account.UserName, account.Password, account.TypeID});
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
-            return data.Rows.Count > 0;
         }
         public DataTable GetAllAccount()
         {
@@ -73,18 +56,8 @@ namespace DAO
                 throw ex;
             }
         }
-        public DataTable GetAccountByTypeID(int TypeID)
-        {
-            string query = "USP_GetAccountByTypeID @TypeID";
-            try
-            {
-                return DataProvider.Instance.ExecuteQuery(query, new Object[] { TypeID });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        
+        
 
     }
 }

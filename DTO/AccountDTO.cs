@@ -16,18 +16,16 @@ namespace DTO
         public AccountDTO()
         { 
         }
+        public AccountDTO(int typeID)
+        {
+            this.TypeID = typeID; 
+        }
         public AccountDTO(string username, string password)
         {
             this.UserName = username;
             this.Password = password;
         }
-        public AccountDTO(string username, string password, int typeid)
-        {
-            this.UserName = username;
-            this.Password = password;
-            this.TypeID = typeid;
-
-        }
+        
         public AccountDTO(string username, string password, string displayname, int typeid)
         {
             this.UserName = username;

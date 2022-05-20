@@ -20,7 +20,7 @@ namespace DAO
                 return _instance;
             }
         }
-        private string strConn = @"Data Source=DESKTOP-KJ8HLPQ\MANHNGUYEN;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
+        private string strConn = @"Data Source=DESKTOP-KJ8HLPQ;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
         public DataTable Ex(string query)
         {
             SqlConnection conn = new SqlConnection(strConn);
@@ -40,13 +40,13 @@ namespace DAO
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(query, conn);
 
-                if(parameter != null)
+                if (parameter != null)
                 {
                     string[] listPara = query.Split(' ');
                     int i = 0;
                     foreach (string para in listPara)
                     {
-                        if(para.Contains('@'))
+                        if (para.Contains('@'))
                         {
                             cmd.Parameters.AddWithValue(para, parameter[i]);
                             i++;
@@ -55,6 +55,58 @@ namespace DAO
                 }
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                 dataAdapter.Fill(data);
+                conn.Close();
+            }
+            return data;
+        }
+
+        public int ExecuteNonQuery(string query, object[] parameter = null)
+        {
+            int row = 0;
+            using (SqlConnection conn = new SqlConnection(strConn))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                if (parameter != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string para in listPara)
+                    {
+                        if (para.Contains('@'))
+                        {
+                            cmd.Parameters.AddWithValue(para, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+                row = cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            return row;
+        }
+        
+        public object ExecuteScalar(string query, object[] parameter = null)
+        {
+            object data = 0;
+            using (SqlConnection conn = new SqlConnection(strConn))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                if(parameter != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach(string para in listPara)
+                    {
+                        if(para.Contains('@'))
+                        {
+                            cmd.Parameters.AddWithValue(para, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+                data = cmd.ExecuteScalar();
                 conn.Close();
             }
             return data;

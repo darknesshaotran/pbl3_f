@@ -21,38 +21,31 @@ namespace BUS
             }
         }
         private AccountBUS() { }
-        public bool CheckLogin(AccountDTO account)
+        //public int CheckLogin1(AccountDTO account)
+        //{
+        //    int account1 = Convert.ToInt32(AccountDAO.Instance.CheckLogin(account));
+        //    if (account.UserName == null)
+        //    {
+        //        return 0;
+        //    }
+        //    if (account.Password == null)
+        //    {
+        //        return 0;
+        //    }
+        //    try
+        //    {
+        //        return account1;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
+        public Object CheckLogin(AccountDTO account)
         {
-            if(account.UserName == null)
-            {
-                return false;
-            }    
-            if(account.Password == null)
-            { 
-                return false;
-            }
             try
             {
                 return AccountDAO.Instance.CheckLogin(account);
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
-        }
-        public bool CheckLoginTypeID(AccountDTO account)
-        {
-            if(account.UserName == null)
-            {
-                return false;
-            }
-            if(account.Password == null)
-            {
-                return false;
-            }
-            try
-            {
-                return AccountDAO.Instance.CheckLoginTypeID(account);
             }
             catch (Exception ex)
             {
@@ -83,18 +76,7 @@ namespace BUS
             }
             return new AccountDTO(data.Rows[0]);
         }
-        public AccountDTO GetAccountByTypeID(int TypeID)
-        {
-            DataTable data;
-            try
-            {
-                data = AccountDAO.Instance.GetAccountByTypeID(TypeID);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return new AccountDTO(data.Rows[0]);
-        }
+        
+        
     }
 }
