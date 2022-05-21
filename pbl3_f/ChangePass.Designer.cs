@@ -84,9 +84,9 @@
             this.label2.Location = new System.Drawing.Point(40, 169);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 20);
+            this.label2.Size = new System.Drawing.Size(108, 20);
             this.label2.TabIndex = 4;
-            this.label2.Text = "tên hiển thị";
+            this.label2.Text = "Tên hiển thị";
             // 
             // bunifuMaterialTextbox2
             // 

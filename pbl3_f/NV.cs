@@ -43,7 +43,7 @@ namespace pbl3_f
             foreach(TableDTO item in tableList)
             {
                 Button btn = new Button() { Width = TableBUS.TableWidth, Height = TableBUS.TableHeight};
-                btn.Text = item.Name + Environment.NewLine + item.Status;
+                btn.Text = item.Name + "\n" + item.Status;
                 btn.Click += Btn_Click;
                 btn.Tag = item;
                 switch(item.Status)

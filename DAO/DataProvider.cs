@@ -34,6 +34,7 @@ namespace DAO
         }
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
+            //using để giải phóng bộ nhớ
             DataTable data = new DataTable();
             using (SqlConnection conn = new SqlConnection(strConn))
             {

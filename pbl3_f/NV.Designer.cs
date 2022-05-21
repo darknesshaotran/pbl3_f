@@ -95,7 +95,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(941, 682);
+            this.tabControl1.Size = new System.Drawing.Size(943, 682);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -219,7 +219,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(933, 653);
+            this.tabPage2.Size = new System.Drawing.Size(935, 653);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "order";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -465,7 +465,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(933, 653);
+            this.tabPage3.Size = new System.Drawing.Size(935, 653);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "infor";
             this.tabPage3.UseVisualStyleBackColor = true;
