@@ -24,7 +24,7 @@ namespace DAO
         {
             try
             {
-                return DataProvider.Instance.ExecuteQuery("Select * from dbo.ItemCategory");
+                return DataProvider.Instance.ExecuteQuery("SELECT DISTINCT * FROM ItemCategory");
             }
             catch (Exception ex)
             {
@@ -63,7 +63,7 @@ namespace DAO
         }
         public void AddCategory(CategoryDTO ct)
         {
-            string query = "insert into ItemCategory values(@Name)";
+            string query = "insert into ItemCategory values (@Name)";
             DataProvider.Instance.ExecuteAddUpdate_Category(query,ct);
         }
     }

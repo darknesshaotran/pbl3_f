@@ -24,15 +24,19 @@ namespace pbl3_f
         }
         void LoadCatergory()
         {
-            cbb_itemCategory.Items.AddRange(CategoryBUS.Instance.GetListCategory().ToArray());
+            cbb_itemCategory.Items.Clear();
+            cbb_itemCategory.Items.AddRange(CategoryBUS.Instance.GetListCategory().Distinct().ToArray());
+            
             cbb_itemCategory.DisplayMember = "Name";
             cbb_itemCategory.SelectedIndex = 0;
         }
         public void showDTG_Item(string name)
         {
             item_dgv.DataSource = ItemBUS.Instance.GetItemByName(name);
-
-
+        }
+        public void showDTG_Staff(string name)
+        {
+            
         }
         public ItemDTO getItemDataToAdd()
         {
@@ -184,8 +188,9 @@ namespace pbl3_f
         {
             Form form = new Category();
             form.ShowDialog();
-            LoadCatergory();
+            
             showDTG_Item("");
+            LoadCatergory();
 
         }
 

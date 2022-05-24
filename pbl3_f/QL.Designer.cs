@@ -71,7 +71,7 @@
             this.btn_updateStaff = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_deleteStaff = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_AddStaff = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Staff_dgv = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.tabMenu = new System.Windows.Forms.TabPage();
             this.addCategory_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -119,7 +119,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Staff_dgv)).BeginInit();
             this.tabMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton6)).BeginInit();
@@ -619,7 +619,7 @@
             this.panel2.Controls.Add(this.btn_updateStaff);
             this.panel2.Controls.Add(this.btn_deleteStaff);
             this.panel2.Controls.Add(this.btn_AddStaff);
-            this.panel2.Controls.Add(this.bunifuCustomDataGrid2);
+            this.panel2.Controls.Add(this.Staff_dgv);
             this.panel2.Location = new System.Drawing.Point(4, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
@@ -726,13 +726,13 @@
             this.btn_AddStaff.TabIndex = 1;
             this.btn_AddStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuCustomDataGrid2
+            // Staff_dgv
             // 
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Staff_dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.Staff_dgv.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.Staff_dgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Staff_dgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -740,19 +740,19 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid2.DoubleBuffered = true;
-            this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(-1, 5);
-            this.bunifuCustomDataGrid2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
-            this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid2.RowHeadersWidth = 51;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(615, 513);
-            this.bunifuCustomDataGrid2.TabIndex = 0;
+            this.Staff_dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.Staff_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Staff_dgv.DoubleBuffered = true;
+            this.Staff_dgv.EnableHeadersVisualStyles = false;
+            this.Staff_dgv.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.Staff_dgv.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.Staff_dgv.Location = new System.Drawing.Point(-1, 5);
+            this.Staff_dgv.Margin = new System.Windows.Forms.Padding(4);
+            this.Staff_dgv.Name = "Staff_dgv";
+            this.Staff_dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Staff_dgv.RowHeadersWidth = 51;
+            this.Staff_dgv.Size = new System.Drawing.Size(615, 513);
+            this.Staff_dgv.TabIndex = 0;
             // 
             // tabMenu
             // 
@@ -1626,7 +1626,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Staff_dgv)).EndInit();
             this.tabMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1702,7 +1702,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btn_updateStaff;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_deleteStaff;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_AddStaff;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid Staff_dgv;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Address;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_PhoneNumber;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_NameStaff;
