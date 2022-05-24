@@ -26,18 +26,18 @@ namespace pbl3_f
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            string s = bunifuMaterialTextbox1.Text;
-            string s2 = s.Trim();
             
-            if (s2  != "")
+            CategoryDTO CT = new CategoryDTO();
+            CT.Name = txtAddCategory.Text;
+            if(txtAddCategory.Text.Trim() == "")
+            {     
+                MessageBox.Show("Vui lòng nhập tên mặt hàng !");
+            }
+            else
             {
-                CategoryDTO CT = new CategoryDTO();
-                CT.Name = bunifuMaterialTextbox1.Text;
-
                 CategoryBUS.Instance.AddCategory(CT);
                 this.Close();
-            }
-            else MessageBox.Show(" vui lòng nhập lại !");
+            }    
             
         }
     }

@@ -32,46 +32,59 @@ namespace DAO
             }
             
         }
-        public List<ItemDTO> getAllItem()
+
+        public DataTable GetAllItem()
         {
-            List<ItemDTO> data  = new List<ItemDTO>();
-            string query = "select * from Item";
-            foreach(DataRow  i in DataProvider.Instance.ExecuteQuery(query).Rows)
+            try
             {
-                data.Add(getItemByDataRow(i));
-            } 
-            return data;
-
-        }
-        public ItemDTO getItemByDataRow(DataRow i)
-        {
-            
-                return new ItemDTO
-                {
-
-                    ID = Convert.ToInt32(i["ID"].ToString()),
-                    Name = i["Name"].ToString(),
-                    IDCategory = Convert.ToInt32(i["IDCategory"].ToString()),
-                    Price = (float)Convert.ToDouble(i["Price"].ToString())
-                 };
+                return DataProvider.Instance.ExecuteQuery("Select * from Item");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
            
-            
         }
+        
+        
         public void AddItemDAO(ItemDTO item)
         {
             string query = "insert into Item values( @Name , @IDCategory , @Price )";
-            DataProvider.Instance.ExecuteNonQuery(query,new Object []{  item.Name, item.IDCategory, item.Price});
+            try
+            {
+                DataProvider.Instance.ExecuteNonQuery(query, new Object[] { item.Name, item.IDCategory, item.Price });
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
             
         }
         public void updateItemDAO(ItemDTO item)
         {
             string query = "update Item set Name = @Name , IDCategory = @IDCategory , Price = @Price where ID = @ID";
-            DataProvider.Instance.ExecuteNonQuery(query, new Object[] {  item.Name, item.IDCategory, item.Price , item.ID });
+            try
+            {
+                DataProvider.Instance.ExecuteNonQuery(query, new Object[] { item.Name, item.IDCategory, item.Price, item.ID });
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
         }
-        public void deleteItemDAO(int ID)
+        public void DeleteItemDAO(int ID)
         {
             string query = "delete from Item where ID =" + ID ;
-           DataProvider.Instance.executeDB(query);
+            try
+            {
+                DataProvider.Instance.ExecuteNonQuery(query, new Object[] { ID });
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
         }
     }
 }

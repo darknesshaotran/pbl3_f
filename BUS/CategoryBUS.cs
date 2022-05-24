@@ -40,9 +40,36 @@ namespace BUS
             }    
             return list;
         }
+        public int GetIDbyNameCategory(string name)
+        {
+            try
+            {
+                CategoryDAO.Instance.GetIDbyNameCategory(name);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return -1;
+        }
+        public string GetNamebyIDCategory(int id)
+        {
+            string a = "";
+            try
+            {
+                a = CategoryDAO.Instance.GetNamebyIDCategory(id);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            return a;
+
+        }
         public void AddCategory(CategoryDTO ct)
         {
             CategoryDAO.Instance.AddCategory(ct);
+
         }
     }
 }

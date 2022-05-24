@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Category));
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtAddCategory = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SuspendLayout();
@@ -42,28 +42,28 @@
             this.label1.Location = new System.Drawing.Point(3, 137);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 15);
+            this.label1.Size = new System.Drawing.Size(72, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Loại hàng";
             // 
-            // bunifuMaterialTextbox1
+            // txtAddCategory
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(108, 137);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(203, 42);
-            this.bunifuMaterialTextbox1.TabIndex = 2;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAddCategory.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAddCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAddCategory.HintForeColor = System.Drawing.Color.Empty;
+            this.txtAddCategory.HintText = "";
+            this.txtAddCategory.isPassword = false;
+            this.txtAddCategory.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtAddCategory.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtAddCategory.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtAddCategory.LineThickness = 3;
+            this.txtAddCategory.Location = new System.Drawing.Point(108, 137);
+            this.txtAddCategory.Margin = new System.Windows.Forms.Padding(5);
+            this.txtAddCategory.Name = "txtAddCategory";
+            this.txtAddCategory.Size = new System.Drawing.Size(203, 42);
+            this.txtAddCategory.TabIndex = 2;
+            this.txtAddCategory.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuThinButton22
             // 
@@ -124,7 +124,7 @@
             this.ClientSize = new System.Drawing.Size(328, 496);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.bunifuThinButton22);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.txtAddCategory);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Category";
@@ -138,7 +138,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtAddCategory;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
     }

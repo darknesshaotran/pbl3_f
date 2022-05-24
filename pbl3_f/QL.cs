@@ -25,23 +25,19 @@ namespace pbl3_f
         void LoadCatergory()
         {
             cbb_itemCategory.Items.Clear();
-            cbb_itemCategory.Items.AddRange(CategoryBUS.Instance.GetListCategory().Distinct().ToArray());
-            
+            cbb_itemCategory.Items.AddRange(CategoryBUS.Instance.GetListCategory().ToArray());
             cbb_itemCategory.DisplayMember = "Name";
             cbb_itemCategory.SelectedIndex = 0;
         }
         public void showDTG_Item(string name)
         {
             item_dgv.DataSource = ItemBUS.Instance.GetItemByName(name);
-        }
-        public void showDTG_Staff(string name)
-        {
-            
+
+
         }
         public ItemDTO getItemDataToAdd()
         {
             ItemDTO item = new ItemDTO();
-           // item.ID = Convert.ToInt32(bunifuMaterialTextbox1.Text);
             item.Name = txt_ItemName.Text;
             item.IDCategory = (CategoryDAO.Instance.GetIDbyNameCategory(cbb_itemCategory.Text));
             item.Price = Convert.ToInt32(txt_PriceItem.Text);
@@ -188,9 +184,8 @@ namespace pbl3_f
         {
             Form form = new Category();
             form.ShowDialog();
-            
-            showDTG_Item("");
             LoadCatergory();
+            showDTG_Item("");
 
         }
 
@@ -233,10 +228,7 @@ namespace pbl3_f
                     showDTG_Item("");
                 }
                 else MessageBox.Show("item da ton  tai !!");
-            }   
-           
-            
-           
+            }    
         }
 
         private void bunifuThinButton26_Click(object sender, EventArgs e)
@@ -255,7 +247,7 @@ namespace pbl3_f
         private void item_dgv_SelectionChanged(object sender, EventArgs e)
         {
            
-           txt_IDItem.Text = item_dgv.CurrentRow.Cells[0].Value.ToString();
+            txt_IDItem.Text = item_dgv.CurrentRow.Cells[0].Value.ToString();
             txt_ItemName.Text = item_dgv.CurrentRow.Cells[1].Value.ToString();
             cbb_itemCategory.Text = CategoryDAO.Instance.GetNamebyIDCategory(Convert.ToInt32(item_dgv.CurrentRow.Cells[2].Value.ToString()));
             txt_PriceItem.Text = item_dgv.CurrentRow.Cells[3].Value.ToString();

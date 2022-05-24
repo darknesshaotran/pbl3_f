@@ -22,6 +22,25 @@ namespace BUS
                 return instance;
             }
         }
+        public List<ItemDTO> GetAllItem()
+        {
+            DataTable data;
+            try
+            {
+                data = ItemDAO.Instance.GetAllItem();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            List<ItemDTO> list = new List<ItemDTO>();
+            foreach (DataRow dr in data.Rows)
+            {
+                ItemDTO item = new ItemDTO(dr);
+                list.Add(item);
+            }
+            return list;
+        }
         public List<ItemDTO> GetItemByIDCategory(int id)
         {
             DataTable data;
@@ -36,9 +55,9 @@ namespace BUS
             List<ItemDTO> list = new List<ItemDTO>();
             foreach (DataRow dr in data.Rows)
             {
-                //ItemDTO item = new ItemDTO(dr);
-                //list.Add(item);
-                list.Add(ItemDAO.Instance.getItemByDataRow(dr));
+                ItemDTO item = new ItemDTO(dr);
+                list.Add(item);
+                
             }    
             return list;
 
@@ -46,7 +65,8 @@ namespace BUS
         public List<ItemDTO> GetItemByName(string name)
         {
             List<ItemDTO> li = new List<ItemDTO>();
-            foreach(ItemDTO i in ItemDAO.Instance.getAllItem())
+            foreach(ItemDTO i in GetAllItem())
+
             {
                 if(i.Name.Contains(name))
                 {
@@ -58,7 +78,7 @@ namespace BUS
         public bool Check(int id)
         {
             bool isAdded = true;
-            foreach (ItemDTO i in ItemDAO.Instance.getAllItem())
+            foreach (ItemDTO i in GetAllItem())
             {
                 if (id == i.ID)
                 {
@@ -83,7 +103,7 @@ namespace BUS
         {
             try
             {
-                ItemDAO.Instance.deleteItemDAO(ItemtoDelete);
+                ItemDAO.Instance.DeleteItemDAO(ItemtoDelete);
                
             }
             catch (Exception ex)

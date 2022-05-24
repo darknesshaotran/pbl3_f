@@ -22,19 +22,9 @@ namespace DAO
                 return _instance;
             }
         }
-        private string strConn = @"Data Source=DESKTOP-SRQRFL4\SQLEXPRESS;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
-        public DataTable Ex(string query)
-        {
-            SqlConnection conn = new SqlConnection(strConn);
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(query, conn);
-            DataTable data = new DataTable();
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            adapter.Fill(data);
-            conn.Close();
-            return data;
-        }
-        public DataTable ExecuteQuery(string query, object[] parameter = null)// hehehehe
+        private string strConn = @"Data Source=DESKTOP-KJ8HLPQ;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
+        
+        public DataTable ExecuteQuery(string query, object[] parameter = null)// override excuteNonquerry
         {
             DataTable data = new DataTable();
             using (SqlConnection conn = new SqlConnection(strConn))
@@ -81,11 +71,8 @@ namespace DAO
                             i++;
                         }
                     }
-                }
-                
-                row = cmd.ExecuteNonQuery();
-                if (row > 0) MessageBox.Show("sucess !!");
-                else MessageBox.Show("error !! ");
+                }   
+                cmd.ExecuteNonQuery();
                 conn.Close();
             }
             return row;
@@ -115,47 +102,6 @@ namespace DAO
                 conn.Close();
             }
             return data;
-        }
-        
-
-       
-        public void ExecuteAddUpdate_Category(string query, CategoryDTO ct)
-        {
-
-            try
-            {
-                SqlConnection cnn = new SqlConnection(strConn);
-                cnn.Open();
-
-                using (SqlCommand cmd = new SqlCommand(query, cnn))
-                {
-
-                   
-                    cmd.Parameters.AddWithValue("@Name", ct.Name);
-                    
-
-
-                    int rowsAdded = cmd.ExecuteNonQuery();
-                    if (rowsAdded > 0)
-                        MessageBox.Show("Row inserted!!");
-                    else
-                        // Well this should never really happen
-                        MessageBox.Show("No row inserted");
-                }
-                cnn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ERROR:" + ex.Message);
-            }
-        }
-        public void executeDB(string query)
-        {
-            SqlConnection cnn = new SqlConnection(strConn);
-            SqlCommand cmd = new SqlCommand(query, cnn);
-            cnn.Open();
-            cmd.ExecuteNonQuery();
-            cnn.Close();
         }
     }
 }
