@@ -40,6 +40,7 @@ namespace pbl3_f
         }
         void LoadTable()
         {
+            flpTable.Controls.Clear();
             List<TableDTO> tableList = TableBUS.Instance.GetListTable();
             foreach(TableDTO item in tableList)
             {
@@ -173,8 +174,10 @@ namespace pbl3_f
                     BillInforDAO.Instance.InsertBillInfor(idBill, idItem, amount);
                 }
                 ShowBill(tableDTO.ID);
+                LoadTable();
             }
             else MessageBox.Show("vui lòng chọn món");
+            
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
@@ -190,6 +193,23 @@ namespace pbl3_f
         private void cbItem_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            TableDTO table = lvBill.Tag as TableDTO;
+            int idBill = BillDAO.Instance.GetUnCheckIDBillByIDTable(table.ID);
+            if (idBill != -1)
+            {
+                if (MessageBox.Show("Bạn có chắc muốn thanh toán hóa đơn cho " + table.Name, "Thông Báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    BillDAO.Instance.CheckOut(idBill);
+                    ShowBill(table.ID);
+                }
+            }
+            else
+                MessageBox.Show("Không tồn tại hóa đơn !");
+            LoadTable();
         }
     }
 }

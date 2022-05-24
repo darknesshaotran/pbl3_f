@@ -55,5 +55,10 @@ namespace DAO
                 return 1;
             }
         }
+        public void CheckOut(int id)
+        {
+            string query = "Update dbo.Bill set Status = 1 where ID = " + id;
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
     }
 }

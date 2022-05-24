@@ -44,7 +44,7 @@
             this.txbTotalPrice = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnCheckOut = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAddItem = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.lvBill = new System.Windows.Forms.ListView();
@@ -279,7 +279,7 @@
             this.panel2.Controls.Add(this.txbTotalPrice);
             this.panel2.Controls.Add(this.comboBox3);
             this.panel2.Controls.Add(this.bunifuThinButton26);
-            this.panel2.Controls.Add(this.bunifuThinButton25);
+            this.panel2.Controls.Add(this.btnCheckOut);
             this.panel2.Location = new System.Drawing.Point(604, 538);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
@@ -331,30 +331,31 @@
             this.bunifuThinButton26.TabIndex = 6;
             this.bunifuThinButton26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuThinButton25
+            // btnCheckOut
             // 
-            this.bunifuThinButton25.ActiveBorderThickness = 1;
-            this.bunifuThinButton25.ActiveCornerRadius = 20;
-            this.bunifuThinButton25.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton25.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
-            this.bunifuThinButton25.ButtonText = "thanh toán";
-            this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton25.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton25.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.IdleBorderThickness = 1;
-            this.bunifuThinButton25.IdleCornerRadius = 20;
-            this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.Location = new System.Drawing.Point(186, 53);
-            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton25.Name = "bunifuThinButton25";
-            this.bunifuThinButton25.Size = new System.Drawing.Size(111, 57);
-            this.bunifuThinButton25.TabIndex = 4;
-            this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCheckOut.ActiveBorderThickness = 1;
+            this.btnCheckOut.ActiveCornerRadius = 20;
+            this.btnCheckOut.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnCheckOut.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCheckOut.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnCheckOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnCheckOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCheckOut.BackgroundImage")));
+            this.btnCheckOut.ButtonText = "thanh toán";
+            this.btnCheckOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCheckOut.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCheckOut.IdleBorderThickness = 1;
+            this.btnCheckOut.IdleCornerRadius = 20;
+            this.btnCheckOut.IdleFillColor = System.Drawing.Color.White;
+            this.btnCheckOut.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnCheckOut.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnCheckOut.Location = new System.Drawing.Point(186, 53);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(5);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(111, 57);
+            this.btnCheckOut.TabIndex = 4;
+            this.btnCheckOut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // btnAddItem
             // 
@@ -936,7 +937,7 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAddItem;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnCheckOut;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private System.Windows.Forms.Label label2;

@@ -11,8 +11,8 @@ namespace BUS
 {
     public class TableBUS
     {
-        public static int TableWidth = 105;
-        public static int TableHeight = 105;
+        public static int TableWidth = 100;
+        public static int TableHeight = 100;
         private static TableBUS instance;
         public static TableBUS Instance
         {

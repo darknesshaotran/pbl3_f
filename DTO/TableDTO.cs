@@ -22,8 +22,8 @@ namespace DTO
         public TableDTO(DataRow row)
         {
             this.ID = (int)row["ID"];
-            this.Name = (string)row["Name"];
-            this.Status = (string)row["Status"];
+            this.Name = row["Name"].ToString();
+            this.Status = row["Status"].ToString();
         }
     }
 }
