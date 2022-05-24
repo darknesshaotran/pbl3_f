@@ -20,6 +20,7 @@ namespace pbl3_f
             InitializeComponent();
             LoadCatergory();
             showDTG_Item("");
+            showDTG_Staff("");
             
         }
         void LoadCatergory()
@@ -35,6 +36,10 @@ namespace pbl3_f
 
 
         }
+        public void showDTG_Staff(string name)
+        {
+            dgv_Staff.DataSource = StaffBUS.Instance.GetStaffByName(name);
+        }
         public ItemDTO getItemDataToAdd()
         {
             ItemDTO item = new ItemDTO();
@@ -42,6 +47,16 @@ namespace pbl3_f
             item.IDCategory = (CategoryDAO.Instance.GetIDbyNameCategory(cbb_itemCategory.Text));
             item.Price = Convert.ToInt32(txt_PriceItem.Text);
             return item;
+
+        }
+        public StaffDTO getStaffDataToAdd()
+        {
+            StaffDTO staff = new StaffDTO();
+            staff.Name = txt_NameStaff.Text;
+            staff.Address = txt_Address.Text;
+            staff.Age = Convert.ToInt32(age_txt.Text);
+            staff.PhoneNumber = txt_PhoneNumber.Text;
+            return staff;
 
         }
         public ItemDTO getItemDataToUpdate()
@@ -52,49 +67,19 @@ namespace pbl3_f
             item.IDCategory = (CategoryDAO.Instance.GetIDbyNameCategory(cbb_itemCategory.Text));
             item.Price = Convert.ToInt32(txt_PriceItem.Text);
             return item;
+        }
+        public StaffDTO getStaffDataToUpdate()
+        {
+            StaffDTO staff = new StaffDTO();
+            staff.ID = Convert.ToInt32(txt_IDstaff.Text);
+            staff.Name = txt_NameStaff.Text;
+            staff.Address = txt_Address.Text;
+            staff.Age = Convert.ToInt32(age_txt.Text);
+            staff.PhoneNumber = txt_PhoneNumber.Text;
+            return staff;
 
         }
-
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-          
-        }
-        private void bunifuFlatButton2_Click(object sender, EventArgs e)
-        {
-            
-        }
-        private void bunifuFlatButton3_Click(object sender, EventArgs e)
-        {
-           
-
-        }
-        private void bunifuFlatButton4_Click(object sender, EventArgs e)
-        {
-          
-        }
-        private void bunifuFlatButton5_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void bunifuGradientPanel1_MouseClick(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void bunifuGradientPanel1_MouseEnter(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void QL_Load(object sender, EventArgs e)
-        {
-            
-        }
-
+////////////////////////////////////////////////////
         private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tab_Home;
@@ -147,17 +132,6 @@ namespace pbl3_f
             Form f = new ChangePass();
             f.ShowDialog();
         }
-
-        private void bunifuTextbox1_OnTextChange(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuMaterialTextbox3_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
             if (item_dgv.SelectedRows.Count == 1)
@@ -169,17 +143,6 @@ namespace pbl3_f
             
             showDTG_Item("");
         }
-
-        private void bunifuMaterialTextbox3_OnValueChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void bunifuThinButton29_Click(object sender, EventArgs e)
         {
             Form form = new Category();
@@ -193,12 +156,6 @@ namespace pbl3_f
         {
             this.Close();
         }
-
-        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             Form f = new Profile();
@@ -238,12 +195,6 @@ namespace pbl3_f
 
             showDTG_Item("");
         }
-
-        private void item_dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void item_dgv_SelectionChanged(object sender, EventArgs e)
         {
            
@@ -258,6 +209,67 @@ namespace pbl3_f
         {
             showDTG_Item("");
             searchItem_txt.text = "";
+        }
+
+        private void btn_AddStaff_Click(object sender, EventArgs e)
+        {
+            if (txt_IDstaff.Text == "")
+            {
+                StaffDTO staff = getStaffDataToAdd();
+                StaffBUS.Instance.AddUpdateStaff(staff);
+                showDTG_Staff("");
+            }
+            else
+            {
+                if (StaffBUS.Instance.Check(Convert.ToInt32(txt_IDstaff.Text)))
+                {
+                    StaffDTO staff = getStaffDataToAdd();
+                    StaffBUS.Instance.AddUpdateStaff(staff);
+                    showDTG_Staff("");
+                }
+                else MessageBox.Show("nhan vien da ton tai !!");
+            }
+        }
+
+        private void button_searchStaff_Click(object sender, EventArgs e)
+        {
+            string name = txt_searchStaff.text;
+            showDTG_Staff(name);
+        }
+
+        private void btn_updateStaff_Click(object sender, EventArgs e)
+        {
+            StaffDTO staff = getStaffDataToUpdate();
+            StaffBUS.Instance.AddUpdateStaff(staff);
+
+            showDTG_Staff("");
+        }
+
+        private void btn_deleteStaff_Click(object sender, EventArgs e)
+        {
+            if (dgv_Staff.SelectedRows.Count == 1)
+            {
+                int DeleteID = Convert.ToInt32(dgv_Staff.CurrentRow.Cells[0].Value.ToString());
+
+                StaffBUS.Instance.DeleteStaff(DeleteID);
+            }
+
+            showDTG_Staff("");
+        }
+
+        private void btn_showStaff_Click(object sender, EventArgs e)
+        {
+            showDTG_Staff("");
+            txt_searchStaff.text = "";
+        }
+
+        private void dgv_Staff_SelectionChanged(object sender, EventArgs e)
+        {
+            txt_IDstaff.Text = dgv_Staff.CurrentRow.Cells[0].Value.ToString();
+            txt_NameStaff.Text = dgv_Staff.CurrentRow.Cells[1].Value.ToString();
+            txt_Address.Text = dgv_Staff.CurrentRow.Cells[2].Value.ToString();
+            age_txt.Text = dgv_Staff.CurrentRow.Cells[3].Value.ToString();
+            txt_PhoneNumber.Text = dgv_Staff.CurrentRow.Cells[4].Value.ToString();
         }
     }
 }
