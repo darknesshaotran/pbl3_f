@@ -27,7 +27,7 @@ namespace DAO
         {
             try
             {
-                return DataProvider.Instance.ExecuteQuery("SELECT i.Name, bi.Amount, i.Price, i.Price * bi.Amount AS TotalPrice FROM dbo.BillInfor bi, dbo.Bill b, dbo.Item i WHERE b.ID = bi.IDBill AND bi.IDItem = i.ID AND b.IDTable = " + id + "and Status = 0");
+                return DataProvider.Instance.ExecuteQuery("SELECT i.Name, bi.Amount, i.Price, i.Price * bi.Amount AS TotalPrice FROM dbo.BillInfor bi, dbo.Bill b, dbo.Item i WHERE b.ID = bi.IDBill AND bi.IDItem = i.ID AND b.IDTable = " + id + " and Status = 0");
             }
             catch (Exception ex)
             {

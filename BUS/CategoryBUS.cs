@@ -40,5 +40,9 @@ namespace BUS
             }    
             return list;
         }
+        public void AddCategory(CategoryDTO ct)
+        {
+            CategoryDAO.Instance.AddCategory(ct);
+        }
     }
 }

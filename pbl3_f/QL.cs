@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BUS;
+using DAO;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +18,41 @@ namespace pbl3_f
         public QL()
         {
             InitializeComponent();
+            LoadCatergory();
+            showDTG_Item("");
             
+        }
+        void LoadCatergory()
+        {
+            cbb_itemCategory.Items.AddRange(CategoryBUS.Instance.GetListCategory().ToArray());
+            cbb_itemCategory.DisplayMember = "Name";
+            cbb_itemCategory.SelectedIndex = 0;
+        }
+        public void showDTG_Item(string name)
+        {
+            item_dgv.DataSource = ItemBUS.Instance.GetItemByName(name);
+
+
+        }
+        public ItemDTO getItemDataToAdd()
+        {
+            ItemDTO item = new ItemDTO();
+           // item.ID = Convert.ToInt32(bunifuMaterialTextbox1.Text);
+            item.Name = txt_ItemName.Text;
+            item.IDCategory = (CategoryDAO.Instance.GetIDbyNameCategory(cbb_itemCategory.Text));
+            item.Price = Convert.ToInt32(txt_PriceItem.Text);
+            return item;
+
+        }
+        public ItemDTO getItemDataToUpdate()
+        {
+            ItemDTO item = new ItemDTO();
+             item.ID = Convert.ToInt32(txt_IDItem.Text);
+            item.Name = txt_ItemName.Text;
+            item.IDCategory = (CategoryDAO.Instance.GetIDbyNameCategory(cbb_itemCategory.Text));
+            item.Price = Convert.ToInt32(txt_PriceItem.Text);
+            return item;
+
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
@@ -123,7 +160,14 @@ namespace pbl3_f
 
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
-
+            if (item_dgv.SelectedRows.Count == 1)
+            {
+                int DeleteID = Convert.ToInt32(item_dgv.CurrentRow.Cells[0].Value.ToString());
+               
+                ItemBUS.Instance.DeleteItem(DeleteID);
+            }
+            
+            showDTG_Item("");
         }
 
         private void bunifuMaterialTextbox3_OnValueChanged_1(object sender, EventArgs e)
@@ -140,6 +184,9 @@ namespace pbl3_f
         {
             Form form = new Category();
             form.ShowDialog();
+            LoadCatergory();
+            showDTG_Item("");
+
         }
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
@@ -156,6 +203,64 @@ namespace pbl3_f
         {
             Form f = new Profile();
             f.ShowDialog();
+        }
+
+        private void bunifuThinButton28_Click(object sender, EventArgs e)
+        {
+            string name = searchItem_txt.text;
+            showDTG_Item(name);
+        }
+
+        private void bunifuThinButton24_Click(object sender, EventArgs e)
+        {
+            if (txt_IDItem.Text == "")
+            {
+                ItemDTO item = getItemDataToAdd();
+                ItemBUS.Instance.AddUpdateItem(item);
+                showDTG_Item("");
+            }
+            else 
+            {
+                if (ItemBUS.Instance.Check(Convert.ToInt32(txt_IDItem.Text)))
+                {
+                    ItemDTO item = getItemDataToAdd();
+                    ItemBUS.Instance.AddUpdateItem(item);
+                    showDTG_Item("");
+                }
+                else MessageBox.Show("item da ton  tai !!");
+            }   
+           
+            
+           
+        }
+
+        private void bunifuThinButton26_Click(object sender, EventArgs e)
+        {
+            ItemDTO item = getItemDataToUpdate();
+            ItemBUS.Instance.AddUpdateItem(item);
+
+            showDTG_Item("");
+        }
+
+        private void item_dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void item_dgv_SelectionChanged(object sender, EventArgs e)
+        {
+           
+           txt_IDItem.Text = item_dgv.CurrentRow.Cells[0].Value.ToString();
+            txt_ItemName.Text = item_dgv.CurrentRow.Cells[1].Value.ToString();
+            cbb_itemCategory.Text = CategoryDAO.Instance.GetNamebyIDCategory(Convert.ToInt32(item_dgv.CurrentRow.Cells[2].Value.ToString()));
+            txt_PriceItem.Text = item_dgv.CurrentRow.Cells[3].Value.ToString();
+
+        }
+
+        private void bunifuThinButton27_Click(object sender, EventArgs e)
+        {
+            showDTG_Item("");
+            searchItem_txt.text = "";
         }
     }
 }

@@ -42,7 +42,7 @@
             this.label1.Location = new System.Drawing.Point(3, 137);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 18);
+            this.label1.Size = new System.Drawing.Size(62, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Loại hàng";
             // 
@@ -59,7 +59,7 @@
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox1.LineThickness = 3;
             this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(108, 137);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(203, 42);
             this.bunifuMaterialTextbox1.TabIndex = 2;
@@ -89,6 +89,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(203, 70);
             this.bunifuThinButton22.TabIndex = 4;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // bunifuThinButton21
             // 
@@ -125,7 +126,7 @@
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuMaterialTextbox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Category";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Category";

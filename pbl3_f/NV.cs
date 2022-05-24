@@ -27,14 +27,15 @@ namespace pbl3_f
         #region methods
         void LoadCatergory()
         {
-            List<CategoryDTO> listCategory = CategoryBUS.Instance.GetListCategory();
-            cbCategory.DataSource = listCategory;
+            cbCategory.Items.AddRange(CategoryBUS.Instance.GetListCategory().ToArray());
             cbCategory.DisplayMember = "Name";
+            cbCategory.SelectedIndex = 0;
+            
         }
         void LoadItemListByIDCategory(int id)
         {
-            List<ItemDTO> listItem = ItemBUS.Instance.GetItemByIDCategory(id);
-            cbItem.DataSource = listItem;
+            cbItem.Items.Clear();          
+            cbItem.Items.AddRange(ItemBUS.Instance.GetItemByIDCategory(id).ToArray());
             cbItem.DisplayMember = "Name";
         }
         void LoadTable()
@@ -43,7 +44,7 @@ namespace pbl3_f
             foreach(TableDTO item in tableList)
             {
                 Button btn = new Button() { Width = TableBUS.TableWidth, Height = TableBUS.TableHeight};
-                btn.Text = item.Name + "\n" + item.Status;
+                btn.Text = item.Name + "\n" + item.Status;  
                 btn.Click += Btn_Click;
                 btn.Tag = item;
                 switch(item.Status)
@@ -150,33 +151,45 @@ namespace pbl3_f
 
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int id = 0;
-            ComboBox cb = sender as ComboBox;
-            if (cb.SelectedItem == null)
-                return;
-            CategoryDTO category = cb.SelectedItem as CategoryDTO;
-            id = category.ID;
-
-            LoadItemListByIDCategory(id);
+            cbItem.Text = "";          
+            LoadItemListByIDCategory(((CategoryDTO)cbCategory.SelectedItem).ID);
         }
 
         private void btnAddItem_Click(object sender, EventArgs e)
         {
-            
-            TableDTO tableDTO = lvBill.Tag as TableDTO;
-            int idBill = BillDAO.Instance.GetUnCheckIDBillByIDTable(tableDTO.ID);
-            int idItem = (cbItem.SelectedItem as ItemDTO).ID;
-            int amount = (int)nmItemAmount.Value;
-            if (idBill == -1)
+            if (cbItem.Text != "")
             {
-                BillDAO.Instance.InsertBill(tableDTO.ID);
-                BillInforDAO.Instance.InsertBillInfor(BillDAO.Instance.GetMaxIDBill(), idItem, amount);
+                TableDTO tableDTO = lvBill.Tag as TableDTO;
+                int idBill = BillDAO.Instance.GetUnCheckIDBillByIDTable(tableDTO.ID);
+                int idItem = (cbItem.SelectedItem as ItemDTO).ID;
+                int amount = (int)nmItemAmount.Value;
+                if (idBill == -1)
+                {
+                    BillDAO.Instance.InsertBill(tableDTO.ID);
+                    BillInforDAO.Instance.InsertBillInfor(BillDAO.Instance.GetMaxIDBill(), idItem, amount);
+                }
+                else
+                {
+                    BillInforDAO.Instance.InsertBillInfor(idBill, idItem, amount);
+                }
+                ShowBill(tableDTO.ID);
             }
-            else
-            {
-                BillInforDAO.Instance.InsertBillInfor(idBill, idItem, amount);
-            }
-            ShowBill(tableDTO.ID);
+            else MessageBox.Show("vui lòng chọn món");
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flpTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbItem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

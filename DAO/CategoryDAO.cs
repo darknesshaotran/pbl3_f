@@ -33,5 +33,38 @@ namespace DAO
             
 
         }
+        public  int GetIDbyNameCategory(string name)
+        {
+            foreach(DataRow i in GetListCategory().Rows)
+            {
+                if (i["Name"].ToString() == name)
+                {
+                   int a  = Convert.ToInt32(i["ID"].ToString());
+                    return a;
+                }
+                
+            }
+            return -1;
+        }
+        public string GetNamebyIDCategory(int id)
+        {
+            string a = "";
+            foreach (DataRow i in GetListCategory().Rows)
+            {
+                if (Convert.ToInt32(i["ID"].ToString()) == id)
+                {
+                    a = i["Name"].ToString();
+                    break;
+                }
+
+            }
+            return a;
+
+        }
+        public void AddCategory(CategoryDTO ct)
+        {
+            string query = "insert into ItemCategory values(@Name)";
+            DataProvider.Instance.ExecuteAddUpdate_Category(query,ct);
+        }
     }
 }

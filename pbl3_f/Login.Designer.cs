@@ -55,7 +55,6 @@
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnLogin, "btnLogin");
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLogin.Name = "btnLogin";

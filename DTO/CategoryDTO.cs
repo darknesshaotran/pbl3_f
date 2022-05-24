@@ -11,6 +11,10 @@ namespace DTO
     {
         public int ID { get; set; }
         public string Name { get; set; }
+        public CategoryDTO()
+        {
+
+        }
         public CategoryDTO(int id, string name)
         {
             this.ID = id;

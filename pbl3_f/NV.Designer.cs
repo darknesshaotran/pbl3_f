@@ -95,7 +95,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(943, 682);
+            this.tabControl1.Size = new System.Drawing.Size(1038, 682);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -108,7 +108,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(933, 653);
+            this.tabPage1.Size = new System.Drawing.Size(1030, 653);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "home";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -219,10 +219,11 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(935, 653);
+            this.tabPage2.Size = new System.Drawing.Size(1030, 653);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "order";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // cbItem
             // 
@@ -232,6 +233,7 @@
             this.cbItem.Name = "cbItem";
             this.cbItem.Size = new System.Drawing.Size(160, 24);
             this.cbItem.TabIndex = 6;
+            this.cbItem.SelectedIndexChanged += new System.EventHandler(this.cbItem_SelectedIndexChanged);
             // 
             // nmItemAmount
             // 
@@ -281,7 +283,7 @@
             this.panel2.Location = new System.Drawing.Point(604, 538);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(337, 123);
+            this.panel2.Size = new System.Drawing.Size(422, 123);
             this.panel2.TabIndex = 2;
             // 
             // txbTotalPrice
@@ -393,7 +395,7 @@
             this.bunifuGradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(338, 422);
+            this.bunifuGradientPanel3.Size = new System.Drawing.Size(422, 422);
             this.bunifuGradientPanel3.TabIndex = 1;
             // 
             // lvBill
@@ -405,10 +407,10 @@
             this.columnHeader4});
             this.lvBill.GridLines = true;
             this.lvBill.HideSelection = false;
-            this.lvBill.Location = new System.Drawing.Point(0, 0);
+            this.lvBill.Location = new System.Drawing.Point(4, 2);
             this.lvBill.Margin = new System.Windows.Forms.Padding(4);
             this.lvBill.Name = "lvBill";
-            this.lvBill.Size = new System.Drawing.Size(336, 421);
+            this.lvBill.Size = new System.Drawing.Size(414, 421);
             this.lvBill.TabIndex = 0;
             this.lvBill.UseCompatibleStateImageBehavior = false;
             this.lvBill.View = System.Windows.Forms.View.Details;
@@ -456,6 +458,7 @@
             this.flpTable.Name = "flpTable";
             this.flpTable.Size = new System.Drawing.Size(597, 660);
             this.flpTable.TabIndex = 0;
+            this.flpTable.Paint += new System.Windows.Forms.PaintEventHandler(this.flpTable_Paint);
             // 
             // tabPage3
             // 
@@ -465,7 +468,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(935, 653);
+            this.tabPage3.Size = new System.Drawing.Size(1030, 653);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "infor";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -880,7 +883,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1224, 682);
+            this.ClientSize = new System.Drawing.Size(1312, 682);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);

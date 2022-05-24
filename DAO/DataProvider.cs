@@ -1,10 +1,12 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAO
 {
@@ -20,7 +22,7 @@ namespace DAO
                 return _instance;
             }
         }
-        private string strConn = @"Data Source=DESKTOP-KJ8HLPQ;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
+        private string strConn = @"Data Source=DESKTOP-SRQRFL4\SQLEXPRESS;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
         public DataTable Ex(string query)
         {
             SqlConnection conn = new SqlConnection(strConn);
@@ -32,9 +34,8 @@ namespace DAO
             conn.Close();
             return data;
         }
-        public DataTable ExecuteQuery(string query, object[] parameter = null)
+        public DataTable ExecuteQuery(string query, object[] parameter = null)// override excuteNonquerry
         {
-            //using để giải phóng bộ nhớ
             DataTable data = new DataTable();
             using (SqlConnection conn = new SqlConnection(strConn))
             {
@@ -61,7 +62,7 @@ namespace DAO
             return data;
         }
 
-        public int ExecuteNonQuery(string query, object[] parameter = null)
+        public int ExecuteNonQuery(string query, object[] parameter = null) // tra ve so row da dc thuc hien
         {
             int row = 0;
             using (SqlConnection conn = new SqlConnection(strConn))
@@ -81,13 +82,16 @@ namespace DAO
                         }
                     }
                 }
+                
                 row = cmd.ExecuteNonQuery();
+                if (row > 0) MessageBox.Show("sucess !!");
+                else MessageBox.Show("error !! ");
                 conn.Close();
             }
             return row;
         }
         
-        public object ExecuteScalar(string query, object[] parameter = null)
+        public object ExecuteScalar(string query, object[] parameter = null) // override executeScalar
         {
             object data = 0;
             using (SqlConnection conn = new SqlConnection(strConn))
@@ -111,6 +115,47 @@ namespace DAO
                 conn.Close();
             }
             return data;
+        }
+        
+
+       
+        public void ExecuteAddUpdate_Category(string query, CategoryDTO ct)
+        {
+
+            try
+            {
+                SqlConnection cnn = new SqlConnection(strConn);
+                cnn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
+                {
+
+                   
+                    cmd.Parameters.AddWithValue("@Name", ct.Name);
+                    
+
+
+                    int rowsAdded = cmd.ExecuteNonQuery();
+                    if (rowsAdded > 0)
+                        MessageBox.Show("Row inserted!!");
+                    else
+                        // Well this should never really happen
+                        MessageBox.Show("No row inserted");
+                }
+                cnn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR:" + ex.Message);
+            }
+        }
+        public void executeDB(string query)
+        {
+            SqlConnection cnn = new SqlConnection(strConn);
+            SqlCommand cmd = new SqlCommand(query, cnn);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
         }
     }
 }
