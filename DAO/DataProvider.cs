@@ -34,7 +34,7 @@ namespace DAO
             conn.Close();
             return data;
         }
-        public DataTable ExecuteQuery(string query, object[] parameter = null)// override excuteNonquerry
+        public DataTable ExecuteQuery(string query, object[] parameter = null)// hehehehe
         {
             DataTable data = new DataTable();
             using (SqlConnection conn = new SqlConnection(strConn))
