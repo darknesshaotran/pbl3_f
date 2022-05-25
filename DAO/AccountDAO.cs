@@ -56,8 +56,34 @@ namespace DAO
                 throw ex;
             }
         }
-        
-        
+        public void AddAccountDAO(AccountDTO account)
+        {
+            string query = "insert into Account values( @UserName , @DisplayName , @PassWord , 1, @IDStaff )";
+            try
+            {
+                DataProvider.Instance.ExecuteNonQuery(query, new Object[] { account.UserName,account.DisplayName, account.Password, account.IDStaff });
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public void DeleteAccountDAO(int IDStaff)
+        {
+            string query = "delete from Account where IDStaff =" + IDStaff;
+            try
+            {
+                DataProvider.Instance.ExecuteNonQuery(query, new Object[] { IDStaff });
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
 
     }
 }

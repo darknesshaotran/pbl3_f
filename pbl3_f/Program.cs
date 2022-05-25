@@ -16,7 +16,7 @@ namespace pbl3_f
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NV());
+            Application.Run(new Login());
         }
     }
 }

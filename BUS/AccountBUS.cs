@@ -76,7 +76,23 @@ namespace BUS
             }
             return new AccountDTO(data.Rows[0]);
         }
-        
-        
+        public void AddAccountBUS(AccountDTO account)
+        {
+            AccountDAO.Instance.AddAccountDAO(account);
+        }
+        public void DeleteAcount(int AccountToDelete)
+        {
+            try
+            {
+                AccountDAO.Instance.DeleteAccountDAO(AccountToDelete);
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
     }
 }
