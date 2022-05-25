@@ -70,6 +70,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.nmDiscount = new System.Windows.Forms.NumericUpDown();
+            this.btnDiscount = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -84,6 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmDiscount)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -223,7 +226,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "order";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // cbItem
             // 
@@ -233,7 +235,6 @@
             this.cbItem.Name = "cbItem";
             this.cbItem.Size = new System.Drawing.Size(160, 24);
             this.cbItem.TabIndex = 6;
-            this.cbItem.SelectedIndexChanged += new System.EventHandler(this.cbItem_SelectedIndexChanged);
             // 
             // nmItemAmount
             // 
@@ -276,6 +277,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnDiscount);
+            this.panel2.Controls.Add(this.nmDiscount);
             this.panel2.Controls.Add(this.txbTotalPrice);
             this.panel2.Controls.Add(this.comboBox3);
             this.panel2.Controls.Add(this.bunifuThinButton26);
@@ -289,7 +292,7 @@
             // txbTotalPrice
             // 
             this.txbTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTotalPrice.Location = new System.Drawing.Point(169, 18);
+            this.txbTotalPrice.Location = new System.Drawing.Point(124, 18);
             this.txbTotalPrice.Name = "txbTotalPrice";
             this.txbTotalPrice.ReadOnly = true;
             this.txbTotalPrice.Size = new System.Drawing.Size(148, 27);
@@ -300,7 +303,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(23, 9);
+            this.comboBox3.Location = new System.Drawing.Point(5, 18);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(109, 24);
@@ -324,7 +327,7 @@
             this.bunifuThinButton26.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton26.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton26.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton26.Location = new System.Drawing.Point(23, 33);
+            this.bunifuThinButton26.Location = new System.Drawing.Point(5, 42);
             this.bunifuThinButton26.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton26.Name = "bunifuThinButton26";
             this.bunifuThinButton26.Size = new System.Drawing.Size(111, 57);
@@ -349,7 +352,7 @@
             this.btnCheckOut.IdleFillColor = System.Drawing.Color.White;
             this.btnCheckOut.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnCheckOut.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCheckOut.Location = new System.Drawing.Point(186, 53);
+            this.btnCheckOut.Location = new System.Drawing.Point(141, 53);
             this.btnCheckOut.Margin = new System.Windows.Forms.Padding(5);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.Size = new System.Drawing.Size(111, 57);
@@ -459,7 +462,6 @@
             this.flpTable.Name = "flpTable";
             this.flpTable.Size = new System.Drawing.Size(597, 660);
             this.flpTable.TabIndex = 0;
-            this.flpTable.Paint += new System.Windows.Forms.PaintEventHandler(this.flpTable_Paint);
             // 
             // tabPage3
             // 
@@ -880,6 +882,49 @@
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             // 
+            // nmDiscount
+            // 
+            this.nmDiscount.Location = new System.Drawing.Point(336, 23);
+            this.nmDiscount.Margin = new System.Windows.Forms.Padding(4);
+            this.nmDiscount.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.nmDiscount.Name = "nmDiscount";
+            this.nmDiscount.Size = new System.Drawing.Size(43, 22);
+            this.nmDiscount.TabIndex = 9;
+            this.nmDiscount.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // btnDiscount
+            // 
+            this.btnDiscount.ActiveBorderThickness = 1;
+            this.btnDiscount.ActiveCornerRadius = 20;
+            this.btnDiscount.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnDiscount.ActiveForecolor = System.Drawing.Color.White;
+            this.btnDiscount.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnDiscount.BackColor = System.Drawing.Color.Transparent;
+            this.btnDiscount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDiscount.BackgroundImage")));
+            this.btnDiscount.ButtonText = "thanh toán";
+            this.btnDiscount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDiscount.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiscount.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnDiscount.IdleBorderThickness = 1;
+            this.btnDiscount.IdleCornerRadius = 20;
+            this.btnDiscount.IdleFillColor = System.Drawing.Color.White;
+            this.btnDiscount.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnDiscount.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnDiscount.Location = new System.Drawing.Point(295, 53);
+            this.btnDiscount.Margin = new System.Windows.Forms.Padding(5);
+            this.btnDiscount.Name = "btnDiscount";
+            this.btnDiscount.Size = new System.Drawing.Size(111, 57);
+            this.btnDiscount.TabIndex = 10;
+            this.btnDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // NV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -908,6 +953,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmDiscount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -955,5 +1001,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.TextBox txbTotalPrice;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnDiscount;
+        private System.Windows.Forms.NumericUpDown nmDiscount;
     }
 }

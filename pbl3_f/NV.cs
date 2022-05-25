@@ -180,30 +180,20 @@ namespace pbl3_f
             
         }
 
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flpTable_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cbItem_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
+            CultureInfo culture = new CultureInfo("vi-VN");
+
             TableDTO table = lvBill.Tag as TableDTO;
             int idBill = BillDAO.Instance.GetUnCheckIDBillByIDTable(table.ID);
+            int discount = (int)nmDiscount.Value; 
+            double TotalPrice = Convert.ToDouble(txbTotalPrice.Text.Split(',')[0]);
+            double FinalPrice = TotalPrice - (TotalPrice / 100) * discount;
             if (idBill != -1)
             {
-                if (MessageBox.Show("Bạn có chắc muốn thanh toán hóa đơn cho " + table.Name, "Thông Báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                if (MessageBox.Show(String.Format("Bạn có chắc muốn thanh toán hóa đơn cho {0} \nTổng tiền = {1}", table.Name, FinalPrice) , "Thông Báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
-                    BillDAO.Instance.CheckOut(idBill);
+                    BillDAO.Instance.CheckOut(idBill, discount);
                     ShowBill(table.ID);
                 }
             }

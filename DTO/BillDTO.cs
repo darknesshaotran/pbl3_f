@@ -13,12 +13,15 @@ namespace DTO
         public DateTime? DateCheckIn { get; set; }
         public DateTime? DateCheckOut { get; set; }
         public string Status { get; set; }
-        public BillDTO(int ID, DateTime? DateCheckIn, DateTime? DateCheckOut, string Status)
+        public int Discount { get; set; }
+
+        public BillDTO(int ID, DateTime? DateCheckIn, DateTime? DateCheckOut, string Status, int Discount)
         {
             this.ID = ID;
             this.DateCheckIn = DateCheckIn;
             this.DateCheckOut = DateCheckOut;
             this.Status = Status;
+            this.Discount = Discount;
         }
         public BillDTO (DataRow row)
         {
@@ -28,6 +31,7 @@ namespace DTO
             if(dateCheckOutTemp.ToString() != "")
                 this.DateCheckOut = (DateTime?)dateCheckOutTemp;
             this.Status = row["Status"].ToString();
+            this.Discount = (int)row["Discount"]; 
         }
     }
 }
