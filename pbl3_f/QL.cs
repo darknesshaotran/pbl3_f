@@ -79,6 +79,14 @@ namespace pbl3_f
             return staff;
 
         }
+        public AccountDTO getDataToCreateAccount()
+        {
+            AccountDTO account = new AccountDTO();
+            account.UserName = txt_NameStaff.Text;
+            account.DisplayName = txt_NameStaff.Text;
+            account.Password = txt_passwordStaff.Text;
+            return account;
+        }
 ////////////////////////////////////////////////////
         private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
         {
@@ -216,16 +224,26 @@ namespace pbl3_f
             if (txt_IDstaff.Text == "")
             {
                 StaffDTO staff = getStaffDataToAdd();
+                AccountDTO account = getDataToCreateAccount();
                 StaffBUS.Instance.AddUpdateStaff(staff);
                 showDTG_Staff("");
+                account.IDStaff = Convert.ToInt32(dgv_Staff.Rows[dgv_Staff.Rows.Count - 1].Cells[0].Value.ToString());
+                AccountBUS.Instance.AddAccountBUS(account);
+                txt_passwordStaff.Text = "";
+
             }
             else
             {
                 if (StaffBUS.Instance.Check(Convert.ToInt32(txt_IDstaff.Text)))
                 {
                     StaffDTO staff = getStaffDataToAdd();
-                    StaffBUS.Instance.AddUpdateStaff(staff);
+                    AccountDTO account = getDataToCreateAccount();
+                    StaffBUS.Instance.AddUpdateStaff(staff);                  
                     showDTG_Staff("");
+                    account.IDStaff = Convert.ToInt32(dgv_Staff.Rows[dgv_Staff.Rows.Count - 1].Cells[0].Value.ToString());
+                    AccountBUS.Instance.AddAccountBUS(account);
+                    txt_passwordStaff.Text = "";
+
                 }
                 else MessageBox.Show("nhan vien da ton tai !!");
             }
@@ -239,9 +257,13 @@ namespace pbl3_f
 
         private void btn_updateStaff_Click(object sender, EventArgs e)
         {
-            StaffDTO staff = getStaffDataToUpdate();
-            StaffBUS.Instance.AddUpdateStaff(staff);
+            
 
+            StaffDTO staff = getStaffDataToUpdate();
+           
+            
+                StaffBUS.Instance.AddUpdateStaff(staff);
+            
             showDTG_Staff("");
         }
 
@@ -252,6 +274,7 @@ namespace pbl3_f
                 int DeleteID = Convert.ToInt32(dgv_Staff.CurrentRow.Cells[0].Value.ToString());
 
                 StaffBUS.Instance.DeleteStaff(DeleteID);
+                AccountBUS.Instance.DeleteAcount(DeleteID);
             }
 
             showDTG_Staff("");

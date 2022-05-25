@@ -13,6 +13,7 @@ namespace DTO
         public string Password { get; set; }
         public string DisplayName { get; set; }
         public int TypeID { get; set; }
+        public int IDStaff { get; set; }
         public AccountDTO()
         { 
         }
@@ -26,12 +27,13 @@ namespace DTO
             this.Password = password;
         }
         
-        public AccountDTO(string username, string password, string displayname, int typeid)
+        public AccountDTO(string username, string password, string displayname, int typeid,int IDStaff)
         {
             this.UserName = username;
             this.Password = password;
             this.DisplayName = displayname;
             this.TypeID = typeid;
+            this.IDStaff = IDStaff;
         }
 
         public AccountDTO(DataRow row)
@@ -40,6 +42,7 @@ namespace DTO
             this.Password = row["Password"].ToString();
             this.DisplayName = row["DisplayName"].ToString();
             this.TypeID = (int)row["TypeID"];
+            this.IDStaff = (int)row["IDStaff"];
         }
     }
 }
