@@ -82,7 +82,7 @@ namespace pbl3_f
         public AccountDTO getDataToCreateAccount()
         {
             AccountDTO account = new AccountDTO();
-            account.UserName = txt_NameStaff.Text;
+            account.UserName = txt_UserName.Text;
             account.DisplayName = txt_NameStaff.Text;
             account.Password = txt_passwordStaff.Text;
             return account;
