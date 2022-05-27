@@ -32,5 +32,9 @@ namespace DAO
                 throw ex;
             }
         }
+        public void SwapTable(int id1, int id2)
+        {
+            DataProvider.Instance.ExecuteQuery("USP_SwapTable @IDTable1 , @TableID2 ", new Object[] { id1, id2 });
+        }
     }
 }

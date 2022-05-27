@@ -37,7 +37,7 @@ namespace DAO
         {
             try
             {
-                DataProvider.Instance.ExecuteNonQuery("exec USP_InsertBill @IDTable", new Object[] {id});
+                DataProvider.Instance.ExecuteNonQuery("USP_InsertBill @IDTable", new Object[] {id});
             }
             catch (Exception ex)
             {

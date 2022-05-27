@@ -23,8 +23,19 @@ namespace pbl3_f
             InitializeComponent();
             LoadTable();    
             LoadCatergory();
+            LoadComboboxTable();
         }
         #region methods
+        void LoadComboboxTable()
+        {
+            cbSwapTable.Items.AddRange(TableBUS.Instance.GetListTable().ToArray());
+            cbSwapTable.DisplayMember = "Name";
+            cbSwapTable.SelectedIndex = 0;
+        }
+        void SwapTable()
+        {
+
+        }
         void LoadCatergory()
         {
             cbCategory.Items.AddRange(CategoryBUS.Instance.GetListCategory().ToArray());
@@ -187,11 +198,11 @@ namespace pbl3_f
             TableDTO table = lvBill.Tag as TableDTO;
             int idBill = BillDAO.Instance.GetUnCheckIDBillByIDTable(table.ID);
             int discount = (int)nmDiscount.Value; 
-            double TotalPrice = Convert.ToDouble(txbTotalPrice.Text.Split(',')[0]);
+            double TotalPrice = Double.Parse(txbTotalPrice.Text, NumberStyles.Currency, new CultureInfo("vi-VN"));
             double FinalPrice = TotalPrice - (TotalPrice / 100) * discount;
             if (idBill != -1)
             {
-                if (MessageBox.Show(String.Format("Bạn có chắc muốn thanh toán hóa đơn cho {0} \nTổng tiền = {1}", table.Name, FinalPrice) , "Thông Báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                if (MessageBox.Show(String.Format("Bạn có chắc muốn thanh toán hóa đơn cho {0} \nTổng tiền = {1}", table.Name, FinalPrice.ToString("c", culture)) , "Thông Báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
                     BillDAO.Instance.CheckOut(idBill, discount);
                     ShowBill(table.ID);
@@ -200,6 +211,20 @@ namespace pbl3_f
             else
                 MessageBox.Show("Không tồn tại hóa đơn !");
             LoadTable();
+        }
+
+        private void bunifuThinButton26_Click(object sender, EventArgs e)
+        {
+            int id1 = (lvBill.Tag as TableDTO).ID;
+            int id2 = (cbSwapTable.SelectedItem as TableDTO).ID;
+
+
+            if (MessageBox.Show(String.Format("Bạn có thật sự muốn chuyển từ {0} sang {1} ?", (lvBill.Tag as TableDTO).Name, (cbSwapTable.SelectedItem as TableDTO).Name), "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                TableDAO.Instance.SwapTable(id1, id2);
+                LoadTable();
+            }
+
         }
     }
 }

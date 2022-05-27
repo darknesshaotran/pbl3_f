@@ -272,7 +272,6 @@ namespace pbl3_f
             if (dgv_Staff.SelectedRows.Count == 1)
             {
                 int DeleteID = Convert.ToInt32(dgv_Staff.CurrentRow.Cells[0].Value.ToString());
-
                 StaffBUS.Instance.DeleteStaff(DeleteID);
                 AccountBUS.Instance.DeleteAcount(DeleteID);
             }
