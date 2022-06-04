@@ -38,7 +38,7 @@
             this.btnDeleteStaff = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddStaff = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvStaff = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txtNameStaff = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUserNameStaff = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIDStaff = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -213,43 +213,43 @@
             this.dtgvStaff.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvStaff.SelectionChanged += new System.EventHandler(this.dtgvStaff_SelectionChanged);
             // 
-            // txtNameStaff
+            // txtUserNameStaff
             // 
-            this.txtNameStaff.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNameStaff.BorderRadius = 6;
-            this.txtNameStaff.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNameStaff.DefaultText = "";
-            this.txtNameStaff.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNameStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNameStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNameStaff.DisabledState.Parent = this.txtNameStaff;
-            this.txtNameStaff.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNameStaff.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNameStaff.FocusedState.Parent = this.txtNameStaff;
-            this.txtNameStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNameStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNameStaff.HoverState.Parent = this.txtNameStaff;
-            this.txtNameStaff.Location = new System.Drawing.Point(899, 318);
-            this.txtNameStaff.Margin = new System.Windows.Forms.Padding(5);
-            this.txtNameStaff.Name = "txtNameStaff";
-            this.txtNameStaff.PasswordChar = '\0';
-            this.txtNameStaff.PlaceholderText = "";
-            this.txtNameStaff.SelectedText = "";
-            this.txtNameStaff.ShadowDecoration.Parent = this.txtNameStaff;
-            this.txtNameStaff.Size = new System.Drawing.Size(281, 30);
-            this.txtNameStaff.TabIndex = 16;
+            this.txtUserNameStaff.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUserNameStaff.BorderRadius = 6;
+            this.txtUserNameStaff.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserNameStaff.DefaultText = "";
+            this.txtUserNameStaff.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserNameStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserNameStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserNameStaff.DisabledState.Parent = this.txtUserNameStaff;
+            this.txtUserNameStaff.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserNameStaff.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserNameStaff.FocusedState.Parent = this.txtUserNameStaff;
+            this.txtUserNameStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserNameStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserNameStaff.HoverState.Parent = this.txtUserNameStaff;
+            this.txtUserNameStaff.Location = new System.Drawing.Point(899, 318);
+            this.txtUserNameStaff.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUserNameStaff.Name = "txtUserNameStaff";
+            this.txtUserNameStaff.PasswordChar = '\0';
+            this.txtUserNameStaff.PlaceholderText = "";
+            this.txtUserNameStaff.SelectedText = "";
+            this.txtUserNameStaff.ShadowDecoration.Parent = this.txtUserNameStaff;
+            this.txtUserNameStaff.Size = new System.Drawing.Size(281, 30);
+            this.txtUserNameStaff.TabIndex = 16;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(793, 318);
+            this.label2.Location = new System.Drawing.Point(760, 318);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 23);
+            this.label2.Size = new System.Drawing.Size(106, 23);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Name:";
+            this.label2.Text = "UserName";
             // 
             // txtIDStaff
             // 
@@ -541,7 +541,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtDisplayName);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtNameStaff);
+            this.Controls.Add(this.txtUserNameStaff);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtIDStaff);
             this.Controls.Add(this.label1);
@@ -566,7 +566,7 @@
         private Guna.UI2.WinForms.Guna2Button btnModifyStaff;
         private Guna.UI2.WinForms.Guna2Button btnDeleteStaff;
         private Guna.UI2.WinForms.Guna2Button btnAddStaff;
-        private Guna.UI2.WinForms.Guna2TextBox txtNameStaff;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserNameStaff;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtIDStaff;
         private System.Windows.Forms.Label label1;

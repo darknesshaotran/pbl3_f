@@ -102,7 +102,7 @@ namespace DAO
             DataTable data = GetAllAccount();
             foreach (DataRow row in data.Rows)
             {
-                if(data.Rows[i]["Tên đăng nhập"].ToString() == username)
+                if(data.Rows[i]["UserName"].ToString() == username)
                 {
                     t = false;
                     break;
@@ -111,7 +111,19 @@ namespace DAO
             }
             return t;
         }
-
+        public string GetUserNameByIDStaff(int id)
+        {
+            string a = "";
+            foreach (DataRow row in GetAllAccount().Rows)
+            {
+                if(Convert.ToInt32(row["IDStaff"]) == id)
+                {
+                    a = row["UserName"].ToString();
+                    break;
+                }    
+            }
+            return a;
+        }
 
     }
 }

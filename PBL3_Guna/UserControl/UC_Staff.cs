@@ -22,7 +22,7 @@ namespace PBL3_Guna
         public StaffDTO getStaffDataToAdd()
         {
             StaffDTO staff = new StaffDTO();
-            staff.Name = txtNameStaff.Text;
+            staff.Name = txtDisplayName.Text;
             staff.Address = txtAddressStaff.Text;
             staff.Age = Convert.ToInt32(txtAgeStaff.Text);
             staff.PhoneNumber = txtPhoneNumberStaff.Text;
@@ -32,7 +32,7 @@ namespace PBL3_Guna
         {
             StaffDTO staff = new StaffDTO();
             staff.ID = Convert.ToInt32(txtIDStaff.Text);
-            staff.Name = txtNameStaff.Text;
+            staff.Name = txtDisplayName.Text;
             staff.Address = txtAddressStaff.Text;
             staff.Age = Convert.ToInt32(txtAgeStaff.Text);
             staff.PhoneNumber = txtPhoneNumberStaff.Text;
@@ -47,7 +47,7 @@ namespace PBL3_Guna
         public AccountDTO getDataToCreateAccount()
         {
             AccountDTO account = new AccountDTO();
-            account.UserName = txtNameStaff.Text;
+            account.UserName = txtUserNameStaff.Text;
             account.DisplayName = txtDisplayName.Text;
             account.Password = txtPassStaff.Text;
             return account;
@@ -133,14 +133,15 @@ namespace PBL3_Guna
 
         private void dtgvStaff_SelectionChanged(object sender, EventArgs e)
         {
-            AccountDTO acc = AccountBUS.Instance.GetAccountByUserName(dtgvStaff.CurrentRow.Cells[1].Value.ToString());
-            txtIDStaff.Text = dtgvStaff.CurrentRow.Cells[0].Value.ToString();
-            txtNameStaff.Text = dtgvStaff.CurrentRow.Cells[1].Value.ToString();
+            int idStaff = Convert.ToInt32(dtgvStaff.CurrentRow.Cells[0].Value.ToString());
+            string username = AccountBUS.Instance.GetUserNameByIDStaff(idStaff);
+            txtIDStaff.Text = idStaff.ToString();
+            txtDisplayName.Text = dtgvStaff.CurrentRow.Cells[1].Value.ToString();
             txtAddressStaff.Text = dtgvStaff.CurrentRow.Cells[2].Value.ToString();
             txtAgeStaff.Text = dtgvStaff.CurrentRow.Cells[3].Value.ToString();
             txtPhoneNumberStaff.Text = dtgvStaff.CurrentRow.Cells[4].Value.ToString();
-            txtDisplayName.Text = acc.DisplayName.ToString();
-            txtPassStaff.Text = acc.Password.ToString();
+            txtUserNameStaff.Text = username;
+            txtPassStaff.Text = AccountBUS.Instance.GetAccountByUserName(username).Password.ToString();
         }
     }
 }

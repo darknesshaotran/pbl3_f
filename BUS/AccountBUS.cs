@@ -80,7 +80,7 @@ namespace BUS
             DataTable data = GetAllAccount();
             foreach(DataRow row in data.Rows)
             {
-                if(data.Rows[i]["Tên đăng nhập"].ToString() == username)
+                if(data.Rows[i]["UserName"].ToString() == username)
                 {
                     t = false;
                     break;
@@ -100,6 +100,9 @@ namespace BUS
                 throw ex;
             }
         }
-
+        public string GetUserNameByIDStaff(int id)
+        {
+            return AccountDAO.Instance.GetUserNameByIDStaff(id);
+        }
     }
 }
