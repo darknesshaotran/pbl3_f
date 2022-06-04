@@ -40,5 +40,16 @@ namespace BUS
             }
             return listBilInfor;
         }
+        public void InsertBillInfor(int idbill, int iditem, int amount)
+        {
+            try
+            {
+                BillInforDAO.Instance.InsertBillInfor(idbill, iditem, amount);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

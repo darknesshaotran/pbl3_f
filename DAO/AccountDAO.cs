@@ -82,7 +82,35 @@ namespace DAO
             }
 
         }
+        public void ChangePassAcc(AccountDTO acc)
+        {
+            string query = "Update dbo.Account set PassWord = '" + acc.Password + "' where UserName = '" + acc.UserName + "'";
+            try
+            {
+                DataProvider.Instance.ExecuteNonQuery(query, new Object[] { acc.Password });
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
 
+        public bool CheckUserName(string username)
+        {
+            int i = 0;
+            bool t = true;
+            DataTable data = GetAllAccount();
+            foreach (DataRow row in data.Rows)
+            {
+                if(data.Rows[i]["Tên đăng nhập"].ToString() == username)
+                {
+                    t = false;
+                    break;
+                }
+                i++;
+            }
+            return t;
+        }
 
 
     }

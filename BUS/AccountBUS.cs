@@ -21,26 +21,7 @@ namespace BUS
             }
         }
         private AccountBUS() { }
-        //public int CheckLogin1(AccountDTO account)
-        //{
-        //    int account1 = Convert.ToInt32(AccountDAO.Instance.CheckLogin(account));
-        //    if (account.UserName == null)
-        //    {
-        //        return 0;
-        //    }
-        //    if (account.Password == null)
-        //    {
-        //        return 0;
-        //    }
-        //    try
-        //    {
-        //        return account1;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //}
+        
         public Object CheckLogin(AccountDTO account)
         {
             try
@@ -92,7 +73,33 @@ namespace BUS
                 throw ex;
             }
         }
-
+        public bool CheckUserName(string username)
+        {
+            int i = 0;
+            bool t = true;
+            DataTable data = GetAllAccount();
+            foreach(DataRow row in data.Rows)
+            {
+                if(data.Rows[i]["Tên đăng nhập"].ToString() == username)
+                {
+                    t = false;
+                    break;
+                }
+                i++;
+            }
+            return t;
+        }
+        public void ChangePassAcc(AccountDTO acc)
+        {
+            try
+            {
+                AccountDAO.Instance.ChangePassAcc(acc);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
 
     }
 }

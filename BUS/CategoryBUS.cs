@@ -44,13 +44,13 @@ namespace BUS
         {
             try
             {
-                CategoryDAO.Instance.GetIDbyNameCategory(name);
+                return CategoryDAO.Instance.GetIDbyNameCategory(name);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            return -1;
+            
         }
         public string GetNamebyIDCategory(int id)
         {

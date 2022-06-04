@@ -23,7 +23,7 @@ namespace DAO
         private BillDAO() {}
         public int GetUnCheckIDBillByIDTable(int ID)
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.Bill WHERE IDTable = " + ID + " AND Status = 0");
+            DataTable data = DataProvider.Instance.ExecuteQuery("GetUnCheckBillIDByTableID @IDTable", new Object[] {ID});
 
             if (data.Rows.Count > 0)
             {
@@ -32,6 +32,10 @@ namespace DAO
             }
 
             return -1;
+        }
+        public DataTable GetListBill()
+        {
+            return DataProvider.Instance.ExecuteQuery("Select * from Bill");
         }
         public void InsertBill(int id)
         {
@@ -44,6 +48,21 @@ namespace DAO
                 throw ex;
             }
         }
+        public DataTable GetListBillByDate(DateTime checkIn, DateTime checkOut)
+        {
+            try
+            {
+                return DataProvider.Instance.ExecuteQuery("USP_GetListBillByDate @checkIn , @checkOut", new Object[] { checkIn, checkOut });
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public DataTable GetDateByID(int id)
+        {
+            return DataProvider.Instance.ExecuteQuery("Select DateCheckIn , DateCheckOut from Bill", new Object[] { id });
+        }
         public int GetMaxIDBill()
         {
             try
@@ -55,10 +74,19 @@ namespace DAO
                 return 1;
             }
         }
-        public void CheckOut(int id, int discount)
+        public void CheckOut(int id, int discount, double TotalPrice)
         {
-            string query = "Update dbo.Bill set Status = 1, " + "discount = " + discount + " where ID = " + id;
-            DataProvider.Instance.ExecuteNonQuery(query);
+            string query = "Update dbo.Bill set DateCheckOut = GETDATE() , Status = 1 , discount = " + discount + ", TotalPrice = " +  TotalPrice +  " where ID = " + id;
+            try
+            {
+                DataProvider.Instance.ExecuteNonQuery(query);
+            }   
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
         }
+
     }
 }

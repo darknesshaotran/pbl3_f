@@ -49,7 +49,7 @@ namespace DAO
         
         public void AddItemDAO(ItemDTO item)
         {
-            string query = "insert into Item values( @Name , @IDCategory , @Price )";
+            string query = "Insert into dbo.Item values ( @Name , @IDCategory , @Price )";
             try
             {
                 DataProvider.Instance.ExecuteNonQuery(query, new Object[] { item.Name, item.IDCategory, item.Price });
@@ -65,7 +65,7 @@ namespace DAO
             string query = "update Item set Name = @Name , IDCategory = @IDCategory , Price = @Price where ID = @ID";
             try
             {
-                DataProvider.Instance.ExecuteNonQuery(query, new Object[] { item.Name, item.IDCategory, item.Price, item.ID });
+                DataProvider.Instance.ExecuteNonQuery(query, new Object[] { item.Name, item.IDCategory, item.Price, item.ID});
             }
             catch (Exception ex)
             {

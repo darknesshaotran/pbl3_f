@@ -12,7 +12,7 @@ namespace DTO
         public int ID { get; set; }
         public string Name { get; set; }
         public string Status { get; set; }
-        
+        public TableDTO() { }
         public TableDTO(int id, string name, string status)
         {
             this.ID = id;

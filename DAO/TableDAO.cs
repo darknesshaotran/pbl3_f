@@ -21,6 +21,20 @@ namespace DAO
         }
         private TableDAO() { }
          
+           
+        public string GetNameTablebyID(int id)
+        {
+            string a = "";
+            foreach (DataRow i in GetListTable().Rows)
+            {
+                if (Convert.ToInt32(i["ID"].ToString()) == id)
+                {
+                    a = i["Name"].ToString();
+                    break;
+                }
+            }
+            return a;
+        }
         public DataTable GetListTable()
         {
             try
@@ -34,7 +48,15 @@ namespace DAO
         }
         public void SwapTable(int id1, int id2)
         {
-            DataProvider.Instance.ExecuteQuery("USP_SwapTable @IDTable1 , @TableID2 ", new Object[] { id1, id2 });
+            try
+            {
+                DataProvider.Instance.ExecuteQuery("USP_SwapTable @IDTable1 , @TableID2 ", new Object[] { id1, id2 });
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
+        
     }
 }

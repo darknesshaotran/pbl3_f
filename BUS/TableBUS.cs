@@ -44,5 +44,20 @@ namespace BUS
             }
             return listTable;
         }
+        public void SwapTable(int id1, int id2)
+        {
+            try
+            {
+                TableDAO.Instance.SwapTable(id1, id2);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public string GetNameTablebyID(int id)
+        {
+            return TableDAO.Instance.GetNameTablebyID(id);
+        }    
     }
 }

@@ -22,6 +22,10 @@ namespace BUS
                 return instance;
             }
         }
+        public DataTable GetAll()
+        {
+            return ItemDAO.Instance.GetAllItem();
+        }
         public List<ItemDTO> GetAllItem()
         {
             DataTable data;
@@ -86,6 +90,24 @@ namespace BUS
                 }
             }
             return isAdded;
+        }
+
+        public bool CheckNameItem(string name)
+        {
+            int i = 0;
+            bool t = true;
+            DataTable data = GetAll();
+            foreach (DataRow dr in data.Rows)
+            {
+                if(data.Rows[i]["Name"].ToString() == name)
+                {
+                    t = false;
+                    break;
+                }
+                i++;
+            }
+            return t;
+
         }
         public void AddUpdateItem(ItemDTO item)
         {
