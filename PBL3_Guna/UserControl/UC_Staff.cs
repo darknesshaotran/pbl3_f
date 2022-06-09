@@ -107,9 +107,6 @@ namespace PBL3_Guna
             //txtPassStaff.Text = acc.Password.ToString();
         }
 
-        private void UC_Staff_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
