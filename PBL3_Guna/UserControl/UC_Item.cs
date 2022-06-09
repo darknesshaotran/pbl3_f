@@ -53,22 +53,11 @@ namespace PBL3_Guna
 
         private void btnAddItem_Click(object sender, EventArgs e)
         {
-            if (txtIDItem.Text == "")
-            {
-                ItemDTO item = getItemDataToAdd();
-                ItemBUS.Instance.AddUpdateItem(item);
-                showDTG_Item("");
-            }
-            else
-            {
-                if (ItemBUS.Instance.Check(Convert.ToInt32(txtIDItem.Text)))
-                {
-                    ItemDTO item = getItemDataToAdd();
-                    ItemBUS.Instance.AddUpdateItem(item);
-                    showDTG_Item("");
-                }
-                else MessageBox.Show("Item này đã tồn tại !!");
-            }
+
+            Form f = new AddItem();
+            f.ShowDialog();
+            showDTG_Item("");
+            
         }
 
         private void btnDeleteItem_Click(object sender, EventArgs e)
@@ -86,7 +75,7 @@ namespace PBL3_Guna
         private void btnModifyItem_Click(object sender, EventArgs e)
         {
             ItemDTO item = getItemDataToUpdate();
-            ItemBUS.Instance.AddUpdateItem(item);
+            ItemBUS.Instance.UpdateItem(item);
             showDTG_Item("");
         }
 

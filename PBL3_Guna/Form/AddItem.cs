@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,10 +17,34 @@ namespace PBL3_Guna
         public AddItem()
         {
             InitializeComponent();
+            LoadCatergory();
+        }
+        
+        void LoadCatergory()
+        {
+            cxbCategoryItem.Items.Clear();
+            cxbCategoryItem.Items.AddRange(CategoryBUS.Instance.GetListCategory().ToArray());
+            cxbCategoryItem.DisplayMember = "Name";
+        }
+        public ItemDTO getItemDataToAdd()
+        {
+            ItemDTO item = new ItemDTO();
+            
+            item.Name = txtNameItem.Text;
+            item.IDCategory = (CategoryBUS.Instance.GetIDbyNameCategory(cxbCategoryItem.Text));
+            item.Price = Convert.ToInt32(txtPriceItem.Text);
+            return item;
+        }
+            private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
+
+            ItemDTO item = getItemDataToAdd();
+            ItemBUS.Instance.AddItem(item);
             this.Close();
         }
     }

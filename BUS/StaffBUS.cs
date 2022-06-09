@@ -89,5 +89,18 @@ namespace BUS
                 throw ex;
             }
         }
+        public int GetIDStaffByName(string name)
+        {
+            int a = -1;
+            foreach (StaffDTO i in GetAllStaff())
+
+            {
+                if (i.Name == name)
+                {
+                    a = i.ID;
+                }
+            }
+            return a;
+        }
     }
 }
