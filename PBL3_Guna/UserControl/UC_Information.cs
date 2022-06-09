@@ -29,10 +29,14 @@ namespace PBL3_Guna
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            _id = Convert.ToInt32(dtgvInfor.CurrentRow.Cells[0].Value.ToString());
-            _total = Convert.ToInt32(dtgvInfor.CurrentRow.Cells[2].Value.ToString());
-            Form f = new DetailsBill();
-            f.ShowDialog();
+            if (dtgvBill.SelectedRows.Count > 0)
+            {
+                _id = Convert.ToInt32(dtgvInfor.CurrentRow.Cells[0].Value.ToString());
+                _total = Convert.ToInt32(dtgvInfor.CurrentRow.Cells[2].Value.ToString());
+                Form detailsbill = new DetailsBill();
+                detailsbill.ShowDialog();
+            }
+            else MessageBox.Show("vui lòng chọn hóa đơn để xem");
         }
     }
 }

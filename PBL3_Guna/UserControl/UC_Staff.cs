@@ -64,9 +64,14 @@ namespace PBL3_Guna
         {
             if (dtgvStaff.SelectedRows.Count == 1)
             {
-                int DeleteID = Convert.ToInt32(dtgvStaff.CurrentRow.Cells[0].Value.ToString());
-                AccountBUS.Instance.DeleteAcount(DeleteID);
-                StaffBUS.Instance.DeleteStaff(DeleteID);
+                if (MessageBox.Show("Bạn có thật sự muốn xóa  " + txtDisplayName.Text + " ra khỏi danh sách ?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.Cancel)
+                {
+                    int DeleteID = Convert.ToInt32(dtgvStaff.CurrentRow.Cells[0].Value.ToString());
+                    AccountBUS.Instance.DeleteAcount(DeleteID);
+                    StaffBUS.Instance.DeleteStaff(DeleteID);
+                }    
+                    
+                
             }
 
             showDTG_Staff("");
@@ -75,8 +80,13 @@ namespace PBL3_Guna
         private void btnModifyStaff_Click(object sender, EventArgs e)
         {
             StaffDTO staff = getStaffDataToUpdate();
-            StaffBUS.Instance.AddUpdateStaff(staff);
-            showDTG_Staff("");
+            if (MessageBox.Show("Bạn có thật sự muốn cập nhập thông tin của "+ staff.Name.ToString() + " ?" , "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.Cancel)
+            {
+               
+                StaffBUS.Instance.AddUpdateStaff(staff);
+                showDTG_Staff("");
+            }    
+               
         }
 
         private void btnShowStaff_Click(object sender, EventArgs e)

@@ -64,9 +64,13 @@ namespace PBL3_Guna
         {
             if (dtgvItem.SelectedRows.Count == 1)
             {
-                int DeleteID = Convert.ToInt32(dtgvItem.CurrentRow.Cells[0].Value.ToString());
-                BillInforBUS.Instance.SetBillInforDefault(DeleteID);
-                ItemBUS.Instance.DeleteItem(DeleteID);
+                if (MessageBox.Show("Bạn có thật sự muốn xóa  " + txtNameItem.Text + " ra khỏi danh sách ?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.Cancel)
+                {
+                    int DeleteID = Convert.ToInt32(dtgvItem.CurrentRow.Cells[0].Value.ToString());
+                    BillInforBUS.Instance.SetBillInforDefault(DeleteID);
+                    ItemBUS.Instance.DeleteItem(DeleteID);
+                }    
+                   
             }
 
             showDTG_Item("");
@@ -74,9 +78,13 @@ namespace PBL3_Guna
 
         private void btnModifyItem_Click(object sender, EventArgs e)
         {
-            ItemDTO item = getItemDataToUpdate();
-            ItemBUS.Instance.UpdateItem(item);
-            showDTG_Item("");
+            if (MessageBox.Show("Bạn có thật sự muốn xóa  " + txtNameItem.Text + " ra khỏi danh sách ?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.Cancel)
+            {
+                ItemDTO item = getItemDataToUpdate();
+                ItemBUS.Instance.UpdateItem(item);
+                showDTG_Item("");
+            }    
+                
         }
 
         private void btnShowItem_Click(object sender, EventArgs e)
