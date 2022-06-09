@@ -370,3 +370,5 @@ C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.csproj.CoreCompileInputs.cac
 C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.csproj.CopyComplete
 C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.exe
 C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.pdb
+C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.AddCategory.resources
+C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.Profile.resources

@@ -22,7 +22,7 @@ namespace DAO
                 return _instance;
             }
         }
-        private string strConn = @"Data Source=DESKTOP-SRQRFL4\SQLEXPRESS;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
+        private string strConn = @"Data Source=DESKTOP-KJ8HLPQ\MANHNGUYEN;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
         
         public DataTable ExecuteQuery(string query, object[] parameter = null)// override excuteNonquerry
         {
