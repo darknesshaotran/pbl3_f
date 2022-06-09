@@ -133,5 +133,19 @@ namespace BUS
                 throw ex;
             }
         }
+        public ItemDTO getItemByID(int id)
+        {
+            ItemDTO item = new ItemDTO();
+            foreach (ItemDTO i in GetAllItem())
+
+            {
+                if (i.ID == id)
+                {
+                    item = i;
+                    break;
+                }
+            }
+            return item;
+        }
     }
 }

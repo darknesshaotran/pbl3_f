@@ -15,7 +15,12 @@
       "ProjectGuid": "eb6ff695-be02-475b-b553-c7b467890de6",
       "DisplayName": "BUS",
       "ColorIndex": 2
+    },
+    "8461200e-bcc5-42cf-824b-fa53c3312893": {
+      "ProjectGuid": "8461200e-bcc5-42cf-824b-fa53c3312893",
+      "DisplayName": "DTO",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

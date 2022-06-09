@@ -51,6 +51,7 @@ namespace PBL3_Guna
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
+            UC_Revenue._id = 0;
             this.Close();
         }
     }

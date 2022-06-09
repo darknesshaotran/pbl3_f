@@ -1,4 +1,5 @@
 ﻿using DAO;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -78,6 +79,34 @@ namespace BUS
             {
                 throw ex;
             }
+
+        }
+        public List<BillDTO> getAllBill()
+        {
+            List<BillDTO> list = new List<BillDTO>();
+            DataTable a = BillDAO.Instance.GetListBill();
+            foreach (DataRow dr in a.Rows)
+            {
+                BillDTO bill = new BillDTO(dr);
+                list.Add(bill);
+            }
+            return list;
+        }
+        public BillDTO getBillByID(int id)
+        {
+            BillDTO bd = null;
+            List<BillDTO> list = getAllBill();
+            foreach (BillDTO bill in list)
+            {
+                if (bill.ID == id)
+                {
+                    bd = bill;
+
+                    break;
+
+                }
+            }
+            return bd;
 
         }
     }

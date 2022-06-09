@@ -86,7 +86,18 @@ namespace DAO
                 throw ex;
             }
         }
-        
+        public List<BillDTO> getAllBill()
+        {
+            List<BillDTO> list = new List<BillDTO>();
+            DataTable a = GetListBill();
+            foreach (DataRow dr in a.Rows)
+            {
+                BillDTO bill = new BillDTO(dr);
+                list.Add(bill);
+            }
+            return list;
+        }
+
 
     }
 }

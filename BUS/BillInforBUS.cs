@@ -25,7 +25,7 @@ namespace BUS
         {
             return BillInforDAO.Instance.GetAllBillInfor();
         }
-        public List<BillInforDTO> GetListBillInfor(int id)
+        public DataTable GetListBillInfor(int id)
         {
             DataTable dataTable = new DataTable();
             try
@@ -36,13 +36,8 @@ namespace BUS
             {
                 throw ex;
             }
-            List<BillInforDTO> listBilInfor = new List<BillInforDTO>();
-            foreach(DataRow dr in dataTable.Rows)
-            {
-                BillInforDTO billInfor = new BillInforDTO(dr);
-                listBilInfor.Add(billInfor);
-            }
-            return listBilInfor;
+
+            return dataTable;
         }
         public void InsertBillInfor(int idbill, int iditem, int amount)
         {
@@ -67,6 +62,18 @@ namespace BUS
                     BillInforDAO.Instance.SetBillInforDefault(dto);
                 }    
             }    
+        }
+        public List<BillInforDTO> getListInforBill(int id)
+        {
+            DataTable data = GetListBillInfor(id);
+            List<BillInforDTO> listBilInfor = new List<BillInforDTO>();
+            foreach (DataRow dr in data.Rows)
+            {
+                BillInforDTO billInfor = new BillInforDTO(dr);
+                listBilInfor.Add(billInfor);
+            }
+            return listBilInfor;
+
         }
     }
 }
