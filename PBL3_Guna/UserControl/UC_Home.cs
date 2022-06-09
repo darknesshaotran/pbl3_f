@@ -33,12 +33,10 @@ namespace PBL3_Guna
             changePassword.ShowDialog();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            this.Hide();
-            login.ShowDialog();
-            this.Show();
+            Form F = new Profile();
+            F.ShowDialog();
         }
     }
 }
