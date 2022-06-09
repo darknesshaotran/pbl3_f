@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,21 @@ namespace PBL3_Guna
         public AddCategory()
         {
             InitializeComponent();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            CategoryDTO CT = new CategoryDTO();
+            CT.Name = txtCategory.Text;
+            if (txtCategory.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên mặt hàng !");
+            }
+            else
+            {
+                CategoryBUS.Instance.AddCategory(CT);
+                this.Close();
+            }
         }
     }
 }
