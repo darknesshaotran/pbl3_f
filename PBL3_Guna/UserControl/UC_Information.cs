@@ -16,6 +16,8 @@ namespace PBL3_Guna
         public UC_Information()
         {
             InitializeComponent();
+            LoadListBillByDate(DateTime.Now, DateTime.Now);
+
         }
 
         void LoadListBillByDate(DateTime CheckIn, DateTime CheckOut)
@@ -25,7 +27,8 @@ namespace PBL3_Guna
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            LoadListBillByDate(DateTime.Now, DateTime.Now);
+            Form f = new DetailsBill();
+            f.ShowDialog();
         }
     }
 }

@@ -52,3 +52,11 @@ C:\Users\DELL\pbl3_f\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\DELL\pbl3_f\DTO\obj\Debug\DTO.csproj.CopyComplete
 C:\Users\DELL\pbl3_f\DTO\obj\Debug\DTO.dll
 C:\Users\DELL\pbl3_f\DTO\obj\Debug\DTO.pdb
+C:\Users\darkn\pbl3_f\DTO\bin\Debug\DTO.dll
+C:\Users\darkn\pbl3_f\DTO\bin\Debug\DTO.pdb
+C:\Users\darkn\pbl3_f\DTO\bin\Debug\System.Data.SqlClient.xml
+C:\Users\darkn\pbl3_f\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\darkn\pbl3_f\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\darkn\pbl3_f\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\darkn\pbl3_f\DTO\obj\Debug\DTO.dll
+C:\Users\darkn\pbl3_f\DTO\obj\Debug\DTO.pdb

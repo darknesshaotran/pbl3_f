@@ -19,15 +19,7 @@ namespace PBL3_Guna
             InitializeComponent();
             showDTG_Staff("");
         }
-        public StaffDTO getStaffDataToAdd()
-        {
-            StaffDTO staff = new StaffDTO();
-            staff.Name = txtDisplayName.Text;
-            staff.Address = txtAddressStaff.Text;
-            staff.Age = Convert.ToInt32(txtAgeStaff.Text);
-            staff.PhoneNumber = txtPhoneNumberStaff.Text;
-            return staff;
-        }
+        
         public StaffDTO getStaffDataToUpdate()
         {
             StaffDTO staff = new StaffDTO();
@@ -59,48 +51,12 @@ namespace PBL3_Guna
             //AddStaff addStaff = new AddStaff();
             //addStaff.ShowDialog();
             //
-            if (txtIDStaff.Text == "")
-            {
-                StaffDTO staff = getStaffDataToAdd();
-                AccountDTO account = getDataToCreateAccount();
-                if (AccountBUS.Instance.CheckUserName(account.UserName.ToString()) == true)
-                {
-                    if (txtPassStaff.Text != "")
-                    {
-                        StaffBUS.Instance.AddUpdateStaff(staff);
-                        showDTG_Staff("");
-                        account.IDStaff = Convert.ToInt32(dtgvStaff.Rows[dtgvStaff.Rows.Count - 1].Cells[0].Value.ToString());
-                        AccountBUS.Instance.AddAccountBUS(account);
-                        txtPassStaff.Text = "";
-                    }
-                    else MessageBox.Show("Không được để trống mật khẩu !");
-                }
-                else MessageBox.Show("Đã tồn tại UserName này");
-            }
-            else
-            {
-                if (StaffBUS.Instance.Check(Convert.ToInt32(txtIDStaff.Text)))
-                {
-                    StaffDTO staff = getStaffDataToAdd();
-                    AccountDTO account = getDataToCreateAccount();
-                    if (AccountBUS.Instance.CheckUserName(account.UserName.ToString()) == true)
-                    {
-                        if (txtPassStaff.Text != "")
-                        {
+            Form f = new AddStaff();
+            f.ShowDialog();
+            showDTG_Staff("");
 
-                            StaffBUS.Instance.AddUpdateStaff(staff);
-                            showDTG_Staff("");
-                            account.IDStaff = Convert.ToInt32(dtgvStaff.Rows[dtgvStaff.Rows.Count - 1].Cells[0].Value.ToString());
-                            AccountBUS.Instance.AddAccountBUS(account);
-                            txtPassStaff.Text = "";
-                        }
-                        else MessageBox.Show("Không được để trống mật khẩu !");
-                    }
-                    else MessageBox.Show("Đã tồn tại UserName này");
 
-                }
-                else MessageBox.Show("Nhân viên đã tồn tại !!");
-            }
+
 
         }
 

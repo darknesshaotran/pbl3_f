@@ -109,17 +109,17 @@ namespace BUS
             return t;
 
         }
-        public void AddUpdateItem(ItemDTO item)
+        public void AddItem(ItemDTO item)
         {
-            if (Check(item.ID))
-            {
-
+   
                 ItemDAO.Instance.AddItemDAO(item);
-            }
-            else
-            {
+           
+        }
+        public void UpdateItem(ItemDTO item)
+        {
+
                 ItemDAO.Instance.updateItemDAO(item);
-            }
+
         }
         public void DeleteItem(int ItemtoDelete)
         {
