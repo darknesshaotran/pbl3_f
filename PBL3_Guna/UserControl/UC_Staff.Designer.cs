@@ -536,7 +536,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "UC_Staff";
             this.Size = new System.Drawing.Size(904, 609);
-            this.Load += new System.EventHandler(this.UC_Staff_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).EndInit();
             this.ResumeLayout(false);

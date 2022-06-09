@@ -89,6 +89,7 @@
             this.btnAddCategory.Size = new System.Drawing.Size(159, 52);
             this.btnAddCategory.TabIndex = 5;
             this.btnAddCategory.Text = "Add Category";
+            this.btnAddCategory.Click += new System.EventHandler(this.btnAddCategory_Click);
             // 
             // btnShowItem
             // 

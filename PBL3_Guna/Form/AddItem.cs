@@ -40,9 +40,9 @@ namespace PBL3_Guna
             this.Close();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        
+        private void btnAddItem_Click_1(object sender, EventArgs e)
         {
-
             ItemDTO item = getItemDataToAdd();
             ItemBUS.Instance.AddItem(item);
             this.Close();

@@ -99,5 +99,12 @@ namespace PBL3_Guna
             showDTG_Item(name);
 
         }
+
+        private void btnAddCategory_Click(object sender, EventArgs e)
+        {
+            Form f = new AddCategory();
+            f.ShowDialog();
+            LoadCatergory();
+        }
     }
 }
