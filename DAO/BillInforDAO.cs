@@ -20,6 +20,10 @@ namespace DAO
                 return instance;
             }
         }
+        public DataTable GetAllBillInfor()
+        {
+            return DataProvider.Instance.ExecuteQuery("Select * from BillInfor");
+        }
         public DataTable GetListBillInfor(int ID)
         {
             try
@@ -38,6 +42,18 @@ namespace DAO
                 DataProvider.Instance.ExecuteQuery("USP_InsertBillInfor @IDBill , @IDItem , @Amount ", new Object[] { idbill, iditem, amount });
             }
             catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void SetBillInforDefault(BillInforDTO bill)
+        {
+            string query = "Delete BillInfor where IDItem = @IDItem";
+            try
+            {
+                DataProvider.Instance.ExecuteNonQuery(query, new Object[] { bill.IDItem });
+            }
+            catch(Exception ex)
             {
                 throw ex;
             }

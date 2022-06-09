@@ -55,6 +55,10 @@ namespace PBL3_Guna
 
         private void btnAddStaff_Click(object sender, EventArgs e)
         {
+            //change to form Add Staff
+            //AddStaff addStaff = new AddStaff();
+            //addStaff.ShowDialog();
+            //
             if (txtIDStaff.Text == "")
             {
                 StaffDTO staff = getStaffDataToAdd();
@@ -145,6 +149,11 @@ namespace PBL3_Guna
             txtUserNameStaff.Text = AccountBUS.Instance.GetUserNameByIDStaff(idStaff);
             
             //txtPassStaff.Text = acc.Password.ToString();
+        }
+
+        private void UC_Staff_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

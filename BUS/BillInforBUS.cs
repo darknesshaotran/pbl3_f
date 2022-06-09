@@ -21,6 +21,10 @@ namespace BUS
                 return instance;
             }
         }
+        public DataTable GetAllBillInfor()
+        {
+            return BillInforDAO.Instance.GetAllBillInfor();
+        }
         public List<BillInforDTO> GetListBillInfor(int id)
         {
             DataTable dataTable = new DataTable();
@@ -50,6 +54,19 @@ namespace BUS
             {
                 throw ex;
             }
+        }
+        public void SetBillInforDefault(int id)
+        {
+            DataTable list = GetAllBillInfor();
+            List<BillInforDTO> billInforDTOs = new List<BillInforDTO>();
+            foreach(DataRow dr in list.Rows)
+            {
+                BillInforDTO dto = new BillInforDTO(dr);
+                if(dto.IDItem == id)
+                {
+                    BillInforDAO.Instance.SetBillInforDefault(dto);
+                }    
+            }    
         }
     }
 }

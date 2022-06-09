@@ -76,7 +76,7 @@ namespace PBL3_Guna
             if (dtgvItem.SelectedRows.Count == 1)
             {
                 int DeleteID = Convert.ToInt32(dtgvItem.CurrentRow.Cells[0].Value.ToString());
-
+                BillInforBUS.Instance.SetBillInforDefault(DeleteID);
                 ItemBUS.Instance.DeleteItem(DeleteID);
             }
 

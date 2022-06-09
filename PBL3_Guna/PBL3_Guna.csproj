@@ -61,6 +61,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AddStaff.Designer.cs">
+      <DependentUpon>AddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DetailsBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DetailsBill.Designer.cs">
+      <DependentUpon>DetailsBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\ChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +147,15 @@
     <Compile Include="UserControl\UC_Staff.Designer.cs">
       <DependentUpon>UC_Staff.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AddStaff.resx">
+      <DependentUpon>AddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DetailsBill.resx">
+      <DependentUpon>DetailsBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>

@@ -41,5 +41,16 @@ namespace PBL3_Guna
 
             lblTotalPrice.Text = total2.ToString();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnDetialsBill_Click(object sender, EventArgs e)
+        {
+            DetailsBill detailsBill = new DetailsBill();
+            detailsBill.ShowDialog();
+        }
     }
 }
