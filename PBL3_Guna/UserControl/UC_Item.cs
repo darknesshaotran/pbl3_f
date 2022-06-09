@@ -31,7 +31,7 @@ namespace PBL3_Guna
         public void showDTG_Item(string name)
         {
             dtgvItem.DataSource = ItemBUS.Instance.GetItemByName(name);
-            this.dtgvItem.Sort(this.dtgvItem.Columns[2], ListSortDirection.Ascending);
+            
         }
         public ItemDTO getItemDataToAdd()
         {

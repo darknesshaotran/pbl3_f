@@ -38,7 +38,7 @@ namespace PBL3_Guna
             double total = 0;
             for (int i = 0; i < dtgvBill.Rows.Count - 1; i++)
             {
-                total += Convert.ToDouble(dtgvBill.Rows[i].Cells[1].Value.ToString());
+                total += Convert.ToDouble(dtgvBill.Rows[i].Cells[2].Value.ToString());
             }
             double total2 = Double.Parse(total.ToString(), NumberStyles.Currency, new CultureInfo("vi-VN"));
 
