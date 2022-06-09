@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,27 @@ namespace PBL3_Guna
         public Profile()
         {
             InitializeComponent();
+            GUI();
+        }
+        public void GUI()
+        {
+            txtUserNameStaff.Text = Login._username;
+            AccountDTO dt = AccountBUS.Instance.GetAccountByUserName(txtUserNameStaff.Text);
+            txtDisplayName.Text = dt.DisplayName.ToString();
+            txtPassStaff.Text = dt.Password.ToString();
+            if (dt.TypeID != 0)
+            {
+                txtChucVu.Text = "nhân viên";
+            }
+            else txtChucVu.Text = "quản lí";
+           
+
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

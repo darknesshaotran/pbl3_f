@@ -14,6 +14,9 @@ namespace PBL3_Guna
 {
     public partial class UC_Revenue : UserControl
     {
+        public static int _id = 0;
+        public static int _total;
+
         public UC_Revenue()
         {
             InitializeComponent();
@@ -49,8 +52,12 @@ namespace PBL3_Guna
 
         private void btnDetialsBill_Click(object sender, EventArgs e)
         {
-            DetailsBill detailsBill = new DetailsBill();
-            detailsBill.ShowDialog();
+            //_id = Convert.ToInt32(dtgvBill.CurrentRow.Cells[0].Value.ToString());
+            //_total = Convert.ToInt32(dtgvBill.CurrentRow.Cells[1].Value.ToString());
+           
+            
+            //DetailsBill detailsBill = new DetailsBill();
+            //detailsBill.ShowDialog();
         }
     }
 }

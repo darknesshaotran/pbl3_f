@@ -72,7 +72,6 @@ C:\Users\darkn\pbl3_f\DAO\bin\Debug\DAO.dll
 C:\Users\darkn\pbl3_f\DAO\bin\Debug\DAO.pdb
 C:\Users\darkn\pbl3_f\DAO\bin\Debug\DTO.dll
 C:\Users\darkn\pbl3_f\DAO\bin\Debug\DTO.pdb
-C:\Users\darkn\pbl3_f\DAO\bin\Debug\System.Data.SqlClient.xml
 C:\Users\darkn\pbl3_f\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
 C:\Users\darkn\pbl3_f\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 C:\Users\darkn\pbl3_f\DAO\obj\Debug\DAO.csproj.CopyComplete
