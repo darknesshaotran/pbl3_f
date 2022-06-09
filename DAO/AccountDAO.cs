@@ -71,7 +71,7 @@ namespace DAO
         }
         public void DeleteAccountDAO(int IDStaff)
         {
-            string query = "delete from Account where IDStaff =" + IDStaff;
+            string query = "delete from Account where IDStaff = " + IDStaff;
             try
             {
                 DataProvider.Instance.ExecuteNonQuery(query, new Object[] { IDStaff });

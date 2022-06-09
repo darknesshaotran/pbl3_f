@@ -68,3 +68,4 @@ C:\Users\Manh Nguyen\source\repos\PBL3_ver2\DAO\obj\Debug\DAO.csproj.CoreCompile
 C:\Users\Manh Nguyen\source\repos\PBL3_ver2\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\Manh Nguyen\source\repos\PBL3_ver2\DAO\obj\Debug\DAO.dll
 C:\Users\Manh Nguyen\source\repos\PBL3_ver2\DAO\obj\Debug\DAO.pdb
+C:\Users\Manh Nguyen\source\repos\pbl3_f\DAO\bin\Debug\System.Data.SqlClient.xml

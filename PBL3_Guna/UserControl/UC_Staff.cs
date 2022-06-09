@@ -133,15 +133,18 @@ namespace PBL3_Guna
 
         private void dtgvStaff_SelectionChanged(object sender, EventArgs e)
         {
+            
             int idStaff = Convert.ToInt32(dtgvStaff.CurrentRow.Cells[0].Value.ToString());
             string username = AccountBUS.Instance.GetUserNameByIDStaff(idStaff);
+            AccountDTO acc = AccountBUS.Instance.GetAccountByUserName(username);
             txtIDStaff.Text = idStaff.ToString();
             txtDisplayName.Text = dtgvStaff.CurrentRow.Cells[1].Value.ToString();
             txtAddressStaff.Text = dtgvStaff.CurrentRow.Cells[2].Value.ToString();
             txtAgeStaff.Text = dtgvStaff.CurrentRow.Cells[3].Value.ToString();
             txtPhoneNumberStaff.Text = dtgvStaff.CurrentRow.Cells[4].Value.ToString();
             txtUserNameStaff.Text = username;
-            txtPassStaff.Text = AccountBUS.Instance.GetAccountByUserName(username).Password.ToString();
+            
+            txtPassStaff.Text = acc.Password.ToString();
         }
     }
 }
