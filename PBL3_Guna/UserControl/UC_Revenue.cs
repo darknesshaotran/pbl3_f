@@ -46,5 +46,11 @@ namespace PBL3_Guna
         {
 
         }
+
+        private void btnDetialsBill_Click(object sender, EventArgs e)
+        {
+            DetailsBill detailsBill = new DetailsBill();
+            detailsBill.ShowDialog();
+        }
     }
 }

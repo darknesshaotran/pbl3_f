@@ -175,6 +175,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(109, 45);
             this.guna2Button1.TabIndex = 44;
             this.guna2Button1.Text = "Exit";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btnLogin
             // 

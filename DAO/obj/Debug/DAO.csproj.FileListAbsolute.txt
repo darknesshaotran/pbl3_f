@@ -69,3 +69,13 @@ C:\Users\Manh Nguyen\source\repos\PBL3_ver2\DAO\obj\Debug\DAO.csproj.CopyComplet
 C:\Users\Manh Nguyen\source\repos\PBL3_ver2\DAO\obj\Debug\DAO.dll
 C:\Users\Manh Nguyen\source\repos\PBL3_ver2\DAO\obj\Debug\DAO.pdb
 C:\Users\Manh Nguyen\source\repos\pbl3_f\DAO\bin\Debug\System.Data.SqlClient.xml
+C:\Users\DELL\pbl3_f\DAO\bin\Debug\DAO.dll
+C:\Users\DELL\pbl3_f\DAO\bin\Debug\DAO.pdb
+C:\Users\DELL\pbl3_f\DAO\bin\Debug\DTO.dll
+C:\Users\DELL\pbl3_f\DAO\bin\Debug\DTO.pdb
+C:\Users\DELL\pbl3_f\DAO\bin\Debug\System.Data.SqlClient.xml
+C:\Users\DELL\pbl3_f\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\DELL\pbl3_f\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\pbl3_f\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\DELL\pbl3_f\DAO\obj\Debug\DAO.dll
+C:\Users\DELL\pbl3_f\DAO\obj\Debug\DAO.pdb
