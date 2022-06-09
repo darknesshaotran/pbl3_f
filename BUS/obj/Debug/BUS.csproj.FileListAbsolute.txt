@@ -83,18 +83,6 @@ C:\Users\Manh Nguyen\source\repos\PBL3_ver2\BUS\obj\Debug\BUS.csproj.CopyComplet
 C:\Users\Manh Nguyen\source\repos\PBL3_ver2\BUS\obj\Debug\BUS.dll
 C:\Users\Manh Nguyen\source\repos\PBL3_ver2\BUS\obj\Debug\BUS.pdb
 C:\Users\Manh Nguyen\source\repos\pbl3_f\BUS\bin\Debug\System.Data.SqlClient.xml
-C:\Users\DELL\pbl3_f\BUS\bin\Debug\BUS.dll
-C:\Users\DELL\pbl3_f\BUS\bin\Debug\BUS.pdb
-C:\Users\DELL\pbl3_f\BUS\bin\Debug\DAO.dll
-C:\Users\DELL\pbl3_f\BUS\bin\Debug\DTO.dll
-C:\Users\DELL\pbl3_f\BUS\bin\Debug\DAO.pdb
-C:\Users\DELL\pbl3_f\BUS\bin\Debug\DTO.pdb
-C:\Users\DELL\pbl3_f\BUS\bin\Debug\System.Data.SqlClient.xml
-C:\Users\DELL\pbl3_f\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-C:\Users\DELL\pbl3_f\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-C:\Users\DELL\pbl3_f\BUS\obj\Debug\BUS.csproj.CopyComplete
-C:\Users\DELL\pbl3_f\BUS\obj\Debug\BUS.dll
-C:\Users\DELL\pbl3_f\BUS\obj\Debug\BUS.pdb
 C:\Users\darkn\pbl3_f\BUS\bin\Debug\BUS.dll
 C:\Users\darkn\pbl3_f\BUS\bin\Debug\BUS.pdb
 C:\Users\darkn\pbl3_f\BUS\bin\Debug\DAO.dll
