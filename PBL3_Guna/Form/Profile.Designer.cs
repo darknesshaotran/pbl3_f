@@ -1,6 +1,6 @@
 ﻿namespace PBL3_Guna
 {
-    partial class AddStaff
+    partial class Profile
     {
         /// <summary>
         /// Required designer variable.
@@ -41,8 +41,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtUserNameStaff = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtIDStaff = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.SuspendLayout();
@@ -63,7 +64,7 @@
             this.txtPassStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassStaff.HoverState.Parent = this.txtPassStaff;
-            this.txtPassStaff.Location = new System.Drawing.Point(159, 312);
+            this.txtPassStaff.Location = new System.Drawing.Point(151, 372);
             this.txtPassStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassStaff.Name = "txtPassStaff";
             this.txtPassStaff.PasswordChar = '\0';
@@ -78,7 +79,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(58, 312);
+            this.label5.Location = new System.Drawing.Point(50, 372);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 18);
             this.label5.TabIndex = 39;
@@ -100,7 +101,7 @@
             this.txtAddressStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddressStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddressStaff.HoverState.Parent = this.txtAddressStaff;
-            this.txtAddressStaff.Location = new System.Drawing.Point(159, 253);
+            this.txtAddressStaff.Location = new System.Drawing.Point(151, 313);
             this.txtAddressStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAddressStaff.Name = "txtAddressStaff";
             this.txtAddressStaff.PasswordChar = '\0';
@@ -115,7 +116,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(67, 253);
+            this.label6.Location = new System.Drawing.Point(59, 319);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 18);
             this.label6.TabIndex = 37;
@@ -137,7 +138,7 @@
             this.txtAgeStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgeStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAgeStaff.HoverState.Parent = this.txtAgeStaff;
-            this.txtAgeStaff.Location = new System.Drawing.Point(159, 194);
+            this.txtAgeStaff.Location = new System.Drawing.Point(151, 254);
             this.txtAgeStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAgeStaff.Name = "txtAgeStaff";
             this.txtAgeStaff.PasswordChar = '\0';
@@ -152,7 +153,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(94, 200);
+            this.label7.Location = new System.Drawing.Point(86, 260);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 18);
             this.label7.TabIndex = 35;
@@ -174,7 +175,7 @@
             this.txtPhoneNumberStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneNumberStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhoneNumberStaff.HoverState.Parent = this.txtPhoneNumberStaff;
-            this.txtPhoneNumberStaff.Location = new System.Drawing.Point(159, 135);
+            this.txtPhoneNumberStaff.Location = new System.Drawing.Point(151, 195);
             this.txtPhoneNumberStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhoneNumberStaff.Name = "txtPhoneNumberStaff";
             this.txtPhoneNumberStaff.PasswordChar = '\0';
@@ -189,7 +190,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 141);
+            this.label3.Location = new System.Drawing.Point(8, 201);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 18);
             this.label3.TabIndex = 33;
@@ -211,7 +212,7 @@
             this.txtDisplayName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDisplayName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDisplayName.HoverState.Parent = this.txtDisplayName;
-            this.txtDisplayName.Location = new System.Drawing.Point(159, 76);
+            this.txtDisplayName.Location = new System.Drawing.Point(151, 136);
             this.txtDisplayName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDisplayName.Name = "txtDisplayName";
             this.txtDisplayName.PasswordChar = '\0';
@@ -226,7 +227,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 82);
+            this.label4.Location = new System.Drawing.Point(18, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 18);
             this.label4.TabIndex = 31;
@@ -248,7 +249,7 @@
             this.txtUserNameStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserNameStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserNameStaff.HoverState.Parent = this.txtUserNameStaff;
-            this.txtUserNameStaff.Location = new System.Drawing.Point(159, 17);
+            this.txtUserNameStaff.Location = new System.Drawing.Point(151, 77);
             this.txtUserNameStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUserNameStaff.Name = "txtUserNameStaff";
             this.txtUserNameStaff.PasswordChar = '\0';
@@ -263,42 +264,58 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 17);
+            this.label2.Location = new System.Drawing.Point(41, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 18);
             this.label2.TabIndex = 29;
             this.label2.Text = "UserName:";
+            // 
+            // txtIDStaff
+            // 
+            this.txtIDStaff.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtIDStaff.BorderRadius = 6;
+            this.txtIDStaff.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIDStaff.DefaultText = "";
+            this.txtIDStaff.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIDStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIDStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDStaff.DisabledState.Parent = this.txtIDStaff;
+            this.txtIDStaff.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDStaff.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDStaff.FocusedState.Parent = this.txtIDStaff;
+            this.txtIDStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDStaff.HoverState.Parent = this.txtIDStaff;
+            this.txtIDStaff.Location = new System.Drawing.Point(151, 18);
+            this.txtIDStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIDStaff.Name = "txtIDStaff";
+            this.txtIDStaff.PasswordChar = '\0';
+            this.txtIDStaff.PlaceholderText = "";
+            this.txtIDStaff.SelectedText = "";
+            this.txtIDStaff.ShadowDecoration.Parent = this.txtIDStaff;
+            this.txtIDStaff.Size = new System.Drawing.Size(211, 24);
+            this.txtIDStaff.TabIndex = 28;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(102, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(27, 18);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "ID:";
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 10;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // btnLogin
-            // 
-            this.btnLogin.Animated = true;
-            this.btnLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
-            this.btnLogin.BorderRadius = 10;
-            this.btnLogin.BorderThickness = 2;
-            this.btnLogin.CheckedState.Parent = this.btnLogin;
-            this.btnLogin.CustomImages.Parent = this.btnLogin;
-            this.btnLogin.FillColor = System.Drawing.Color.Transparent;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
-            this.btnLogin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
-            this.btnLogin.HoverState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.HoverState.Parent = this.btnLogin;
-            this.btnLogin.Location = new System.Drawing.Point(59, 387);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
-            this.btnLogin.Size = new System.Drawing.Size(109, 45);
-            this.btnLogin.TabIndex = 41;
-            this.btnLogin.Text = "Add";
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
             // guna2Button1
             // 
+            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button1.Animated = true;
             this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
             this.guna2Button1.BorderRadius = 10;
@@ -312,27 +329,24 @@
             this.guna2Button1.HoverState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(234, 387);
+            this.guna2Button1.Location = new System.Drawing.Point(138, 439);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(109, 45);
-            this.guna2Button1.TabIndex = 42;
+            this.guna2Button1.TabIndex = 45;
             this.guna2Button1.Text = "Exit";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2DragControl1
             // 
             this.guna2DragControl1.TargetControl = this;
-            this.guna2DragControl1.UseTransparentDrag = true;
             // 
-            // AddStaff
+            // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(216)))), ((int)(((byte)(176)))));
-            this.ClientSize = new System.Drawing.Size(400, 460);
+            this.ClientSize = new System.Drawing.Size(387, 518);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassStaff);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtAddressStaff);
@@ -345,9 +359,11 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtUserNameStaff);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtIDStaff);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AddStaff";
-            this.Text = "AddStaff";
+            this.Name = "Profile";
+            this.Text = "AddCategory";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,9 +383,10 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtUserNameStaff;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2TextBox txtIDStaff;
+        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
