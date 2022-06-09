@@ -135,16 +135,16 @@ namespace PBL3_Guna
         {
             
             int idStaff = Convert.ToInt32(dtgvStaff.CurrentRow.Cells[0].Value.ToString());
-            string username = AccountBUS.Instance.GetUserNameByIDStaff(idStaff);
-            AccountDTO acc = AccountBUS.Instance.GetAccountByUserName(username);
+            //string username = AccountBUS.Instance.GetUserNameByIDStaff(idStaff);
+            //AccountDTO acc = AccountBUS.Instance.GetAccountByUserName(username);
             txtIDStaff.Text = idStaff.ToString();
             txtDisplayName.Text = dtgvStaff.CurrentRow.Cells[1].Value.ToString();
             txtAddressStaff.Text = dtgvStaff.CurrentRow.Cells[2].Value.ToString();
             txtAgeStaff.Text = dtgvStaff.CurrentRow.Cells[3].Value.ToString();
             txtPhoneNumberStaff.Text = dtgvStaff.CurrentRow.Cells[4].Value.ToString();
-            txtUserNameStaff.Text = username;
+            txtUserNameStaff.Text = AccountBUS.Instance.GetUserNameByIDStaff(idStaff);
             
-            txtPassStaff.Text = acc.Password.ToString();
+            //txtPassStaff.Text = acc.Password.ToString();
         }
     }
 }
