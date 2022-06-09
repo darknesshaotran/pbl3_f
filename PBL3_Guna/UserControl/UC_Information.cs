@@ -13,6 +13,8 @@ namespace PBL3_Guna
 {
     public partial class UC_Information : UserControl
     {
+        public static int _id;
+        public static int _total;
         public UC_Information()
         {
             InitializeComponent();
@@ -27,6 +29,8 @@ namespace PBL3_Guna
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
+            _id = Convert.ToInt32(dtgvInfor.CurrentRow.Cells[0].Value.ToString());
+            _total = Convert.ToInt32(dtgvInfor.CurrentRow.Cells[2].Value.ToString());
             Form f = new DetailsBill();
             f.ShowDialog();
         }

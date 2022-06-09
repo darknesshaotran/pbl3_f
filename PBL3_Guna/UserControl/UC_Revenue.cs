@@ -38,7 +38,7 @@ namespace PBL3_Guna
             double total = 0;
             for (int i = 0; i < dtgvBill.Rows.Count - 1; i++)
             {
-                total += Convert.ToDouble(dtgvBill.Rows[i].Cells[1].Value.ToString());
+                total += Convert.ToDouble(dtgvBill.Rows[i].Cells[2].Value.ToString());
             }
             double total2 = Double.Parse(total.ToString(), NumberStyles.Currency, new CultureInfo("vi-VN"));
 
@@ -52,12 +52,13 @@ namespace PBL3_Guna
 
         private void btnDetialsBill_Click(object sender, EventArgs e)
         {
-            //_id = Convert.ToInt32(dtgvBill.CurrentRow.Cells[0].Value.ToString());
-            //_total = Convert.ToInt32(dtgvBill.CurrentRow.Cells[1].Value.ToString());
+            _id = Convert.ToInt32(dtgvBill.CurrentRow.Cells[0].Value.ToString());
+            _total = Convert.ToInt32(dtgvBill.CurrentRow.Cells[2].Value.ToString());
            
-            
-            //DetailsBill detailsBill = new DetailsBill();
-            //detailsBill.ShowDialog();
+
+
+            Form detailsbill = new DetailsBill();
+            detailsbill.ShowDialog();
         }
     }
 }
