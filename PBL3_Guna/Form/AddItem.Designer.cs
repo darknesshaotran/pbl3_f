@@ -39,6 +39,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -51,10 +52,9 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(76, 209);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(65, 178);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 23);
+            this.label3.Size = new System.Drawing.Size(49, 18);
             this.label3.TabIndex = 17;
             this.label3.Text = "Price:";
             // 
@@ -63,10 +63,9 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 132);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(32, 115);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 23);
+            this.label4.Size = new System.Drawing.Size(82, 18);
             this.label4.TabIndex = 20;
             this.label4.Text = "Category:";
             // 
@@ -86,14 +85,14 @@
             this.txtNameItem.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNameItem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNameItem.HoverState.Parent = this.txtNameItem;
-            this.txtNameItem.Location = new System.Drawing.Point(171, 43);
-            this.txtNameItem.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNameItem.Location = new System.Drawing.Point(136, 43);
+            this.txtNameItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNameItem.Name = "txtNameItem";
             this.txtNameItem.PasswordChar = '\0';
             this.txtNameItem.PlaceholderText = "";
             this.txtNameItem.SelectedText = "";
             this.txtNameItem.ShadowDecoration.Parent = this.txtNameItem;
-            this.txtNameItem.Size = new System.Drawing.Size(281, 30);
+            this.txtNameItem.Size = new System.Drawing.Size(211, 24);
             this.txtNameItem.TabIndex = 16;
             // 
             // txtPriceItem
@@ -112,14 +111,14 @@
             this.txtPriceItem.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPriceItem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPriceItem.HoverState.Parent = this.txtPriceItem;
-            this.txtPriceItem.Location = new System.Drawing.Point(171, 209);
-            this.txtPriceItem.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPriceItem.Location = new System.Drawing.Point(136, 178);
+            this.txtPriceItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPriceItem.Name = "txtPriceItem";
             this.txtPriceItem.PasswordChar = '\0';
             this.txtPriceItem.PlaceholderText = "";
             this.txtPriceItem.SelectedText = "";
             this.txtPriceItem.ShadowDecoration.Parent = this.txtPriceItem;
-            this.txtPriceItem.Size = new System.Drawing.Size(281, 30);
+            this.txtPriceItem.Size = new System.Drawing.Size(211, 24);
             this.txtPriceItem.TabIndex = 18;
             // 
             // label2
@@ -127,10 +126,9 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 50);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(57, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 23);
+            this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 15;
             this.label2.Text = "Name:";
             // 
@@ -151,11 +149,10 @@
             this.cxbCategoryItem.HoverState.Parent = this.cxbCategoryItem;
             this.cxbCategoryItem.ItemHeight = 30;
             this.cxbCategoryItem.ItemsAppearance.Parent = this.cxbCategoryItem;
-            this.cxbCategoryItem.Location = new System.Drawing.Point(171, 121);
-            this.cxbCategoryItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cxbCategoryItem.Location = new System.Drawing.Point(136, 106);
             this.cxbCategoryItem.Name = "cxbCategoryItem";
             this.cxbCategoryItem.ShadowDecoration.Parent = this.cxbCategoryItem;
-            this.cxbCategoryItem.Size = new System.Drawing.Size(280, 36);
+            this.cxbCategoryItem.Size = new System.Drawing.Size(211, 36);
             this.cxbCategoryItem.TabIndex = 19;
             // 
             // guna2Button1
@@ -173,11 +170,10 @@
             this.guna2Button1.HoverState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(293, 289);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Location = new System.Drawing.Point(228, 249);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(145, 55);
+            this.guna2Button1.Size = new System.Drawing.Size(109, 45);
             this.guna2Button1.TabIndex = 44;
             this.guna2Button1.Text = "Exit";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -197,11 +193,10 @@
             this.btnLogin.HoverState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.Parent = this.btnLogin;
-            this.btnLogin.Location = new System.Drawing.Point(60, 289);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Location = new System.Drawing.Point(53, 249);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
-            this.btnLogin.Size = new System.Drawing.Size(145, 55);
+            this.btnLogin.Size = new System.Drawing.Size(109, 45);
             this.btnLogin.TabIndex = 43;
             this.btnLogin.Text = "Add";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -209,13 +204,14 @@
             // guna2DragControl1
             // 
             this.guna2DragControl1.TargetControl = this;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // AddItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(255)))), ((int)(((byte)(231)))));
-            this.ClientSize = new System.Drawing.Size(507, 382);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(216)))), ((int)(((byte)(176)))));
+            this.ClientSize = new System.Drawing.Size(387, 329);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label3);
@@ -225,7 +221,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cxbCategoryItem);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddItem";
             this.Text = "AddItem";
             this.ResumeLayout(false);
@@ -245,5 +240,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

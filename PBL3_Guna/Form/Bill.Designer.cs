@@ -639,14 +639,17 @@
             // guna2DragControl1
             // 
             this.guna2DragControl1.TargetControl = this.panel1;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // guna2DragControl2
             // 
             this.guna2DragControl2.TargetControl = this.panel3;
+            this.guna2DragControl2.UseTransparentDrag = true;
             // 
             // guna2DragControl3
             // 
             this.guna2DragControl3.TargetControl = this.panel2;
+            this.guna2DragControl3.UseTransparentDrag = true;
             // 
             // Bill
             // 
