@@ -41,5 +41,10 @@ namespace PBL3_Guna
 
             lblTotalPrice.Text = total2.ToString();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

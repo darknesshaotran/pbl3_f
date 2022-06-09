@@ -38,6 +38,7 @@
             this.cxbCategoryItem = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -197,6 +198,10 @@
             this.btnLogin.TabIndex = 43;
             this.btnLogin.Text = "Add";
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this;
+            // 
             // AddItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,5 +235,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cxbCategoryItem;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
