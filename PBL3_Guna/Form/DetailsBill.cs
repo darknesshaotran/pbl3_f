@@ -84,5 +84,9 @@ namespace PBL3_Guna
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
