@@ -42,7 +42,7 @@ namespace PBL3_Guna
             }
             double total2 = Double.Parse(total.ToString(), NumberStyles.Currency, new CultureInfo("vi-VN"));
 
-            lblTotalPrice.Text = total2.ToString();
+            lblTotalPrice.Text = total.ToString("c", new CultureInfo("vi-VN"));
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

@@ -79,7 +79,7 @@ namespace PBL3_Guna
 
         private void btnModifyItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có thật sự muốn xóa  " + txtNameItem.Text + " ra khỏi danh sách ?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.Cancel)
+            if (MessageBox.Show("Bạn có thật sự muốn sửa " + txtNameItem.Text + " ?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.Cancel)
             {
                 ItemDTO item = getItemDataToUpdate();
                 ItemBUS.Instance.UpdateItem(item);
