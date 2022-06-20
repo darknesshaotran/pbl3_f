@@ -59,7 +59,7 @@
             this.txtPassStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassStaff.HoverState.Parent = this.txtPassStaff;
             this.txtPassStaff.Location = new System.Drawing.Point(188, 289);
-            this.txtPassStaff.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPassStaff.Margin = new System.Windows.Forms.Padding(5);
             this.txtPassStaff.Name = "txtPassStaff";
             this.txtPassStaff.PasswordChar = '\0';
             this.txtPassStaff.PlaceholderText = "";
@@ -97,7 +97,7 @@
             this.txtChucVu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChucVu.HoverState.Parent = this.txtChucVu;
             this.txtChucVu.Location = new System.Drawing.Point(188, 210);
-            this.txtChucVu.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtChucVu.Margin = new System.Windows.Forms.Padding(5);
             this.txtChucVu.Name = "txtChucVu";
             this.txtChucVu.PasswordChar = '\0';
             this.txtChucVu.PlaceholderText = "";
@@ -135,7 +135,7 @@
             this.txtDisplayName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDisplayName.HoverState.Parent = this.txtDisplayName;
             this.txtDisplayName.Location = new System.Drawing.Point(188, 134);
-            this.txtDisplayName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtDisplayName.Margin = new System.Windows.Forms.Padding(5);
             this.txtDisplayName.Name = "txtDisplayName";
             this.txtDisplayName.PasswordChar = '\0';
             this.txtDisplayName.PlaceholderText = "";
@@ -173,7 +173,7 @@
             this.txtUserNameStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserNameStaff.HoverState.Parent = this.txtUserNameStaff;
             this.txtUserNameStaff.Location = new System.Drawing.Point(188, 62);
-            this.txtUserNameStaff.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtUserNameStaff.Margin = new System.Windows.Forms.Padding(5);
             this.txtUserNameStaff.Name = "txtUserNameStaff";
             this.txtUserNameStaff.PasswordChar = '\0';
             this.txtUserNameStaff.PlaceholderText = "";
@@ -217,7 +217,7 @@
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(169, 409);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(141, 66);
@@ -245,8 +245,9 @@
             this.Controls.Add(this.txtUserNameStaff);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Profile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCategory";
             this.ResumeLayout(false);
             this.PerformLayout();

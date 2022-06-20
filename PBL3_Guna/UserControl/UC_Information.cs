@@ -19,7 +19,6 @@ namespace PBL3_Guna
         {
             InitializeComponent();
             LoadListBillByDate(DateTime.Now, DateTime.Now);
-
         }
 
         void LoadListBillByDate(DateTime CheckIn, DateTime CheckOut)
@@ -29,7 +28,7 @@ namespace PBL3_Guna
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            if (dtgvBill.SelectedRows.Count > 0)
+            if (dtgvInfor.SelectedRows.Count > 0)
             {
                 _id = Convert.ToInt32(dtgvInfor.CurrentRow.Cells[0].Value.ToString());
                 _total = Convert.ToInt32(dtgvInfor.CurrentRow.Cells[2].Value.ToString());

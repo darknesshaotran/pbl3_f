@@ -52,7 +52,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(87, 219);
+            this.label3.Location = new System.Drawing.Point(87, 228);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 23);
@@ -64,7 +64,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(43, 142);
+            this.label4.Location = new System.Drawing.Point(43, 148);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 23);
@@ -87,7 +87,7 @@
             this.txtNameItem.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNameItem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNameItem.HoverState.Parent = this.txtNameItem;
-            this.txtNameItem.Location = new System.Drawing.Point(181, 53);
+            this.txtNameItem.Location = new System.Drawing.Point(180, 61);
             this.txtNameItem.Margin = new System.Windows.Forms.Padding(5);
             this.txtNameItem.Name = "txtNameItem";
             this.txtNameItem.PasswordChar = '\0';
@@ -113,7 +113,7 @@
             this.txtPriceItem.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPriceItem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPriceItem.HoverState.Parent = this.txtPriceItem;
-            this.txtPriceItem.Location = new System.Drawing.Point(181, 219);
+            this.txtPriceItem.Location = new System.Drawing.Point(182, 221);
             this.txtPriceItem.Margin = new System.Windows.Forms.Padding(5);
             this.txtPriceItem.Name = "txtPriceItem";
             this.txtPriceItem.PasswordChar = '\0';
@@ -128,7 +128,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(76, 60);
+            this.label2.Location = new System.Drawing.Point(76, 68);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 23);
@@ -152,7 +152,7 @@
             this.cxbCategoryItem.HoverState.Parent = this.cxbCategoryItem;
             this.cxbCategoryItem.ItemHeight = 30;
             this.cxbCategoryItem.ItemsAppearance.Parent = this.cxbCategoryItem;
-            this.cxbCategoryItem.Location = new System.Drawing.Point(181, 130);
+            this.cxbCategoryItem.Location = new System.Drawing.Point(182, 135);
             this.cxbCategoryItem.Margin = new System.Windows.Forms.Padding(4);
             this.cxbCategoryItem.Name = "cxbCategoryItem";
             this.cxbCategoryItem.ShadowDecoration.Parent = this.cxbCategoryItem;
@@ -198,7 +198,7 @@
             this.btnAddItem.HoverState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddItem.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnAddItem.HoverState.Parent = this.btnAddItem;
-            this.btnAddItem.Location = new System.Drawing.Point(71, 306);
+            this.btnAddItem.Location = new System.Drawing.Point(62, 306);
             this.btnAddItem.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddItem.Name = "btnAddItem";
             this.btnAddItem.ShadowDecoration.Parent = this.btnAddItem;
@@ -229,6 +229,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddItem";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddItem";
             this.ResumeLayout(false);
             this.PerformLayout();

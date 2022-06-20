@@ -90,6 +90,7 @@ namespace PBL3_Guna
 
         private void btnShowItem_Click(object sender, EventArgs e)
         {
+            
             showDTG_Item("");
             txtSearchItem.Text = "";
         }

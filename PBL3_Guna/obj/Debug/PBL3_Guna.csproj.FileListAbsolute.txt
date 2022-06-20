@@ -1,8 +1,8 @@
-<<<<<<< HEAD
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\PBL3_Guna.exe.config
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\PBL3_Guna.exe
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\PBL3_Guna.pdb
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\BUS.dll
+C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DAO.dll
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Data.Desktop.v21.2.dll
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Data.v21.2.dll
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Printing.v21.2.Core.dll
@@ -11,10 +11,10 @@ C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Utils.v2
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.XtraBars.v21.2.dll
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.XtraEditors.v21.2.dll
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DTO.dll
-C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DAO.dll
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Pdf.v21.2.Core.dll
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Pdf.v21.2.Drawing.dll
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\BUS.pdb
+C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DAO.pdb
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DTO.pdb
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Data.Desktop.v21.2.xml
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Data.v21.2.xml
@@ -23,7 +23,6 @@ C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Sparklin
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Utils.v21.2.xml
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.XtraBars.v21.2.xml
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.XtraEditors.v21.2.xml
-C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DAO.pdb
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Pdf.v21.2.Core.xml
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Pdf.v21.2.Drawing.xml
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\bin\Debug\de\DevExpress.Data.v21.2.resources.dll
@@ -79,78 +78,3 @@ C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.csproj.Co
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.csproj.CopyComplete
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.exe
 C:\Users\Manh Nguyen\source\repos\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.pdb
-=======
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\PBL3_Guna.exe.config
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\PBL3_Guna.exe
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\PBL3_Guna.pdb
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\BUS.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DTO.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DAO.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Pdf.v21.2.Core.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Pdf.v21.2.Drawing.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\BUS.pdb
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DTO.pdb
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Data.Desktop.v21.2.xml
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Data.v21.2.xml
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Printing.v21.2.Core.xml
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Sparkline.v21.2.Core.xml
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Utils.v21.2.xml
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.XtraBars.v21.2.xml
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.XtraEditors.v21.2.xml
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DAO.pdb
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Pdf.v21.2.Core.xml
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\DevExpress.Pdf.v21.2.Drawing.xml
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\de\DevExpress.Data.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\es\DevExpress.Data.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ja\DevExpress.Data.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ru\DevExpress.Data.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\de\DevExpress.Printing.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\es\DevExpress.Printing.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ja\DevExpress.Printing.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ru\DevExpress.Printing.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\de\DevExpress.Sparkline.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\es\DevExpress.Sparkline.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ja\DevExpress.Sparkline.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ru\DevExpress.Sparkline.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\de\DevExpress.Utils.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\es\DevExpress.Utils.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ja\DevExpress.Utils.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ru\DevExpress.Utils.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\de\DevExpress.XtraBars.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\es\DevExpress.XtraBars.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ja\DevExpress.XtraBars.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ru\DevExpress.XtraBars.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\de\DevExpress.XtraEditors.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\es\DevExpress.XtraEditors.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ja\DevExpress.XtraEditors.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ru\DevExpress.XtraEditors.v21.2.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\bin\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.csproj.SuggestedBindingRedirects.cache
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.AddCategory.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.Profile.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.AddItem.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.AddStaff.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.DetailsBill.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.ChangePassword.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.Bill.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.Admin.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.Login.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.Properties.Resources.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.Staff.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.UC_Home.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.UC_Information.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.UC_Item.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.UC_Order.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.UC_Revenue.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.UC_Staff.resources
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.csproj.GenerateResource.cache
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.exe.licenses
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.csproj.CoreCompileInputs.cache
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.csproj.CopyComplete
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.exe
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.pdb
-C:\Users\darkn\pbl3_f\PBL3_Guna\obj\Debug\PBL3_Guna.csproj.AssemblyReference.cache
->>>>>>> ab6b6b445f805d08024f2ddc06fc36ba1130f470
