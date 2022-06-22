@@ -12,18 +12,20 @@ namespace DTO
         public int ID { get; set; } 
         public DateTime? DateCheckIn { get; set; }
         public DateTime? DateCheckOut { get; set; }
+        public int IDTable { get; set; }
         public string Status { get; set; }
         public int Discount { get; set; }
-        //public int ToTal { get; set; }
+        public int ToTalPrice { get; set; }
 
-        public BillDTO(int ID, DateTime? DateCheckIn, DateTime? DateCheckOut, string Status, int Discount,int total)
+        public BillDTO(int ID, DateTime? DateCheckIn, DateTime? DateCheckOut, int IDTable, string Status, int Discount,int total)
         {
             this.ID = ID;
             this.DateCheckIn = DateCheckIn;
             this.DateCheckOut = DateCheckOut;
+            this.IDTable = IDTable;
             this.Status = Status;
             this.Discount = Discount;
-            //this.ToTal = total;
+            //this.ToTalPrice = total;
 
         }
         public BillDTO (DataRow row)
@@ -33,9 +35,10 @@ namespace DTO
             var dateCheckOutTemp = row["DateCheckOut"];
             if(dateCheckOutTemp.ToString() != "")
                 this.DateCheckOut = (DateTime?)dateCheckOutTemp;
+            this.IDTable = (int)row["IDTable"];
             this.Status = row["Status"].ToString();
             this.Discount = (int)row["Discount"];
-           // this.ToTal = (int)row["ToTal"];
+            //this.ToTalPrice = (int)row["TotalPrice"];
         }
     }
 }

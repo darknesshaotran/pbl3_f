@@ -65,9 +65,10 @@
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.InitialImage")));
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(396, 510);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(528, 628);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -77,8 +78,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(339, 188);
+            this.pictureBox1.Size = new System.Drawing.Size(452, 231);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -97,9 +99,10 @@
             this.panel2.Controls.Add(this.txtUser);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(396, 0);
+            this.panel2.Location = new System.Drawing.Point(528, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(339, 510);
+            this.panel2.Size = new System.Drawing.Size(452, 628);
             this.panel2.TabIndex = 1;
             // 
             // ShowPass
@@ -119,10 +122,11 @@
             this.ShowPass.HoverState.Parent = this.ShowPass;
             this.ShowPass.Image = ((System.Drawing.Image)(resources.GetObject("ShowPass.Image")));
             this.ShowPass.ImageOffset = new System.Drawing.Point(1, 0);
-            this.ShowPass.Location = new System.Drawing.Point(278, 317);
+            this.ShowPass.Location = new System.Drawing.Point(371, 390);
+            this.ShowPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ShowPass.Name = "ShowPass";
             this.ShowPass.ShadowDecoration.Parent = this.ShowPass;
-            this.ShowPass.Size = new System.Drawing.Size(29, 28);
+            this.ShowPass.Size = new System.Drawing.Size(39, 34);
             this.ShowPass.TabIndex = 5;
             this.ShowPass.Click += new System.EventHandler(this.ShowPass_Click);
             // 
@@ -142,10 +146,11 @@
             this.btnExit.HoverState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnExit.HoverState.Parent = this.btnExit;
-            this.btnExit.Location = new System.Drawing.Point(198, 385);
+            this.btnExit.Location = new System.Drawing.Point(264, 474);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Parent = this.btnExit;
-            this.btnExit.Size = new System.Drawing.Size(109, 45);
+            this.btnExit.Size = new System.Drawing.Size(145, 55);
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Exit";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -165,10 +170,11 @@
             this.btnLogin.HoverState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnLogin.HoverState.Parent = this.btnLogin;
-            this.btnLogin.Location = new System.Drawing.Point(30, 385);
+            this.btnLogin.Location = new System.Drawing.Point(40, 474);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
-            this.btnLogin.Size = new System.Drawing.Size(109, 45);
+            this.btnLogin.Size = new System.Drawing.Size(145, 55);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -191,15 +197,15 @@
             this.txtPass.ForeColor = System.Drawing.Color.Black;
             this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(70)))), ((int)(((byte)(66)))));
             this.txtPass.HoverState.Parent = this.txtPass;
-            this.txtPass.Location = new System.Drawing.Point(58, 317);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Location = new System.Drawing.Point(77, 390);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '\0';
             this.txtPass.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
             this.txtPass.PlaceholderText = "Password";
             this.txtPass.SelectedText = "";
             this.txtPass.ShadowDecoration.Parent = this.txtPass;
-            this.txtPass.Size = new System.Drawing.Size(213, 28);
+            this.txtPass.Size = new System.Drawing.Size(284, 34);
             this.txtPass.TabIndex = 2;
             this.txtPass.UseSystemPasswordChar = true;
             // 
@@ -221,15 +227,15 @@
             this.txtUser.ForeColor = System.Drawing.Color.Black;
             this.txtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(70)))), ((int)(((byte)(66)))));
             this.txtUser.HoverState.Parent = this.txtUser;
-            this.txtUser.Location = new System.Drawing.Point(58, 245);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUser.Location = new System.Drawing.Point(77, 302);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtUser.Name = "txtUser";
             this.txtUser.PasswordChar = '\0';
             this.txtUser.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(97)))), ((int)(((byte)(98)))));
             this.txtUser.PlaceholderText = "Username";
             this.txtUser.SelectedText = "";
             this.txtUser.ShadowDecoration.Parent = this.txtUser;
-            this.txtUser.Size = new System.Drawing.Size(213, 28);
+            this.txtUser.Size = new System.Drawing.Size(284, 34);
             this.txtUser.TabIndex = 1;
             // 
             // panel1
@@ -237,21 +243,23 @@
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(396, 510);
+            this.panel1.Size = new System.Drawing.Size(528, 628);
             this.panel1.TabIndex = 0;
             // 
             // Login
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(97)))), ((int)(((byte)(98)))));
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(735, 510);
+            this.ClientSize = new System.Drawing.Size(980, 628);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

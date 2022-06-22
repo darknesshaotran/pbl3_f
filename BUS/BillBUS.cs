@@ -101,9 +101,7 @@ namespace BUS
                 if (bill.ID == id)
                 {
                     bd = bill;
-
                     break;
-
                 }
             }
             return bd;

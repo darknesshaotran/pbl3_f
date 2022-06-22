@@ -98,6 +98,18 @@ namespace DAO
             return list;
         }
 
+        public int GetIDTableByID(int id)
+        {
 
+            DataTable data = DataProvider.Instance.ExecuteQuery("select * from Bill where ID = " + id, new Object[] { id });
+
+            if (data.Rows.Count > 0)
+            {
+                BillDTO bill = new BillDTO(data.Rows[0]);
+                return bill.IDTable;
+            }
+
+            return -1;
+        }
     }
 }

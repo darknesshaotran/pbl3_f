@@ -195,7 +195,13 @@
             this.dtgvItem.EnableHeadersVisualStyles = false;
             this.dtgvItem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvItem.Location = new System.Drawing.Point(0, 0);
+<<<<<<< HEAD
+=======
+            this.dtgvItem.Margin = new System.Windows.Forms.Padding(4);
+            this.dtgvItem.MultiSelect = false;
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
             this.dtgvItem.Name = "dtgvItem";
+            this.dtgvItem.ReadOnly = true;
             this.dtgvItem.RowHeadersVisible = false;
             this.dtgvItem.RowHeadersWidth = 51;
             this.dtgvItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -215,7 +221,7 @@
             this.dtgvItem.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtgvItem.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvItem.ThemeStyle.HeaderStyle.Height = 4;
-            this.dtgvItem.ThemeStyle.ReadOnly = false;
+            this.dtgvItem.ThemeStyle.ReadOnly = true;
             this.dtgvItem.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvItem.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvItem.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);

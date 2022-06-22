@@ -39,6 +39,25 @@ namespace BUS
                 list.Add(tempBillDTO);
             }    
             return list;
-        }    
+        }
+        public List<TempBillDTO> GetListTempBillByID(int id)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                data = TempBillDAO.Instance.GetListTempBillByID(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            List<TempBillDTO> list = new List<TempBillDTO>();
+            foreach (DataRow dr in data.Rows)
+            {
+                TempBillDTO tempBillDTO = new TempBillDTO(dr);
+                list.Add(tempBillDTO);
+            }
+            return list;
+        }
     }
 }

@@ -123,8 +123,10 @@
             // nmItemAmount
             // 
             this.nmItemAmount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nmItemAmount.AutoRoundedCorners = true;
             this.nmItemAmount.BackColor = System.Drawing.Color.Transparent;
-            this.nmItemAmount.BorderRadius = 6;
+            this.nmItemAmount.BorderRadius = 21;
+            this.nmItemAmount.CausesValidation = false;
             this.nmItemAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nmItemAmount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.nmItemAmount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -294,7 +296,11 @@
             this.nmDiscount.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nmDiscount.AutoRoundedCorners = true;
             this.nmDiscount.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.nmDiscount.BorderRadius = 17;
+=======
+            this.nmDiscount.BorderRadius = 21;
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
             this.nmDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nmDiscount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.nmDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -384,8 +390,14 @@
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+<<<<<<< HEAD
            // this.Name = "UC_Order";
             this.Size = new System.Drawing.Size(904, 609);
+=======
+            this.Margin = new System.Windows.Forms.Padding(4);
+            //this.Name = "UC_Order";
+            this.Size = new System.Drawing.Size(1205, 750);
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

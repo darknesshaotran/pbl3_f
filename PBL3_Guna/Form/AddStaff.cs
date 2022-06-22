@@ -50,8 +50,7 @@ namespace PBL3_Guna
             {
                 if (txtPassStaff.Text != "")
                 {
-                    StaffBUS.Instance.AddUpdateStaff(staff);
-                    
+                    StaffBUS.Instance.AddStaffBUS(staff);
                     account.IDStaff = StaffBUS.Instance.GetIDStaffByName(staff.Name);
                     AccountBUS.Instance.AddAccountBUS(account);
                     this.Close();

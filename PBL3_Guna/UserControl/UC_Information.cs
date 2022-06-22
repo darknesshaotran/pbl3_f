@@ -19,7 +19,6 @@ namespace PBL3_Guna
         {
             InitializeComponent();
             LoadListBillByDate(DateTime.Now, DateTime.Now);
-
         }
 
         void LoadListBillByDate(DateTime CheckIn, DateTime CheckOut)

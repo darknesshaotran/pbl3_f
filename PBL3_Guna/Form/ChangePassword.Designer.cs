@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePassword));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,8 +38,6 @@
             this.txtOldPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNewPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtAgainPass = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
@@ -202,6 +199,7 @@
             this.txtAgainPass.TabIndex = 10;
             this.txtAgainPass.UseSystemPasswordChar = true;
             // 
+<<<<<<< HEAD
             // guna2Button3
             // 
             this.guna2Button3.Animated = true;
@@ -245,6 +243,8 @@
             this.guna2Button4.Size = new System.Drawing.Size(29, 28);
             this.guna2Button4.TabIndex = 12;
             // 
+=======
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
             // label4
             // 
             this.label4.AutoSize = true;
@@ -303,8 +303,6 @@
             this.ClientSize = new System.Drawing.Size(358, 415);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.txtAgainPass);
             this.Controls.Add(this.txtNewPass);
             this.Controls.Add(this.txtOldPass);
@@ -333,8 +331,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtAgainPass;
         private Guna.UI2.WinForms.Guna2TextBox txtNewPass;
         private Guna.UI2.WinForms.Guna2TextBox txtOldPass;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;

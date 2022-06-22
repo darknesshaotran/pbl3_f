@@ -18,6 +18,7 @@ namespace PBL3_Guna
         public Bill()
         {
             InitializeComponent();
+            GUI();
             ShowBill(UC_Order._idTable);
         }
 
@@ -34,22 +35,28 @@ namespace PBL3_Guna
                 listView.SubItems.Add(item.TotalPrice.ToString());
                 totalPrice += item.TotalPrice;
                 lvBill.Items.Add(listView);
-                txtTotalPrice.Text = totalPrice.ToString("c", new CultureInfo("vi-VN"));
             }
+            int discount = UC_Order._discount;
+            txtTotalPrice.Text = totalPrice.ToString("c", new CultureInfo("vi-VN"));
+            int total = Int32.Parse(txtTotalPrice.Text, NumberStyles.Currency, new CultureInfo("vi-VN"));
+            int payment = total - ((total * discount) / 100);
+            txtPayment.Text = payment.ToString();
+            int paid = Int32.Parse(txtPaid.Text, NumberStyles.Currency, new CultureInfo("vi-VN"));
+
+        }
+        void GUI()
+        {
             TableDTO table = new TableDTO();
             AccountDTO acc = AccountBUS.Instance.GetAccountByUserName(Login._username);
             int idTable = UC_Order._idTable;
             table.Name = TableBUS.Instance.GetNameTablebyID(idTable);
             int idBill = BillBUS.Instance.GetUnCheckIDBillByIDTable(idTable);
-            int discount = UC_Order._discount;
-            int total = Int32.Parse(txtTotalPrice.Text, NumberStyles.Currency, new CultureInfo("vi-VN"));
-            int payment = total - ((total * discount) / 100);
-            txtPayment.Text = payment.ToString();
-            int paid = Int32.Parse(txtPaid.Text, NumberStyles.Currency, new CultureInfo("vi-VN"));
             txtIDBill.Text = idBill.ToString();
             txtTable.Text = table.Name;
             txtCashier.Text = acc.DisplayName.ToString();
-            txtDateCheckOut.Text = DateTime.Now.ToString();
+            DateTime date = DateTime.Now;
+            txtDateCheckOut.Text = date.ToShortDateString();
+            txtTimeOut.Text = date.ToLongTimeString();
         }
 
         private void btnCheckOut_Click(object sender, EventArgs e)
@@ -72,7 +79,6 @@ namespace PBL3_Guna
                     this.Close();
                 }
                 else this.Close();
-                
             }
             
         }
@@ -98,5 +104,9 @@ namespace PBL3_Guna
                
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

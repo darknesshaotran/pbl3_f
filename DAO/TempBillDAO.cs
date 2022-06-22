@@ -34,5 +34,17 @@ namespace DAO
                 throw ex;
             }
         }
+        public DataTable GetListTempBillByID(int id)
+        {
+            try
+            {
+                return DataProvider.Instance.ExecuteQuery("SELECT i.Name, bi.Amount, i.Price, i.Price * bi.Amount AS TotalPrice FROM dbo.BillInfor bi, dbo.Bill b, dbo.Item i WHERE b.ID = bi.IDBill AND bi.IDItem = i.ID AND b.ID = " + id + " AND b.Status = 1");
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+
+        }
     }
 }

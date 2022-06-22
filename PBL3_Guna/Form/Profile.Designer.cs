@@ -58,8 +58,13 @@
             this.txtPassStaff.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtPassStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassStaff.HoverState.Parent = this.txtPassStaff;
+<<<<<<< HEAD
             this.txtPassStaff.Location = new System.Drawing.Point(141, 235);
             this.txtPassStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.txtPassStaff.Location = new System.Drawing.Point(188, 289);
+            this.txtPassStaff.Margin = new System.Windows.Forms.Padding(5);
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
             this.txtPassStaff.Name = "txtPassStaff";
             this.txtPassStaff.PasswordChar = '\0';
             this.txtPassStaff.PlaceholderText = "Password";
@@ -96,8 +101,13 @@
             this.txtChucVu.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtChucVu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChucVu.HoverState.Parent = this.txtChucVu;
+<<<<<<< HEAD
             this.txtChucVu.Location = new System.Drawing.Point(141, 171);
             this.txtChucVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.txtChucVu.Location = new System.Drawing.Point(188, 210);
+            this.txtChucVu.Margin = new System.Windows.Forms.Padding(5);
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
             this.txtChucVu.Name = "txtChucVu";
             this.txtChucVu.PasswordChar = '\0';
             this.txtChucVu.PlaceholderText = "Position";
@@ -134,8 +144,13 @@
             this.txtDisplayName.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtDisplayName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDisplayName.HoverState.Parent = this.txtDisplayName;
+<<<<<<< HEAD
             this.txtDisplayName.Location = new System.Drawing.Point(141, 109);
             this.txtDisplayName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.txtDisplayName.Location = new System.Drawing.Point(188, 134);
+            this.txtDisplayName.Margin = new System.Windows.Forms.Padding(5);
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
             this.txtDisplayName.Name = "txtDisplayName";
             this.txtDisplayName.PasswordChar = '\0';
             this.txtDisplayName.PlaceholderText = "Displayname";
@@ -172,8 +187,13 @@
             this.txtUserNameStaff.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtUserNameStaff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserNameStaff.HoverState.Parent = this.txtUserNameStaff;
+<<<<<<< HEAD
             this.txtUserNameStaff.Location = new System.Drawing.Point(141, 50);
             this.txtUserNameStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.txtUserNameStaff.Location = new System.Drawing.Point(188, 62);
+            this.txtUserNameStaff.Margin = new System.Windows.Forms.Padding(5);
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
             this.txtUserNameStaff.Name = "txtUserNameStaff";
             this.txtUserNameStaff.PasswordChar = '\0';
             this.txtUserNameStaff.PlaceholderText = "Username";
@@ -199,6 +219,35 @@
             this.guna2Elipse1.BorderRadius = 10;
             this.guna2Elipse1.TargetControl = this;
             // 
+<<<<<<< HEAD
+=======
+            // guna2Button1
+            // 
+            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
+            this.guna2Button1.HoverState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(169, 409);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(141, 66);
+            this.guna2Button1.TabIndex = 45;
+            this.guna2Button1.Text = "Exit";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
             // guna2DragControl1
             // 
             this.guna2DragControl1.TargetControl = this;
@@ -241,7 +290,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+<<<<<<< HEAD
+=======
+            this.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
             this.Name = "Profile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCategory";
             this.ResumeLayout(false);
             this.PerformLayout();

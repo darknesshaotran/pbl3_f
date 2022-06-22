@@ -37,7 +37,7 @@ namespace DAO
         {
             try
             {
-                return DataProvider.Instance.ExecuteQuery("Select * from Item");
+                return DataProvider.Instance.ExecuteQuery("Select * from Item Order by IDCategory ASC");
             }
             catch (Exception ex)
             {

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,16 +22,6 @@ namespace PBL3_Guna
             GUI();
             showBill();
         }
-
-        private void DetailsBill_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         public void GUI()
         {
             bool a = true;
@@ -40,53 +31,50 @@ namespace PBL3_Guna
                 a = false;
                 id = UC_Information._id;
             }
-
-            DataTable dt = BillInforBUS.Instance.GetListBillInfor(id);
-            DataTable dt2 = DataProvider.Instance.ExecuteQuery("SELECT IDTable FROM dbo.Bill WHERE ID = " + id);
-            int table = Convert.ToInt32(dt2.Rows[0]["IDTable"].ToString());
-            txtTable.Text = table.ToString();
-            txt_id.Text =  id.ToString();
+            int idTable = BillDAO.Instance.GetIDTableByID(id);
+            TableDTO table = new TableDTO();
+            table.Name = TableBUS.Instance.GetNameTablebyID(idTable);
+            txtTable.Text = table.Name;
+            txt_id.Text = id.ToString();
             BillDTO bill = BillBUS.Instance.getBillByID(id);
-            txtDate.Text = bill.DateCheckOut.ToString();
-
-            if (a)
-            {
-                txtToTal.Text = UC_Revenue._total + " đ";
-            }
-            else txtToTal.Text = UC_Information._total + " đ";
-
+            DateTime? date = bill.DateCheckOut;
+            txtDate.Text = date.ToString();
         }
         void showBill()
         {
-
+            bool a = true;
             int id = UC_Revenue._id;
             if (UC_Revenue._id == 0)
             {
+                a = false;
                 id = UC_Information._id;
             }
-
-            lvBill.Items.Clear();
-            List<BillInforDTO> list = BillInforBUS.Instance.getListInforBill(id);
-            foreach (BillInforDTO b in list)
+            lvDetailBill.Items.Clear();
+            List<TempBillDTO> list = TempBillBUS.Instance.GetListTempBillByID(id);
+            
+            foreach (TempBillDTO item in list)
             {
-                ItemDTO item = ItemBUS.Instance.getItemByID(Convert.ToInt32(b.IDItem.ToString()));
-
-                ListViewItem listview = new ListViewItem(item.Name.ToString());
-                listview.SubItems.Add(b.Amount.ToString());
-                listview.SubItems.Add(item.Price.ToString());
-                listview.SubItems.Add((Convert.ToInt32(item.Price.ToString()) * Convert.ToInt32(b.Amount.ToString())).ToString());
-                lvBill.Items.Add(listview);
-
-
+                ListViewItem listView = new ListViewItem(item.ItemName.ToString());
+                listView.SubItems.Add(item.AmountItem.ToString());
+                listView.SubItems.Add(item.Price.ToString());
+                listView.SubItems.Add(item.TotalPrice.ToString());
+                
+                lvDetailBill.Items.Add(listView);
             }
-
-
-
+            if (a)
+            {
+                txtToTal.Text = UC_Revenue._total.ToString("c", new CultureInfo("vi-VN"));
+            }
+            else txtToTal.Text = UC_Information._total.ToString("c", new CultureInfo("vi-VN"));
         }
 
+<<<<<<< HEAD
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
+=======
+        
+>>>>>>> dd1547b151bf44383cc40152003c04f9a1ea2f1e
     }
 }

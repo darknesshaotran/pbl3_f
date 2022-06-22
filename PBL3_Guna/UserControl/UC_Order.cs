@@ -152,17 +152,7 @@ namespace PBL3_Guna
             else MessageBox.Show("Không tồn tại hóa đơn !");
             
             
-            //if (idBill != -1)
-            //{
-            //    if (MessageBox.Show(String.Format("Bạn có chắc muốn thanh toán hóa đơn cho {0} \nTổng tiền = {1}", table.Name, FinalPrice.ToString("c", culture)), "Thông Báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            //    {
-            //        BillBUS.Instance.CheckOut(idBill, discount, FinalPrice);
-            //        ShowBill(table.ID);
-            //    }
-            //}
-            //else
-            //    MessageBox.Show("Không tồn tại hóa đơn !");
-            //LoadTable();
+            
         }
     }
 }

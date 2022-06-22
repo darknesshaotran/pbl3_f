@@ -53,30 +53,31 @@ namespace BUS
             }
             return li;
         }
-        public bool Check(int id)
+       
+        public void AddStaffBUS(StaffDTO staff)
         {
-            bool isAdded = true;
-            foreach (StaffDTO i in GetAllStaff())
+            try
             {
-                if (id == i.ID)
-                {
-                    isAdded = false;
-                }
-            }
-            return isAdded;
-        }
-        public void AddUpdateStaff(StaffDTO staff)
-        {
-            if (Check(staff.ID))
-            {
-
                 StaffDAO.Instance.AddStaffDAO(staff);
             }
-            else
+            catch(Exception ex)
             {
-               StaffDAO.Instance.updateStaffDAO(staff);
+                throw ex;
             }
         }
+        public void UpdateStaffBUS(StaffDTO staff)
+        {
+            try
+            {
+                StaffDAO.Instance.updateStaffDAO(staff);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        
         public void DeleteStaff(int StafftoDelete)
         {
             try
