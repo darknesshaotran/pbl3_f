@@ -128,8 +128,10 @@
             // nmItemAmount
             // 
             this.nmItemAmount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nmItemAmount.AutoRoundedCorners = true;
             this.nmItemAmount.BackColor = System.Drawing.Color.Transparent;
-            this.nmItemAmount.BorderRadius = 6;
+            this.nmItemAmount.BorderRadius = 21;
+            this.nmItemAmount.CausesValidation = false;
             this.nmItemAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nmItemAmount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.nmItemAmount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -304,8 +306,9 @@
             // nmDiscount
             // 
             this.nmDiscount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nmDiscount.AutoRoundedCorners = true;
             this.nmDiscount.BackColor = System.Drawing.Color.Transparent;
-            this.nmDiscount.BorderRadius = 6;
+            this.nmDiscount.BorderRadius = 21;
             this.nmDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nmDiscount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.nmDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -399,6 +402,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
+            //this.Name = "UC_Order";
             this.Size = new System.Drawing.Size(1205, 750);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

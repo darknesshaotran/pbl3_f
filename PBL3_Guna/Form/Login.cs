@@ -54,7 +54,13 @@ namespace PBL3_Guna
 
                 txtUser.Focus();
             }
-            else MessageBox.Show("Vui lòng nhập đúng tài khoản hoặc mật khẩu", "Cảnh báo đăng nhập!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đúng tài khoản hoặc mật khẩu", "Cảnh báo đăng nhập!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtUser.Text = "";
+                txtPass.Text = "";
+                txtUser.Focus();
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
