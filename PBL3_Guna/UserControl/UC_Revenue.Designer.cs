@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Revenue));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtpkToDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dtpkFromDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDetialsBill = new Guna.UI2.WinForms.Guna2Button();
             this.btnRevenue = new Guna.UI2.WinForms.Guna2Button();
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dtgvBill = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dtpkFromDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.dtpkToDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.btnDetialsBill = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -67,6 +67,40 @@
             this.panel1.Size = new System.Drawing.Size(904, 134);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // dtpkToDate
+            // 
+            this.dtpkToDate.BorderRadius = 8;
+            this.dtpkToDate.BorderThickness = 1;
+            this.dtpkToDate.CheckedState.Parent = this.dtpkToDate;
+            this.dtpkToDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(216)))), ((int)(((byte)(176)))));
+            this.dtpkToDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpkToDate.HoverState.Parent = this.dtpkToDate;
+            this.dtpkToDate.Location = new System.Drawing.Point(630, 70);
+            this.dtpkToDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpkToDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpkToDate.Name = "dtpkToDate";
+            this.dtpkToDate.ShadowDecoration.Parent = this.dtpkToDate;
+            this.dtpkToDate.Size = new System.Drawing.Size(200, 36);
+            this.dtpkToDate.TabIndex = 9;
+            this.dtpkToDate.Value = new System.DateTime(2022, 6, 9, 14, 11, 27, 24);
+            // 
+            // dtpkFromDate
+            // 
+            this.dtpkFromDate.BorderRadius = 8;
+            this.dtpkFromDate.BorderThickness = 1;
+            this.dtpkFromDate.CheckedState.Parent = this.dtpkFromDate;
+            this.dtpkFromDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(216)))), ((int)(((byte)(176)))));
+            this.dtpkFromDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpkFromDate.HoverState.Parent = this.dtpkFromDate;
+            this.dtpkFromDate.Location = new System.Drawing.Point(235, 70);
+            this.dtpkFromDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpkFromDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpkFromDate.Name = "dtpkFromDate";
+            this.dtpkFromDate.ShadowDecoration.Parent = this.dtpkFromDate;
+            this.dtpkFromDate.Size = new System.Drawing.Size(200, 36);
+            this.dtpkFromDate.TabIndex = 8;
+            this.dtpkFromDate.Value = new System.DateTime(2022, 6, 9, 14, 11, 27, 24);
             // 
             // label4
             // 
@@ -136,6 +170,25 @@
             this.panel2.Size = new System.Drawing.Size(904, 609);
             this.panel2.TabIndex = 2;
             // 
+            // btnDetialsBill
+            // 
+            this.btnDetialsBill.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDetialsBill.Animated = true;
+            this.btnDetialsBill.BorderRadius = 10;
+            this.btnDetialsBill.CheckedState.Parent = this.btnDetialsBill;
+            this.btnDetialsBill.CustomImages.Parent = this.btnDetialsBill;
+            this.btnDetialsBill.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
+            this.btnDetialsBill.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.btnDetialsBill.ForeColor = System.Drawing.Color.Black;
+            this.btnDetialsBill.HoverState.Parent = this.btnDetialsBill;
+            this.btnDetialsBill.Location = new System.Drawing.Point(196, 506);
+            this.btnDetialsBill.Name = "btnDetialsBill";
+            this.btnDetialsBill.ShadowDecoration.Parent = this.btnDetialsBill;
+            this.btnDetialsBill.Size = new System.Drawing.Size(121, 38);
+            this.btnDetialsBill.TabIndex = 8;
+            this.btnDetialsBill.Text = "Detials";
+            this.btnDetialsBill.Click += new System.EventHandler(this.btnDetialsBill_Click);
+            // 
             // btnRevenue
             // 
             this.btnRevenue.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -179,33 +232,33 @@
             // 
             // dtgvBill
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtgvBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgvBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvBill.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvBill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvBill.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dtgvBill.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(220)))), ((int)(((byte)(166)))));
+            this.dtgvBill.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(110)))), ((int)(((byte)(121)))));
             this.dtgvBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvBill.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvBill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvBill.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvBill.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvBill.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvBill.EnableHeadersVisualStyles = false;
             this.dtgvBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvBill.Location = new System.Drawing.Point(0, 134);
@@ -221,7 +274,7 @@
             this.dtgvBill.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dtgvBill.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dtgvBill.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgvBill.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(220)))), ((int)(((byte)(166)))));
+            this.dtgvBill.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(110)))), ((int)(((byte)(121)))));
             this.dtgvBill.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvBill.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtgvBill.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -237,59 +290,6 @@
             this.dtgvBill.ThemeStyle.RowsStyle.Height = 22;
             this.dtgvBill.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvBill.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // dtpkFromDate
-            // 
-            this.dtpkFromDate.BorderRadius = 8;
-            this.dtpkFromDate.BorderThickness = 1;
-            this.dtpkFromDate.CheckedState.Parent = this.dtpkFromDate;
-            this.dtpkFromDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(216)))), ((int)(((byte)(176)))));
-            this.dtpkFromDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpkFromDate.HoverState.Parent = this.dtpkFromDate;
-            this.dtpkFromDate.Location = new System.Drawing.Point(235, 70);
-            this.dtpkFromDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpkFromDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpkFromDate.Name = "dtpkFromDate";
-            this.dtpkFromDate.ShadowDecoration.Parent = this.dtpkFromDate;
-            this.dtpkFromDate.Size = new System.Drawing.Size(200, 36);
-            this.dtpkFromDate.TabIndex = 8;
-            this.dtpkFromDate.Value = new System.DateTime(2022, 6, 9, 14, 11, 27, 24);
-            // 
-            // dtpkToDate
-            // 
-            this.dtpkToDate.BorderRadius = 8;
-            this.dtpkToDate.BorderThickness = 1;
-            this.dtpkToDate.CheckedState.Parent = this.dtpkToDate;
-            this.dtpkToDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(216)))), ((int)(((byte)(176)))));
-            this.dtpkToDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpkToDate.HoverState.Parent = this.dtpkToDate;
-            this.dtpkToDate.Location = new System.Drawing.Point(630, 70);
-            this.dtpkToDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpkToDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpkToDate.Name = "dtpkToDate";
-            this.dtpkToDate.ShadowDecoration.Parent = this.dtpkToDate;
-            this.dtpkToDate.Size = new System.Drawing.Size(200, 36);
-            this.dtpkToDate.TabIndex = 9;
-            this.dtpkToDate.Value = new System.DateTime(2022, 6, 9, 14, 11, 27, 24);
-            // 
-            // btnDetialsBill
-            // 
-            this.btnDetialsBill.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDetialsBill.Animated = true;
-            this.btnDetialsBill.BorderRadius = 10;
-            this.btnDetialsBill.CheckedState.Parent = this.btnDetialsBill;
-            this.btnDetialsBill.CustomImages.Parent = this.btnDetialsBill;
-            this.btnDetialsBill.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
-            this.btnDetialsBill.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.btnDetialsBill.ForeColor = System.Drawing.Color.Black;
-            this.btnDetialsBill.HoverState.Parent = this.btnDetialsBill;
-            this.btnDetialsBill.Location = new System.Drawing.Point(196, 506);
-            this.btnDetialsBill.Name = "btnDetialsBill";
-            this.btnDetialsBill.ShadowDecoration.Parent = this.btnDetialsBill;
-            this.btnDetialsBill.Size = new System.Drawing.Size(121, 38);
-            this.btnDetialsBill.TabIndex = 8;
-            this.btnDetialsBill.Text = "Detials";
-            this.btnDetialsBill.Click += new System.EventHandler(this.btnDetialsBill_Click);
             // 
             // UC_Revenue
             // 

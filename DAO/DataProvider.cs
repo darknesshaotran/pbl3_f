@@ -23,7 +23,7 @@ namespace DAO
             }
         }
 
-        private string strConn = @"Data Source=DESKTOP-SRQRFL4\SQLEXPRESS;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
+        private string strConn = @"Data Source=DESKTOP-8622U14;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
 
 
         

@@ -54,5 +54,15 @@ namespace PBL3_Guna
             UC_Revenue._id = 0;
             this.Close();
         }
+
+        private void PanelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

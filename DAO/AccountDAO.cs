@@ -10,7 +10,10 @@ namespace DAO
 {
     public class AccountDAO
     {
-        private static AccountDAO _instance;
+        private static AccountDAO _instance; //Một trường đối tượng, trong C #
+                                             //là một biến của bất kỳ loại nào có trong một lớp hoặc struct
+                                             //được sử dụng để lưu trữ dữ liệu đối tượng
+                                             //nó là thành viên của kiểu chứa nó với một bản sao của trường cho mỗi phiên bản của kiểu chứa.
         public static AccountDAO Instance
         {
             get
@@ -23,6 +26,7 @@ namespace DAO
 
         public Object CheckLogin(AccountDTO account)
         {
+            //ExecuteScalar dùng để thực thi 1 query trong sql
             string query = "USP_AuthoLogin @UserName , @PassWord";
             try
             {
@@ -35,6 +39,8 @@ namespace DAO
         }
         public DataTable GetAllAccount()
         {
+            //DataProvider: dùng để là các thư viện lớp cung cấp chức năng tạo kết nối đến nguồn dữ liệu, thi hành các lệnh trên nguồn dữ liệu đó inset, update, delete, read.
+            
             try
             {
                 return DataProvider.Instance.ExecuteQuery("USP_GetAllAccount");
@@ -113,10 +119,10 @@ namespace DAO
         }
         public string GetUserNameByIDStaff(int id)
         {
-            string a = "";
+            string a = ""; //khởi tạo chuỗi để lấy username
             foreach (DataRow row in GetAllAccount().Rows)
             {
-                if(Convert.ToInt32(row["IDStaff"]) == id)
+                if(Convert.ToInt32(row["IDStaff"]) == id) //Nếu id = IDStaff thì tiến hành gán a = Username
                 {
                     a = row["UserName"].ToString();
                     break;
