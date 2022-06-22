@@ -80,10 +80,9 @@ namespace PBL3_Guna
         private void btnModifyStaff_Click(object sender, EventArgs e)
         {
             StaffDTO staff = getStaffDataToUpdate();
-            if (MessageBox.Show("Bạn có thật sự muốn cập nhập thông tin của "+ staff.Name.ToString() + " ?" , "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.Cancel)
+            if (MessageBox.Show("Bạn có thật sự muốn cập nhập thông tin của nhân viên có ID = " + staff.ID.ToString() + " ?" , "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.Cancel)
             {
-               
-                StaffBUS.Instance.AddUpdateStaff(staff);
+                StaffBUS.Instance.UpdateStaffBUS(staff);
                 showDTG_Staff("");
             }    
                
@@ -105,8 +104,6 @@ namespace PBL3_Guna
         {
             
             int idStaff = Convert.ToInt32(dtgvStaff.CurrentRow.Cells[0].Value.ToString());
-            //string username = AccountBUS.Instance.GetUserNameByIDStaff(idStaff);
-            //AccountDTO acc = AccountBUS.Instance.GetAccountByUserName(username);
             txtIDStaff.Text = idStaff.ToString();
             txtDisplayName.Text = dtgvStaff.CurrentRow.Cells[1].Value.ToString();
             txtAddressStaff.Text = dtgvStaff.CurrentRow.Cells[2].Value.ToString();
@@ -114,7 +111,6 @@ namespace PBL3_Guna
             txtPhoneNumberStaff.Text = dtgvStaff.CurrentRow.Cells[4].Value.ToString();
             txtUserNameStaff.Text = AccountBUS.Instance.GetUserNameByIDStaff(idStaff);
             
-            //txtPassStaff.Text = acc.Password.ToString();
         }
 
         
